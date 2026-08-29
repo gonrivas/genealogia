@@ -1,0 +1,153 @@
+PRIMER CENSO GENERAL DE LA PROVINCIA DE SANTA FE — 6, 7 y 8 de junio de 1887
+Departamento La Capital · Distrito LA COLONIA EMILIA · Tomo 12 · Libreto 12
+Originales: Museo de la Ciudad de Rosario. Base nominativa publicada por el
+Archivo General de la Provincia de Santa Fe y el CFI.
+Consulta: https://www.santafe.gov.ar/censo1887/public_html/ficha/<IDX>/
+NOTA: el sitio NO publica la imagen escaneada del padron, solo la transcripcion,
+y oculta dos campos sin cuenta (Profesion y Religion salen '-bloqueado-').
+==============================================================================
+
+IDX 24087 · linea 9
+  Olazio Benedetto (65)
+    Sexo:              Varón
+    Años:              65
+    Parentesco:        Padre
+    Estado Civil:      Casado/a
+    Profesión:         -bloqueado-
+    Dependencia:       Patrón
+    Religión:          -bloqueado-
+    Nación Pertenece:  Italia
+    Lugar Nacimiento:  Italia
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24088 · linea 10
+  Bertina Madalena (47)
+    Sexo:              Mujer
+    Años:              47
+    Parentesco:        Madre
+    Estado Civil:      Casado/a
+    Hijos:             14
+    Años Casados:      31
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Italia
+    Lugar Nacimiento:  Italia
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24089 · linea 1
+  Alazio Domingo (24)
+    Sexo:              Varón
+    Años:              24
+    Parentesco:        Hijo/a
+    Estado Civil:      Casado/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Italia
+    Lugar Nacimiento:  Italia
+    Leer:              SI
+    Escribir:          SI
+    Población:         Campaña
+
+IDX 24090 · linea 2
+  Molina María (23)
+    Sexo:              Mujer
+    Años:              23
+    Parentesco:        Nuera
+    Estado Civil:      Casado/a
+    Hijos:             2
+    Años Casados:      2
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Italia
+    Lugar Nacimiento:  Italia
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24091 · linea 3
+  Alazio Nicolas (15)
+    Sexo:              Varón
+    Años:              15
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Italia
+    Lugar Nacimiento:  Italia
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24092 · linea 4
+  Alazio Juan (11)
+    Sexo:              Varón
+    Años:              11
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Argentina
+    Lugar Nacimiento:  Argentina, Santa Fe
+    Leer:              SI
+    Escribir:          SI
+    Población:         Campaña
+
+IDX 24093 · linea 5
+  Alazio Francisco (9)
+    Sexo:              Varón
+    Años:              9
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Argentina
+    Lugar Nacimiento:  Argentina, Santa Fe
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24094 · linea 6
+  Alazio María (7)
+    Sexo:              Mujer
+    Años:              7
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Argentina
+    Lugar Nacimiento:  Argentina, Santa Fe
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24095 · linea 7
+  Alazio Margarita (5)
+    Sexo:              Mujer
+    Años:              5
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Argentina
+    Lugar Nacimiento:  Argentina, Santa Fe
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
+
+IDX 24096 · linea 8
+  Alazio Madalenia (1)
+    Sexo:              Mujer
+    Años:              1
+    Parentesco:        Hijo/a
+    Estado Civil:      Soltero/a
+    Profesión:         -bloqueado-
+    Religión:          -bloqueado-
+    Nación Pertenece:  Argentina
+    Lugar Nacimiento:  Argentina, Santa Fe
+    Leer:              NO
+    Escribir:          NO
+    Población:         Campaña
