@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Salerno Archive</title>
+<meta name="description" content="Five families, three countries and three centuries: the documented genealogy of the Salerno, Celeri, Faienza and Rivas families of Santa Fe, Argentina, rebuilt record by record.">
+<link rel="alternate" hreflang="es" href="../">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="x-default" href="../">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#EBEDE7; --surface:#F8F9F5; --sunk:#E2E5DD; --panel:#E6E9E1;
+  --ink:#1B1D19; --ink-2:#3E423B; --muted:#666B60; --faint:#9AA093;
+  --rule:#CBD0C4; --rule-2:#DDE1D7;
+  --accent:#2C4E70; --accent-soft:#E0E8F0;
+  --sepia:#6E5A3E; --sepia-bg:#F1EADF;
+  --gap:#8A6A16; --gap-bg:#F2EBD8;
+  --shadow:0 1px 2px rgba(27,29,25,.06),0 6px 20px -12px rgba(27,29,25,.18);
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17px; line-height:1.6;
+}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;margin:0;text-wrap:balance;letter-spacing:-.015em}
+a{color:var(--accent)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* ---------- barra ---------- */
+.nav{
+  position:sticky; top:0; z-index:20; background:rgba(235,237,231,.93);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--rule);
+}
+.nav .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:11px;padding-bottom:11px}
+.nav .marca{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-right:auto;
+}
+.nav a.b{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.11em;
+  text-transform:uppercase; text-decoration:none; color:var(--muted);
+  border:1px solid var(--rule); border-radius:4px; padding:6px 13px; background:var(--surface);
+}
+.nav a.b:hover{background:var(--sunk);color:var(--ink)}
+.nav a.b.pri{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.nav a.b.pri:hover{background:var(--accent);color:var(--surface)}
+
+/* ---------- entrada ---------- */
+.hero{padding:76px 0 58px;border-bottom:1px solid var(--rule)}
+.hero .eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--sepia); margin:0 0 20px;
+}
+.hero h1{font-size:clamp(38px,6.2vw,64px);line-height:1.05;max-width:17ch;font-weight:600}
+.hero .lead{font-size:21px;line-height:1.55;color:var(--ink-2);max-width:60ch;margin:26px 0 0}
+.hero .lead b{font-weight:600;color:var(--ink)}
+
+.cifras{display:flex;flex-wrap:wrap;gap:38px;margin:44px 0 0}
+.cifra .n{
+  font-family:"IBM Plex Mono",monospace; font-size:34px; font-weight:500;
+  color:var(--accent); line-height:1; font-variant-numeric:tabular-nums;
+}
+.cifra .l{
+  display:block; margin-top:7px; font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted);
+}
+
+/* ---------- secciones ---------- */
+section.blq{padding:62px 0;border-bottom:1px solid var(--rule)}
+section.blq > .wrap > h2{font-size:31px;font-weight:600;max-width:22ch}
+.sub{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--sepia); margin:0 0 14px;
+}
+.txt{max-width:66ch;color:var(--ink-2);margin:20px 0 0}
+.txt p{margin:0 0 15px}
+.txt p:last-child{margin-bottom:0}
+.txt b{color:var(--ink);font-weight:600}
+
+/* ---------- ramas ---------- */
+.ramas-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin:34px 0 0}
+.rama-card{
+  display:block; text-decoration:none; color:inherit;
+  background:var(--surface); border:1px solid var(--rule); border-radius:8px;
+  padding:24px 24px 20px; box-shadow:var(--shadow); transition:border-color .15s,transform .15s;
+}
+.rama-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.rc-reg{
+  font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--sepia);
+}
+.rama-card h3{font-size:25px;margin:8px 0 0;font-weight:600}
+.rc-lug{font-size:13.5px;color:var(--muted);margin:5px 0 0;font-style:italic}
+.rc-txt{font-size:15.5px;color:var(--ink-2);margin:15px 0 0;line-height:1.55}
+.rc-cif{
+  display:inline-block; margin-top:17px; font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--accent); background:var(--accent-soft);
+  border-radius:4px; padding:5px 10px;
+}
+.rama-vacia .rc-cif{color:var(--gap);background:var(--gap-bg)}
+
+/* ---------- dos columnas ---------- */
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin:32px 0 0}
+.caja{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:24px}
+.caja h3{font-size:19px;margin:0 0 11px;font-weight:600}
+.caja p{margin:0 0 11px;font-size:15.5px;color:var(--ink-2)}
+.caja p:last-child{margin-bottom:0}
+.caja .ir{
+  display:inline-block; margin-top:14px; font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+  text-decoration:none; color:var(--accent);
+  border:1px solid var(--accent); border-radius:4px; padding:6px 12px;
+}
+.caja .ir:hover{background:var(--accent);color:var(--surface)}
+
+/* ---------- aviso ---------- */
+.aviso{
+  background:var(--sepia-bg); border-left:3px solid var(--sepia);
+  border-radius:0 6px 6px 0; padding:20px 24px; margin:30px 0 0; max-width:70ch;
+}
+.aviso h3{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--sepia);margin:0 0 9px}
+.aviso p{margin:0 0 10px;font-size:15.5px;color:var(--ink-2)}
+.aviso p:last-child{margin-bottom:0}
+
+/* ---------- contacto ---------- */
+.form{max-width:56ch;margin:28px 0 0}
+.form label{
+  display:block; font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin:0 0 6px;
+}
+.form input,.form textarea{
+  width:100%; font-family:inherit; font-size:16px; color:var(--ink);
+  background:var(--surface); border:1px solid var(--rule); border-radius:5px;
+  padding:10px 13px; margin:0 0 17px;
+}
+.form textarea{min-height:130px;resize:vertical;line-height:1.5}
+.form input:focus,.form textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.form button{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--surface); background:var(--accent);
+  border:1px solid var(--accent); border-radius:5px; padding:11px 22px; cursor:pointer;
+}
+.form button:hover{background:var(--ink)}
+.nota-form{font-size:14px;color:var(--muted);margin:14px 0 0;max-width:56ch}
+
+footer{padding:44px 0 66px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:baseline}
+footer a{color:var(--muted)}
+
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .hero{padding:52px 0 42px}
+  .cifras{gap:26px}
+  .nav .marca{width:100%;margin-bottom:4px}
+}
+@media (prefers-reduced-motion:reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <span class="marca">The Salerno Archive</span>
+    <a class="b" href="#branches">The branches</a>
+    <a class="b" href="#method">Method</a>
+    <a class="b" href="#contact">Contact</a>
+    <a class="b pri" href="../fichas.html">The people</a>
+    <a class="b pri" href="../arbol.html">The tree</a>
+    <a class="b" href="../" hreflang="es" lang="es">Español</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Documented genealogy · Italy and Argentina</p>
+    <h1>Five surnames that happened to meet in Santa Fe</h1>
+    <p class="lead">Between 1880 and 1910 a handful of families who had never heard of one another,
+      and who had very little in common with each other, left <b>three regions of Italy with nothing
+      in common</b> — Calabria, the Tuscan
+      Garfagnana and Abruzzo. They all ended up in the same Argentine province, and their children
+      married each other. This is an attempt to find out who they were, <b>one document at a time,
+      taking nothing on trust without a record to back it</b>.</p>
+
+    <div class="cifras">
+      <div class="cifra"><span class="n">168</span><span class="l">People</span></div>
+      <div class="cifra"><span class="n">77</span><span class="l">Records read in the original</span></div>
+      <div class="cifra"><span class="n">371</span><span class="l">Images at full resolution</span></div>
+      <div class="cifra"><span class="n">38</span><span class="l">Lives written up</span></div>
+      <div class="cifra"><span class="n">12</span><span class="l">Generations</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="blq" id="branches">
+  <div class="wrap">
+    <p class="sub">Where to start</p>
+    <h2>Four branches, four corners of Europe</h2>
+    <div class="txt">
+      <p>Each branch begins with one of Gonzalo Rivas's four grandparents and climbs backwards as far
+      as the paper allows. They are not sealed compartments: anyone standing at a meeting point
+      appears in several at once, which is as it should be. Choosing a branch leaves only its people,
+      its records and its loose ends in view.</p>
+    </div>
+    <div class="ramas-g">
+    <a class="rama-card" href="index.html#rama=salerno">
+      <span class="rc-reg">Calabria</span>
+      <h3>Salerno</h3>
+      <p class="rc-lug">Rende · Marano Marchesato · Castrolibero · Cosenza (province of Cosenza)</p>
+      <p class="rc-txt">The best-documented branch, and the one that reaches furthest back. It begins with a foundling: on 27 June 1825 a newborn was left at the foundling wheel in Cosenza and given the name Michele, which is why his paternal line stops dead there. Everything above him comes through his wife, Maria Antonia Palermo, and climbs to a Michele Volpintesta born around 1723 whose death in 1793 was copied into his granddaughter&#x27;s marriage file and survives there.</p>
+      <span class="rc-cif">90 people · 52 records</span>
+    </a>
+    <a class="rama-card" href="index.html#rama=celeri">
+      <span class="rc-reg">Tuscany</span>
+      <h3>Celeri</h3>
+      <p class="rc-lug">Trassilico · Vallico Sopra · Gallicano (Garfagnana, province of Lucca)</p>
+      <p class="rc-txt">A mountain village in the Garfagnana, above the Serchio valley. Civil registration for Trassilico survives in two stretches — the Napoleonic one of 1808-1812 and the ducal one of 1852-1865 — with half a century of silence between them that only the parish books can cover. Desiderio Celeri emigrated from here to Argentina, and so did the paternal grandmother of the family.</p>
+      <span class="rc-cif">61 people · 11 records</span>
+    </a>
+    <a class="rama-card" href="index.html#rama=faienza">
+      <span class="rc-reg">Abruzzo</span>
+      <h3>Faienza</h3>
+      <p class="rc-lug">Atessa · Paglieta (province of Chieti)</p>
+      <p class="rc-txt">This branch holds the oldest person in the whole tree: Domenico Pizzi, a stonemason from Atessa, born around 1730-1740 and named only in passing in his son&#x27;s death record. Four straight generations of masons. Domingo Faienza, the one who crossed the Atlantic, was born in Paglieta on 1 March 1900 — not in Atessa, as was believed here for months.</p>
+      <span class="rc-cif">43 people · 9 records</span>
+    </a>
+    <a class="rama-card rama-vacia" href="index.html#rama=rivas">
+      <span class="rc-reg">Argentina</span>
+      <h3>Rivas</h3>
+      <p class="rc-lug">Santa Fe</p>
+      <p class="rc-txt">The branch that exists in this tree entirely on family memory, without a single document behind it. It is the only one like that, and it appears here so the gap is visible. The first brick would be the birth record of Marcos César Rivas, Santa Fe, 22 March 1950.</p>
+      <span class="rc-cif">32 people · no records yet</span>
+    </a></div>
+  </div>
+</section>
+
+<section class="blq" id="reading">
+  <div class="wrap">
+    <p class="sub">Two ways to look at it</p>
+    <h2>The profiles tell the story; the tree shows the shape</h2>
+    <div class="duo">
+      <div class="caja">
+        <h3>The people</h3>
+        <p>One profile per person, ordered by generation. Each says who they were, whom they descend
+        from, what records exist — and, when there are none, <b>why not, and where one would have to
+        look</b>.</p>
+        <p>Every record appears twice: the <b>Italian transcribed literally</b> from the manuscript,
+        and a full translation, with the original image beside it at full resolution.</p>
+        <p class="nota-form" style="margin-top:14px"><b>Still in Spanish.</b> The individual
+        profiles and the record transcriptions have not been translated yet — around 84,000 words.
+        The link opens the Spanish version.</p>
+        <a class="ir" href="../fichas.html">Open the profiles &rarr;</a>
+      </div>
+      <div class="caja">
+        <h3>The tree</h3>
+        <p>Interactive: centre it on a person, see where they came from and where the line goes, and
+        cross from one branch to another through the point where the families meet.</p>
+        <p>You can search anyone by name, keep only the direct line, and zoom out or in to show more
+        or fewer generations at once.</p>
+        <p class="nota-form" style="margin-top:14px"><b>Still in Spanish</b>, but names, dates and
+        places read the same in either language.</p>
+        <a class="ir" href="../arbol.html">Open the tree &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blq" id="method">
+  <div class="wrap">
+    <p class="sub">How this was built</p>
+    <h2>One rule above all: what a record says and what someone guesses are never mixed</h2>
+    <div class="txt">
+      <p>Almost everything here comes from the Italian civil registers digitised by the
+      <b>Portale Antenati</b> of the Ministry of Culture, together with parish books transcribed by
+      local researchers and, on the Argentine side, the <b>1887 provincial census of Santa Fe</b> and
+      certificates from the civil registry.</p>
+      <p>For each record the image is kept at its original resolution — never recompressed — the
+      Italian is transcribed exactly as written, misspellings and all, and then translated in full.
+      After that comes a note on <b>what it proves and what it does not</b>, which is usually the most
+      useful part.</p>
+      <p>Where something is a hypothesis, the text says so in those words. And when an earlier
+      conclusion turns out to be wrong, it is not deleted: it is corrected, and the fact that it was
+      wrong stays on the record. There is a sources file that only ever grows, with its own list of
+      corrections, so that anyone can retrace the path and find the mistake.</p>
+    </div>
+    <div class="aviso">
+      <h3>What you will not find here</h3>
+      <p><b>The two most recent generations are withheld.</b> They are living people, and in the
+      published version of this site their names, dates and places do not appear: they are not hidden,
+      they are <b>simply not in the file</b>. They remain only as links, so the line is not broken.</p>
+      <p>You will not find noble surnames or coats of arms either. What you will find is a wide gap
+      in fortune between one branch and another: <b>day labourers, stonemasons, spinners and a
+      foundling left at the wheel in Cosenza</b> on one side, and on the other <b>landowners, a town
+      clerk and a lawyer from Lucca</b> whose daughters are recorded as «possidenti». In some records
+      people cannot sign their names; in others the godfather at the christening is the doctor from
+      the next village.</p>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="blq" id="contact">
+  <div class="wrap">
+    <p class="sub">If this is close to home</p>
+    <h2>Do you think you belong to this tree?</h2>
+    <div class="txt">
+      <p>If your surname is <b>Salerno, Celeri, Faienza, Nelli, Rizzo, Costabile, Alasia, Palermo,
+      Chiappetta, Volpintesta or Pizzi</b>, or if one of your forebears left Rende, Trassilico, Atessa
+      or Paglieta and ended up in Argentina, there is a fair chance we are on the same page of some
+      register. Write, and we will look.</p>
+      <p>Anything is worth sending: a name, a rough date, a photograph with something written on the
+      back, the name of the village people used at home. Several things here have been solved with
+      less than that.</p>
+    </div>
+    
+    <div class="aviso" style="border-left-color:var(--gap);background:var(--gap-bg)">
+      <h3 style="color:var(--gap)">This form is not connected yet</h3>
+      <p>A static site cannot receive a submission on its own: it needs an intermediary service to
+      collect the message and forward it by email. Everything is in place; only the service address
+      is missing.</p>
+    </div>
+    <form class="form" method="POST" action="#">
+      <label for="f-nom">Your name</label>
+      <input id="f-nom" name="nombre" type="text" required autocomplete="name">
+      <label for="f-mail">Your email</label>
+      <input id="f-mail" name="email" type="email" required autocomplete="email">
+      <label for="f-ape">The surname or village that brings you here</label>
+      <input id="f-ape" name="apellido" type="text" placeholder="Salerno · Rende · Trassilico…">
+      <label for="f-msg">What you know</label>
+      <textarea id="f-msg" name="mensaje" required
+        placeholder="Names, approximate dates, the village people named at home…"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p class="nota-form">The message arrives by email. Nothing is stored on this page and nothing is
+    shared with anyone.</p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>A family archive · rebuilt record by record</span>
+    <span style="margin-left:auto">
+      <a href="../fichas.html">People</a> · <a href="../arbol.html">Tree</a> ·
+      <a href="../" hreflang="es" lang="es">Español</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
