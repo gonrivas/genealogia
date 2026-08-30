@@ -140,6 +140,19 @@ dl.datos dd a.ext:hover{border-bottom-color:var(--acc)}
 }
 .relato p{font-size:16.5px; line-height:1.65; color:var(--ink-2); margin:0 0 13px}
 .relato p:last-child{margin-bottom:0}
+.rel-claves{
+  display:grid; grid-template-columns:auto 1fr; gap:5px 16px;
+  margin:16px 0 0; padding-top:14px; border-top:1px solid var(--rule);
+  font-size:14.5px;
+}
+.rel-claves dt{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace; font-size:11px;
+  letter-spacing:.05em; text-transform:uppercase; color:var(--muted);
+  padding-top:3px; white-space:nowrap;
+}
+.rel-claves dd{margin:0;color:var(--ink-2)}
+@media (max-width:560px){ .rel-claves{grid-template-columns:1fr;gap:2px 0}
+  .rel-claves dd{margin:0 0 9px} }
 
 .cuenta{
   font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em;
@@ -295,13 +308,13 @@ body[data-rama="sinrama"] [data-r]:not([data-r~="sinrama"]){display:none !import
 <button class="rb" data-rama="faienza">Faienza</button>
 <button class="rb rb-sin" data-rama="sinrama">No branch assigned</button>
     <a class="rb-arbol rb-ini" href="index.html">&larr; Home</a>
-    <a class="rb-arbol" href="../arbol.html">View the tree &rarr;</a>
-    <a class="rb-arbol rb-ini" style="margin-left:8px" href="../index.html" hreflang="es" lang="es">Español</a>
+    <a class="rb-arbol" href="arbol.html">View the tree &rarr;</a>
+    <a class="rb-arbol rb-ini" style="margin-left:8px" href="../fichas.html" hreflang="es" lang="es">Español</a>
   </div>
   <h1 id="tit">Family archive</h1>
   <p class="sub" id="sub"><b>168</b> people · <b>77</b> records read in the original ·
      <b>293</b> images at full resolution · Calabria, los Abruzos, la Garfagnana, el Piamonte y Argentina</p>
-  <p class="sub" style="margin-top:10px;padding:10px 14px;background:var(--gap-bg);border-left:3px solid var(--gap);border-radius:0 5px 5px 0;max-width:78ch"><b>Translation in progress.</b> The interface, every person's summary and the 38 written lives are in English. Still in Spanish: the record transcriptions and their notes, the detail fields and the «what is missing» section — about 73,000 words. <b>The Italian quoted from the manuscripts is never translated</b>, by design.</p>
+  <p class="sub" style="margin-top:10px;padding:10px 14px;background:var(--gap-bg);border-left:3px solid var(--gap);border-radius:0 5px 5px 0;max-width:78ch"><b>Translation in progress — about a fifth done.</b> In English: the whole interface, every person's summary, the 38 written lives and the «what is missing» section. Still in Spanish: the record transcriptions, their notes and the detail fields — some 68,000 words. <b>The Italian quoted from the manuscripts is never translated</b>, by design.</p>
 </header>
 
 <div class="wrap">
@@ -522,6 +535,7 @@ body[data-rama="sinrama"] [data-r]:not([data-r~="sinrama"]){display:none !import
 <p class="legal">In the records: <b>«il fu Domenico Pizzi» en el acta de 1841</b></p>
 <p class="f-res">A stonemason from Atessa, in Abruzzo. He is the oldest person in the entire tree. His son Leone was born around 1761, which places him in the generation of 1730-1740. He was already dead by October 1841.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-santa_menna" data-ir="santa_menna">Santa Menna</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-leone_pizzi" data-ir="leone_pizzi">Leone Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1730-1740, presumiblemente Atessa (provincia de Chieti, Abruzos)</dd>
@@ -540,6 +554,7 @@ body[data-rama="sinrama"] [data-r]:not([data-r~="sinrama"]){display:none !import
 <h2>Santa Menna</h2>
 <p class="f-res">Mother of Leone Pizzi, from Atessa. Born around 1730-1740. She is the oldest documented woman in the tree, and the first mother any record of this era bothers to name.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-domenico_pizzi_viejo" data-ir="domenico_pizzi_viejo">Domenico Pizzi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-leone_pizzi" data-ir="leone_pizzi">Leone Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1730-1740, presumiblemente Atessa</dd>
@@ -558,6 +573,7 @@ body[data-rama="sinrama"] [data-r]:not([data-r~="sinrama"]){display:none !import
 <p class="f-res">A stonemason from Atessa, of the rione di Santa Croce, born around 1761. He was widowed three times. He died on 26 October 1841, aged eighty, and his record — the oldest in this whole genealogy — names his parents. His son Giuseppe&#x27;s record, six years later, names Leone: it is the link that joins the two halves of the Atessa tree.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-domenico_pizzi_viejo" data-ir="domenico_pizzi_viejo">Domenico Pizzi</a> · <a href="#p-santa_menna" data-ir="santa_menna">Santa Menna</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-rosa_iacobitti" data-ir="rosa_iacobitti">Rosa Iacobitti</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe_pizzi" data-ir="giuseppe_pizzi">Giuseppe Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1761, ATESSA — por los ochenta años que le da el acta de defunción</dd>
@@ -633,6 +649,7 @@ Santa Croce, figlio del fu DOMENICO PIZZI di professione muratore, domiciliato
 <h2>Rosa Iacobitti</h2>
 <p class="f-res">Second wife of Leone Pizzi and mother of Giuseppe Pizzi. Born around 1765. She is the only one of Leone&#x27;s three wives in the bloodline, and she is known only from her son&#x27;s death record.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-leone_pizzi" data-ir="leone_pizzi">Leone Pizzi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe_pizzi" data-ir="giuseppe_pizzi">Giuseppe Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1765, presumiblemente Atessa — su hijo nació allí hacia 1787</dd>
@@ -684,6 +701,13 @@ LO QUE NO SE SABE: nada más. Ni oficio, ni domicilio, ni con quién estuvo casa
 <p>Everything known about him fits into one line written on 4 December 1880, when two day labourers from Rende went to the town hall to report the death of his son Raffaele. The clerk noted that the deceased was the son «da fu Pietro, bracciante, domiciliato in detto Castrolibero». It is all there: what he was called, what he lived by and where. And the «fu», which on these forms means deceased: by December 1880 Pietro had been dead for some time.</p>
 <p>His son was born around 1805, so he must have been born between 1775 and 1785. That puts him out of reach by the civil route: civil registration in Calabria begins in 1809, and before that date there are only parish books. His death record, on the other hand, could well exist, in the Castrolibero death registers before 1880.</p>
 <p>There is a clue about his wife, whom the 1880 record leaves unnamed. In three marriages of other Chiappettas gathered in the blog corpus — Castrolibero 1832, Marano Principato 1839 and Castrolibero 1849 — the groom&#x27;s parents are «Chiappetta, Pietro» and «Veltri, Pasqualina». If it is the same Pietro, she was called Pasqualina Veltri. It is not confirmed: no record read so far says so of him directly.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciante, a landless day labourer</dd>
+<dt>Village</dt><dd>Castrolibero</dd>
+<dt>Records of his own</dt><dd>none; his birth predates civil registration</dd>
+<dt>Dead before</dt><dd>December 1880</dd>
+<dt>His wife</dt><dd>unnamed in the record; Pasqualina Veltri? unconfirmed</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1780, presumiblemente Castrolibero — su hijo nació allí hacia 1805</dd>
@@ -702,12 +726,19 @@ LO QUE NO SE SABE: nada más. Ni oficio, ni domicilio, ni con quién estuvo casa
 <h2>Carmine Molinaro</h2>
 <p class="f-res">He is taken to be the father of Teresa Molinaro, but her death record does NOT name him. The name comes from the index alone.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-carmina_covello" data-ir="carmina_covello">Carmina Covello</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-teresa_molinaro" data-ir="teresa_molinaro">Teresa Molinaro</a></p>
 <div class="relato">
 <h3 class="rel-tit">Two blank boxes</h3>
 <p>On 20 December 1879 the death record of his daughter Teresa was drawn up at Rende. The form had space for both parents. The clerk wrote «da fu ______» and «e dalla fu ______» and left both names blank — something he did not do on the other three records of that same generation, where he did put the father&#x27;s name. That record had been obtained precisely on the expectation that it would name him.</p>
 <p>So Carmine Molinaro remains what he was before: an index line with no document behind it. The only thing the record genuinely adds is the «fu»: whoever Teresa&#x27;s father was, he had died before December 1879. And a correction of spelling, which is no small thing when you are searching indexes: the surname is written MOLINARO, with an o, in the body of the record, in the marginal heading, in the register&#x27;s own annual index and in his grandson&#x27;s marriage of 1873. The «Mulinaro» of the modern indexes is a distortion.</p>
 <p>One attractive hypothesis remains, with no record to support it. In the Marano Principato marriages of 1839, Antonio Chiappetta, son of Pietro Chiappetta and Pasqualina Veltri, marries Saveria Maria Mulinaro, daughter of Carmine Mulinaro and Carmina Covello. If our Raffaele — also a son of Pietro — married Teresa — a daughter of Carmine — they would be two brothers married to two sisters. It fits, but the marriage of Raffaele and Teresa was searched for at Marano Principato in 1838 and 1841-1845, page by page, and it is not there: among those forty-six marriages no Chiappetta appears.</p>
+<dl class="rel-claves">
+<dt>State of the evidence</dt><dd>unconfirmed: only an index says so</dd>
+<dt>The one documented fact</dt><dd>Teresa&#x27;s father had died before December 1879</dd>
+<dt>Spelling of the surname</dt><dd>Molinaro, never Mulinaro</dd>
+<dt>Daughter</dt><dd>Teresa Molinaro, c. 1819 – 19 December 1879</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Daughter</dt><dd>Teresa Molinaro (hacia 1819 – 19 de diciembre de 1879)</dd>
@@ -724,12 +755,18 @@ LO QUE NO SE SABE: nada más. Ni oficio, ni domicilio, ni con quién estuvo casa
 <h2>Carmina Covello</h2>
 <p class="f-res">She is taken to be the mother of Teresa Molinaro. No record read so far names her.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-carmine_molinaro" data-ir="carmine_molinaro">Carmine Molinaro</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-teresa_molinaro" data-ir="teresa_molinaro">Teresa Molinaro</a></p>
 <div class="relato">
 <h3 class="rel-tit">The mother nobody wrote down</h3>
 <p>Her name comes from the same index line as her husband&#x27;s, and the document that was meant to back it up does not. In her daughter Teresa&#x27;s death record of December 1879 the box reads «e dalla fu ______ domiciliata in ______» and is empty.</p>
 <p>This is not an isolated slip, it is a pattern. Of the four death records of that generation read in 2026 — Teresa Molinaro in 1879, Raffaele Chiappetta in 1880, Carmina Ricchio in 1883 and Domenico Massei in 1891 — all four omit the mother&#x27;s name; three of them do give the father&#x27;s. In these Rende registers maternal descent is the first thing to be lost. The oddest case is that of 1891: the clerk left the name blank and yet filled in «domiciliata in Rende». He knew where that woman had lived and did not know what she was called.</p>
 <p>Of Carmina Covello, therefore, the only documented fact is that Teresa&#x27;s mother had died before December 1879. She is kept in the tree, marked as unconfirmed.</p>
+<dl class="rel-claves">
+<dt>State of the evidence</dt><dd>unconfirmed by any record</dd>
+<dt>The one documented fact</dt><dd>she had died before December 1879</dd>
+<dt>Why she is missing</dt><dd>all four records of her generation omit the mother&#x27;s name</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Daughter</dt><dd>Teresa Molinaro</dd>
@@ -746,12 +783,19 @@ LO QUE NO SE SABE: nada más. Ni oficio, ni domicilio, ni con quién estuvo casa
 <h2>Giuseppe Ricchio</h2>
 <p class="f-res">A day labourer from Marano Principato, father of Carmina Ricchio. Born around 1800. He was already dead by December 1883, and he never left his village.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-maria_bosco" data-ir="maria_bosco">Maria Bosco</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carmina_ricchio" data-ir="carmina_ricchio">Carmina Ricchio</a></p>
 <div class="relato">
 <h3 class="rel-tit">Resident in life at Marano</h3>
 <p>On 12 December 1883, at the town hall of Rende, his son-in-law Giovanni Chiappetta reported the death of Carmina Ricchio, which had occurred the previous day at noon. In identifying the deceased, the record calls her the daughter «da fu Giuseppe, bracciante, domiciliato in vita in Marano Principato».</p>
 <p>That «in vita» — in life — is what turns the phrase into a usable fact. It does not merely say that Giuseppe had died: it says where he lived until the end. His death record is not to be sought at Rende, where his daughter died, but in the Marano Principato registers before 1883.</p>
 <p>Marano Principato did not appear in this tree until that run of readings. It suddenly turned out to be the home village of two of Filomena&#x27;s four grandparents: Carmina Ricchio and Teresa Molinaro. Giuseppe, a day labourer like almost every man in this line, was presumably born there around 1800, reckoning back from his daughter&#x27;s birth around 1828.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciante, day labourer</dd>
+<dt>Village</dt><dd>Marano Principato, where he lived until he died</dd>
+<dt>Dead before</dt><dd>December 1883</dd>
+<dt>Daughter</dt><dd>Carmina Ricchio, c. 1828 – 11 December 1883</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1800, presumiblemente Marano Principato</dd>
@@ -773,6 +817,7 @@ CORRECCIÓN DEL 26 DE AGOSTO DE 2026, y va en sentido contrario. El acta de defu
 <p class="f-res">A countrywoman born in Marano Principato around 1797, wife of Giuseppe Ricchio and mother of Carmina Ricchio. She died a widow at Castrolibero, contrada Feudo, on 11 August 1865, aged sixty-eight. Until 25 August 2026 no one knew she existed.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-santo_bosco" data-ir="santo_bosco">Santo Bosco</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-giuseppe_ricchio" data-ir="giuseppe_ricchio">Giuseppe Ricchio</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carmina_ricchio" data-ir="carmina_ricchio">Carmina Ricchio</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1797, MARANO PRINCIPATO — el acta dice «nato in Marano Principato» y le da 68 años</dd>
@@ -840,6 +885,12 @@ CORRECCIÓN DEL 26 DE AGOSTO DE 2026, y va en sentido contrario. El acta de defu
 <p>He appears in a single sentence, in the death record of his son Domenico, drawn up at Rende on 9 November 1891: «dal fu Filippo, bracciante, domiciliato in Rende».</p>
 <p>That sentence corrected an assumption that had stood for some time. The Massei were taken to be people of Castrolibero, because Angela, Domenico&#x27;s daughter, had been born there around 1858. But the record says that Domenico was born at Rende around 1821 and that his father was resident at Rende. The family had been from Rende all along; it was Domenico who moved, and who came back.</p>
 <p>His death record should be in the Rende death registers before 1891 — collections already known and accessible — with nothing to go on but the name and the trade. His birth, around 1795, is out of reach. And the surname: the 1891 record spells it MAZZEI, with an unmistakable double z, while the records of the branch that lives on (1873, 1877, 1894) spell it MASSEI. Both forms are real and depend on the clerk, not on the bearer.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciante, day labourer</dd>
+<dt>Village</dt><dd>Rende</dd>
+<dt>Dead before</dt><dd>November 1891</dd>
+<dt>Spelling</dt><dd>Mazzei in the record that names him; Massei everywhere else in the branch</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1795, presumiblemente Rende — su hijo nació allí hacia 1821</dd>
@@ -860,6 +911,7 @@ CORRECCIÓN DEL 26 DE AGOSTO DE 2026, y va en sentido contrario. El acta de defu
 <p class="f-res">A stonemason from Atessa, of the rione di Santa Croce, born around 1787. He died on 29 April 1847, aged sixty, and his death record is the one that anchors this branch at the top: it states in so many words that he was the son of Leone Pizzi.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-leone_pizzi" data-ir="leone_pizzi">Leone Pizzi</a> · <a href="#p-rosa_iacobitti" data-ir="rosa_iacobitti">Rosa Iacobitti</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-antonia_di_iorio" data-ir="antonia_di_iorio">Antonia di Iorio</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico_pizzi" data-ir="domenico_pizzi">Domenico Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1787, ATESSA — por los sesenta años que le da el acta de defunción</dd>
@@ -932,6 +984,7 @@ e della fu ROSA IACOBITTI, domiciliata ————.</pre></div>
 <h2>Antonia di Iorio</h2>
 <p class="f-res">A spinner from Atessa, mother of Domenico Pizzi. Born around 1795-1805. Her name is rescued by her son&#x27;s death record in 1891.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giuseppe_pizzi" data-ir="giuseppe_pizzi">Giuseppe Pizzi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico_pizzi" data-ir="domenico_pizzi">Domenico Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1795-1805, presumiblemente Atessa</dd>
@@ -951,6 +1004,7 @@ e della fu ROSA IACOBITTI, domiciliata ————.</pre></div>
 <p class="legal">In the records: <b>«il fu Lorenzo» en el acta de 1863</b></p>
 <p class="f-res">Father of Giuseppe Palermo, the one from Marano Marchesato. Since his son was born around 1773, he belongs to the generation of 1740-1750. He was already dead by March 1863.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giulia_chiappetta" data-ir="giulia_chiappetta">Giulia Chiappetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe_palermo" data-ir="giuseppe_palermo">Giuseppe Palermo</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1740-1750, presumiblemente MARANO MARCHESATO — su hijo Giuseppe consta «nato in Marano medesimo»</dd>
@@ -972,6 +1026,7 @@ Su propia acta de defunción no está al alcance por la vía fácil: con un hijo
 <p class="legal">In the records: <b>«fu Giulia Chiappetta» en el acta de 1863</b></p>
 <p class="f-res">Mother of Giuseppe Palermo. Born around 1740-1750, dead before March 1863. She is one of the few mothers the Marano forms bother to name.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-lorenzo_palermo" data-ir="lorenzo_palermo">Lorenzo Palermo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe_palermo" data-ir="giuseppe_palermo">Giuseppe Palermo</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1740-1750, presumiblemente Marano Marchesato</dd>
@@ -1045,6 +1100,7 @@ Su propia acta de defunción no está al alcance por la vía fácil: con un hijo
 <p class="legal">In the records: <b>«il fu Gio: Antonio» en el acta de 1851 — abreviatura de Giovanni Antonio</b></p>
 <p class="f-res">A bracciale from Marano Marchesato, father of Teresa Luchetta. Born around 1750-1760. He was already dead by June 1851.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-marianna_conforti" data-ir="marianna_conforti">Marianna Conforti</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-teresa_luchetta" data-ir="teresa_luchetta">Teresa Luchetta</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1750-1760, presumiblemente MARANO MARCHESATO — su hija Teresa consta «nata in Marano suddetto»</dd>
@@ -1067,6 +1123,7 @@ Su acta propia habría que buscarla en los Morti de Marano Marchesato anteriores
 <p class="legal">In the records: <b>«la fu Marianna Conforti» en el acta de 1851</b></p>
 <p class="f-res">Mother of Teresa Luchetta. Born around 1750-1760, dead before June 1851. Her name appears in two separate documents, which is rare in this genealogy.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-antonio_luchetta" data-ir="antonio_luchetta">Gio: Antonio Luchetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-teresa_luchetta" data-ir="teresa_luchetta">Teresa Luchetta</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1750-1760, presumiblemente Marano Marchesato</dd>
@@ -1088,12 +1145,21 @@ Que un acta de Marano nombre a la madre no es cosa que se pueda dar por desconta
 <p class="f-res">A shepherd and day labourer from Marano Marchesato, father of Francesco Giacomo Palermo. He was born around 1773 and died in his own house on 6 March 1863, aged NINETY. His death record, read in August 2026, at last names his parents: Lorenzo Palermo and Giulia Chiappetta.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-lorenzo_palermo" data-ir="lorenzo_palermo">Lorenzo Palermo</a> · <a href="#p-giulia_chiappetta" data-ir="giulia_chiappetta">Giulia Chiappetta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-carmina_spizzirri" data-ir="carmina_spizzirri">Carmina Spizzirri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-francesco_giacomo" data-ir="francesco_giacomo">Francesco Giacomo Palermo</a> · <a href="#p-aquila_palermo" data-ir="aquila_palermo">Aquila Palermo</a></p>
 <div class="relato">
-<h3 class="rel-tit">Figlio del fu Giuseppe</h3>
-<p>On 14 May 1867, at five in the afternoon, two neighbours from Rende with village trades — Pasquale Sacco, a fifty-year-old carter, and Costantino Perugini, a forty-two-year-old tailor — reported the death of Giacomo Palermo, a shepherd, which had occurred the previous day at four in the afternoon. The parentage of the deceased is settled in four words: «figlio del fu Giuseppe».</p>
-<p>That is all that is known of him: the name, and that by May 1867 he was already dead. The record goes no further. It does not name the mother, so Carmina Spizzirri, whom the indexes give as his wife, still has no document to support her.</p>
-<p>His own record would have to be looked for at Marano Marchesato, which is where his son was born around 1807. Without an approximate date it is a needle in a haystack.</p>
+<h3 class="rel-tit">From four words to two generations</h3>
+<p>For months everything known about him fitted into four words. On 14 May 1867 two neighbours from Rende with village trades — Pasquale Sacco, a carter, and Costantino Perugini, a tailor — reported the death of his son Giacomo Palermo, a shepherd. The parentage of the deceased was settled like this: «figlio del fu Giuseppe». A name, and nothing else. No mother, no village, no age.</p>
+<p>In August 2026 his own record turned up, and it is one of those that change a whole tree. He died on 6 March 1863 at eight in the morning, in his own house at Marano Marchesato, and record 24 puts him at *** NINETY YEARS OLD ***: the greatest age in this entire genealogy. And it names his parents — LORENZO PALERMO and GIULIA CHIAPPETTA, both already dead — so the line climbs at a stroke to people born around 1740-1750, thirty years before civil registration existed in Calabria.</p>
+<p>The trade comes and goes with the years, like his son&#x27;s: bracciale in June 1821, when he registers his daughter Aquila&#x27;s birth; pastore in December 1838, when he marries her off; and bracciale again when he dies. The only known address of this family comes from that 1821 record: contrada Malvitani, at Marano.</p>
+<p>One discrepancy remains unresolved, and it is better not to paper over it. The ninety years of 1863 place his birth around 1773; but in 1821, declaring for himself, he said he was forty, which would give 1781. Eight years apart. The 1821 figure comes from his own mouth and the 1863 one from two neighbours, so the first is probably the sound one.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>c. 1781 by his own declaration in 1821; c. 1773 by his death record</dd>
+<dt>Parents</dt><dd>Lorenzo Palermo and Giulia Chiappetta — CONFIRMED by record</dd>
+<dt>Trade</dt><dd>bracciale and pastore, depending on the year</dd>
+<dt>Address</dt><dd>contrada Malvitani, Marano Marchesato</dd>
+<dt>Death</dt><dd>6 March 1863, aged ninety — Marano, record 24</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1781, y no 1773, MARANO MARCHESATO — «nato in Marano medesimo». El acta de nacimiento de su hija Aquila (1821) le da CUARENTA años; los noventa de su acta de defunción de 1863 darían 1773. Ocho años de diferencia, y la cifra de 1821 la dice él mismo</dd>
@@ -1150,11 +1216,22 @@ Que un acta de Marano nombre a la madre no es cosa que se pueda dar por desconta
 <h2>Carmina Spizzirri</h2>
 <p class="f-res">A countrywoman of Marano Marchesato, wife of Giuseppe Palermo. She was born around 1789 and died a widow on 11 October 1864. Her death record was sought precisely to get her parents out of it, and it is the one document in the tree that leaves those two boxes deliberately blank; her age is fixed better by the birth of her daughter Aquila in 1821 than by that record.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giuseppe_palermo" data-ir="giuseppe_palermo">Giuseppe Palermo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-francesco_giacomo" data-ir="francesco_giacomo">Francesco Giacomo Palermo</a> · <a href="#p-aquila_palermo" data-ir="aquila_palermo">Aquila Palermo</a></p>
 <div class="relato">
-<h3 class="rel-tit">It stopped at the father</h3>
-<p>Her son Giacomo&#x27;s death record at Rende was sought on the expectation that it would name her: the form used in these registers usually gives both parents of the deceased. It does not. Record 35 of 1867 says «figlio del fu Giuseppe» and stops there.</p>
-<p>Her name still rests solely on the index this investigation started from, with no original document behind it. She is kept in the tree, but marked as unconfirmed. It is one more instance of the same pattern that repeats across the whole district: in these records, the mother&#x27;s name is the first thing to disappear.</p>
+<h3 class="rel-tit">The record that was sought and came back blank</h3>
+<p>Her death record was sought for a precise reason: it was the one place in the world where her parents&#x27; names could appear. The Calabrian blog&#x27;s index did not give them, and above 1809 there is no civil registration in Calabria.</p>
+<p>The record turned up — Marano Marchesato, 12 October 1864, record 74 — and the answer is negative. The printed form says «figlia del fu ———» and «della fu ———», with both names left blank. *** It is the only document in the whole tree that leaves those two boxes deliberately empty. *** All it proves is that by October 1864 her father and mother were both dead.</p>
+<p>And it is not a gap in the reading. On 29 August 2026 it was checked by a second route: the Marano death index for 1864, transcribed by someone else, gives in the row for record 74 only «Spizzirri» in the parents column, with no names, exactly as the original does. *** The gaps are in the paper. ***</p>
+<p>What the record does give, and it is not nothing, is her identity. The spouse column says «Giuseppe Palermo», and that pins her down beyond error — because in that same index there is ANOTHER Carmina Spizzirri, married to a Giuseppe Pellegrino. She died on 11 October 1864 at eleven in the morning, at home, after eighteen months of widowhood.</p>
+<p>Her age, on the other hand, is better fixed by another document. The 1864 record puts her at seventy, which would give 1794; but in June 1821 her husband declared her thirty-two, which gives 1789. For her parents&#x27; names all that is left are the Marano parish books before 1809, or her marriage record.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>c. 1789 — the 1821 figure, more reliable than her own record&#x27;s</dd>
+<dt>Parents</dt><dd>*** STILL UNKNOWN ***: the record leaves both boxes blank</dd>
+<dt>What the record does prove</dt><dd>that by October 1864 both her parents were dead</dd>
+<dt>How she is identified</dt><dd>by the spouse column: there is another Carmina Spizzirri in the same index</dd>
+<dt>Death</dt><dd>11 October 1864, aged seventy — Marano, record 74</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1789, MARANO MARCHESATO — «nata in Marano medesimo». Los 32 años que declara su marido en 1821 dan 1789; los 70 del acta de defunción de 1864 darían 1794. Se prefiere la primera cifra</dd>
@@ -1215,12 +1292,21 @@ Que un acta de Marano nombre a la madre no es cosa que se pueda dar por desconta
 <p class="f-res">A day labourer from Marano Marchesato, father of Carmina Volpintesta. He was born around 1773 and died at home on 19 March 1823, aged fifty, when his daughter Carmina was eight. His death record gives his father&#x27;s name: Michele.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-michele_volpintesta" data-ir="michele_volpintesta">Michele Volpintesta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-teresa_luchetta" data-ir="teresa_luchetta">Teresa Luchetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carmina_volpintesta" data-ir="carmina_volpintesta">Carmina Volpintesta</a></p>
 <div class="relato">
-<h3 class="rel-tit">Named by accident</h3>
-<p>He appears in a record that is not his and in which, in principle, he had no business being. In identifying the dead man, the death record of his son-in-law Giacomo Palermo (Rende, 14 May 1867) says he was the «marito di Carmina Volpintesta fu Vincenzo».</p>
-<p>Four words that prove two things at once: that Carmina&#x27;s father was called Vincenzo, and that by May 1867 he was already dead. A whole generation is gained from a line written for something else.</p>
-<p>It goes no further. His death record has not been located, and his wife, Teresa Luchetta, still has no verified source.</p>
+<h3 class="rel-tit">Fifty years old, and his father&#x27;s name</h3>
+<p>He entered this tree sideways, in a record that was not his. The death record of his son-in-law Giacomo Palermo (Rende, 14 May 1867) said he was the «marito di Carmina Volpintesta fu Vincenzo»: four words written for something else that proved two, that Carmina&#x27;s father was called Vincenzo and that he was already dead.</p>
+<p>In August 2026 his own record turned up and the detour is no longer needed. He died on 19 March 1823 at midday, at his house in Marano Marchesato, aged fifty, when his daughter Carmina was eight. Record 8 gives his trade — bracciale, day labourer — and his father&#x27;s name: *** «figlio del FU MICHELE di professione BRACCIALE» ***. The trade was inherited: Michele bracciale, Vincenzo bracciale. The mother, though, is not named: that box was left blank, as in so many others across the district.</p>
+<p>There is a detail that makes that record indispensable and no other. At Marano there live at the same time at least four or five Vincenzo Volpintestas — one married to Arcangela Bartelli, another to Rosa Mancino, another the son of Antonio and Francesca — and without a line to tell them apart any of them would do. The one that identifies him is «e sposo di TERESA LUCHETTA».</p>
+<p>She outlived him by twenty-eight years, and her own record, of 1851, calls her «vedova di Vincenzo Volpentesta». The marriage is confirmed from both ends.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>c. 1773 by his own record; c. 1776 by his daughter&#x27;s in 1814</dd>
+<dt>Father</dt><dd>Michele Volpentesta, bracciale, already dead in 1823 — CONFIRMED by record</dd>
+<dt>Mother</dt><dd>not named: the box was left blank</dd>
+<dt>How he is told apart</dt><dd>by his wife: there are several Vincenzo Volpintestas at Marano at once</dd>
+<dt>Death</dt><dd>19 March 1823, aged fifty — Marano, record 8</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1773, MARANO MARCHESATO — «nato in Marano suddetto». El acta de nacimiento de su hija, de 1814, le da treinta y ocho años, que apuntarían más bien a 1776; las edades declaradas son aproximadas</dd>
@@ -1285,12 +1371,21 @@ Encaja en cuatro cosas: el nombre, el padre MICHELE —lo único que su acta de 
 <p class="f-res">A countrywoman of Marano Marchesato, wife of Vincenzo Volpentesta and mother of Carmina. She was born around 1779 and died on 6 June 1851, aged seventy-two, after twenty-eight years of widowhood. Until August 2026 she was the only person in the tree without a single document; she now has a record of her own and both parents named.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-antonio_luchetta" data-ir="antonio_luchetta">Gio: Antonio Luchetta</a> · <a href="#p-marianna_conforti" data-ir="marianna_conforti">Marianna Conforti</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-vincenzo_volpintesta" data-ir="vincenzo_volpintesta">Vincenzo Volpintesta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carmina_volpintesta" data-ir="carmina_volpintesta">Carmina Volpintesta</a></p>
 <div class="relato">
-<h3 class="rel-tit">The wedding that did not exist</h3>
-<p>Her name came from a single place: a supposed marriage banns record at Marano Marchesato in 1837, for the wedding of her daughter Carmina Volpintesta to Francesco Giacomo Palermo. In August 2026 that document was searched for and it is not there.</p>
-<p>The check was one of those that close a question. The Marano Marchesato marriage register for 1837 carries an alphabetical index at the end, on pages 28 and 29: a complete list of twenty-five weddings, from 22 January to 30 December, with the sequence number, the couple and the name of each of their fathers. They were read one by one, enlarged. There is not a single Palermo or Volpintesta. And the file of marriage dossiers for that year, two hundred and thirty-five pages long, corresponds to those same twenty-five weddings: it begins with dossier number 1 on page 2 and ends with number 25 on the last. There is no room for a twenty-sixth.</p>
-<p>What is known: the wedding took place before March 1839, the month Maria Antonia was born, and probably in 1837 or 1838, but it is in another register or another village. Meanwhile Teresa Luchetta is left without a source: the only new document touching this couple, Giacomo Palermo&#x27;s death record of 1867, names Vincenzo and not her.</p>
+<h3 class="rel-tit">From having nothing to having everything</h3>
+<p>Her name came from a single place, and that place turned out not to exist. She was credited to a marriage banns record at Marano Marchesato in 1837, for the wedding of her daughter Carmina to Francesco Giacomo Palermo. It was searched for and it is not there: the 1837 register carries an alphabetical index at the end, with its twenty-five weddings one by one, and there is not a single Palermo or Volpintesta; the dossier file for that year, two hundred and thirty-five pages long, corresponds exactly to those twenty-five and leaves no room for a twenty-sixth. The wedding was at Rende, not at Marano.</p>
+<p>For a time she was therefore the only person in the tree without a single document. It was even written of her that she was «the only one of the four undocumented forebears still exactly where she was».</p>
+<p>*** And then her record appeared, and it turned out to be the best of the whole batch. *** Marano Marchesato, 6 June 1851, record 44. She died at eight in the morning in her own house, aged seventy-two, after twenty-eight years of widowhood. In a single paragraph the form gives the spouse — «vedova di Vincenzo Volpentesta» — the age, the trade of contadina and *** BOTH PARENTS: GIO: ANTONIO LUCHETTA, bracciale, and MARIANNA CONFORTI ***, both already dead. It is rare for these records to name the mother; this one does.</p>
+<p>With that, two more names of the 1740-1760 generation enter the tree, and the woman who had nothing became the one who gives most. Her own birth, around 1779, is now out of reach by the civil route: only the books of the parish of S. Maria del Carmine at Marano would hold it.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>c. 1779 by her own record; c. 1783 by her daughter&#x27;s in 1814</dd>
+<dt>Parents</dt><dd>Gio: Antonio Luchetta and Marianna Conforti — CONFIRMED by record</dd>
+<dt>Trade</dt><dd>contadina, countrywoman</dd>
+<dt>Widowed since</dt><dd>March 1823 — twenty-eight years of widowhood</dd>
+<dt>Death</dt><dd>6 June 1851, aged seventy-two — Marano, record 44</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1779, MARANO MARCHESATO — «nata in Marano suddetto», por los setenta y dos años que le da el acta de defunción. El acta de su hija, de 1814, le daba treinta y un años, que apuntarían a 1783</dd>
@@ -1349,12 +1444,20 @@ Encaja en cuatro cosas: el nombre, el padre MICHELE —lo único que su acta de 
 <p class="f-res">A day labourer born in Castrolibero around 1805. Father of Giovanni Chiappetta and therefore great-grandfather of the Argentine Salernos. He died a widower at Rende, contrada Surdo, on 3 December 1880, aged seventy-five, one year less twelve days after his wife.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-pietro_chiappetta" data-ir="pietro_chiappetta">Pietro Chiappetta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-teresa_molinaro" data-ir="teresa_molinaro">Teresa Molinaro</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giovanni_chiappetta" data-ir="giovanni_chiappetta">Giovanni Chiappetta</a></p>
 <div class="relato">
 <h3 class="rel-tit">Eleven months a widower</h3>
 <p>He was born at Castrolibero around 1805 — his death record&#x27;s seventy-five years say so — and he is the earliest-born ancestor this line reaches by document. A day labourer, like his father Pietro and like almost every man in the tree.</p>
 <p>His wife, Teresa Molinaro, died on 19 December 1879 in the contrada Surdo at Rende. He died in the same contrada on 3 December 1880, at three in the afternoon, eleven and a half months later; the record calls him «vedovo di Molinaro Teresa». Two village day labourers went to report it, Bruno Salvatore, thirty, and Stellato Andrea, thirty-seven. The witnesses were a stonemason of sixty-six and a day labourer of thirty-seven. Nobody signed but the registrar, Vincenzo Martino.</p>
 <p>The record names his father — «da fu Pietro, bracciante, domiciliato in detto Castrolibero» — and leaves the mother&#x27;s box blank. Of his children, the documented one is Giovanni, born around 1848; probably also a Pasquale who in 1883 declares himself twenty-eight, and the Vincenzo and Pietro Chiappetta who appear as witnesses on family records. That last is inference from ages and surname, not proof.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciante, day labourer</dd>
+<dt>Born</dt><dd>c. 1805 at Castrolibero</dd>
+<dt>Contrada</dt><dd>Surdo, at Rende</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Death</dt><dd>3 December 1880, aged 75</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1805, CASTROLIBERO — por los 75 años que le da el acta de defunción</dd>
@@ -1416,12 +1519,20 @@ Castrolibero, e da fu ————, domiciliata in ————, vedovo di Molin
 <p class="f-res">A countrywoman born in Marano Principato around 1819, mother of Giovanni Chiappetta. She died at Rende, contrada Surdo, on 19 December 1879, aged sixty. Her death was reported by her son&#x27;s father-in-law, Domenico Massei.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-carmine_molinaro" data-ir="carmine_molinaro">Carmine Molinaro</a> · <a href="#p-carmina_covello" data-ir="carmina_covello">Carmina Covello</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-raffaele_chiappetta" data-ir="raffaele_chiappetta">Raffaele Chiappetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giovanni_chiappetta" data-ir="giovanni_chiappetta">Giovanni Chiappetta</a></p>
 <div class="relato">
 <h3 class="rel-tit">Reported by her son&#x27;s father-in-law</h3>
 <p>She died on 19 December 1879, at one in the afternoon, in the contrada Surdo at Rende, aged sixty. She had been born around 1819 at Marano Principato, a village that did not figure in this tree until that reading.</p>
 <p>The man who went to the town hall to report it, at ten the following morning, was neither a son nor an ordinary neighbour: it was Massei Domenico, a day labourer, the father of Angela Massei — that is, the father-in-law of her son Giovanni. His age is written in ink so faint that all one can read is «fifty-something». With him was a sixty-eight-year-old day labourer whose surname probably reads De Rango: the same foundling surname Michele Salerno used at Castrolibero, though nothing proves any kinship.</p>
 <p>The record spells MOLINARO, with an o, as do the marginal heading and the register&#x27;s annual index. And it leaves both parents&#x27; boxes blank, so the names the indexes give — Carmine Molinaro and Carmina Covello — remain unsupported. Her husband outlived her by eleven and a half months and died in the same contrada.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>contadina, countrywoman</dd>
+<dt>Born</dt><dd>c. 1819 at Marano Principato</dd>
+<dt>Contrada</dt><dd>Surdo, at Rende</dd>
+<dt>Death</dt><dd>19 December 1879, aged 60</dd>
+<dt>Who reported it</dt><dd>her son&#x27;s father-in-law, Domenico Massei</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1819, MARANO PRINCIPATO — por los 60 años que le da el acta de defunción</dd>
@@ -1485,6 +1596,7 @@ domiciliata in ————, moglie di Chiappetta Raffaele.</pre></div>
 <p class="f-res">A day labourer BORN IN RENDE around 1821, father of Angela Massei. He was widowed in 1883 and died a widower on 8 November 1891, in contrada Saporito, aged seventy. One of the two witnesses on his record is his son-in-law, Giovanni Chiappetta.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-filippo_massei" data-ir="filippo_massei">Filippo Massei</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-carmina_ricchio" data-ir="carmina_ricchio">Carmina Ricchio</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-angela_massei" data-ir="angela_massei">Angela Massei</a></p>
 <div class="relato">
 <h3 class="rel-tit">The witness was his son-in-law</h3>
@@ -1492,6 +1604,12 @@ domiciliata in ————, moglie di Chiappetta Raffaele.</pre></div>
 <p>The two fathers-in-law buried one another, and the records set it down. In December 1879 it was Domenico who reported the death of Teresa Molinaro, his son-in-law&#x27;s mother. In December 1883 it was the son-in-law, Giovanni Chiappetta, who reported that of Carmina Ricchio, his own mother-in-law. And in November 1891, on Domenico&#x27;s own record, one of the two witnesses is «Giovanni Chiappetta, di anni quarantatre, bracciante»: the same man again.</p>
 <p>Of the father, the record gives name and trade: «dal fu Filippo, bracciante, domiciliato in Rende». Of the mother, only the gap — but with a detail the other three records of that generation lack: the clerk left the name blank and still filled in «domiciliata in Rende».</p>
 <p>The surname changes from clerk to clerk and not from man to man: MASSEI in 1873 and 1879, MAZZEI in 1883 and 1891. The tree keeps Massei, which is the form used in the records of the branch that lives on.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciante, day labourer</dd>
+<dt>Born</dt><dd>c. 1821 at Rende, not Castrolibero as had been assumed</dd>
+<dt>Contradas</dt><dd>Surdo in 1883; Saporito when he died</dd>
+<dt>Death</dt><dd>8 November 1891, aged 70</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1821, RENDE — por los 70 años que le da el acta de defunción</dd>
@@ -1556,6 +1674,7 @@ domiciliata in Rende — Vedovo di Ricchio Carmina.</pre></div>
 <p class="f-res">A countrywoman born in Marano Principato around 1828, mother of Angela Massei. She died at Rende, contrada Surdo, on 11 December 1883, aged fifty-five. The man who went to report her death was her son-in-law, Giovanni Chiappetta.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giuseppe_ricchio" data-ir="giuseppe_ricchio">Giuseppe Ricchio</a> · <a href="#p-maria_bosco" data-ir="maria_bosco">Maria Bosco</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-domenico_massei" data-ir="domenico_massei">Domenico Massei</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-angela_massei" data-ir="angela_massei">Angela Massei</a></p>
 <div class="relato">
 <h3 class="rel-tit">Four Chiappettas on her record</h3>
@@ -1563,6 +1682,13 @@ domiciliata in Rende — Vedovo di Ricchio Carmina.</pre></div>
 <p>Her record is a gathering of Chiappettas: it is reported by Giovanni Chiappetta, thirty-three — her son-in-law — and Pasquale Chiappetta, twenty-eight; and the witnesses are Vincenzo Chiappetta, twenty-five, and Pietro Chiappetta, fifty. That Pasquale fits as a brother of Giovanni, another son of Raffaele and Teresa born around 1855. It is a lead to follow, not a proof.</p>
 <p>Of her father the record says «da fu Giuseppe, bracciante, domiciliato in vita in Marano Principato»; of her mother, nothing. None of those present signed: only the registrar, Vincenzo Bruno, who also spells the husband&#x27;s surname with a double z, Mazzei.</p>
 <p>Three of Filomena&#x27;s four grandparents died in the same contrada Surdo and in three Decembers: Teresa Molinaro on 19 December 1879, Raffaele Chiappetta on 3 December 1880 and she on 11 December 1883.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>contadina, countrywoman</dd>
+<dt>Born</dt><dd>c. 1828 at Marano Principato</dd>
+<dt>Contrada</dt><dd>Surdo, at Rende</dd>
+<dt>Death</dt><dd>11 December 1883, aged 55</dd>
+<dt>Who reported it</dt><dd>her son-in-law, Giovanni Chiappetta</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1828, MARANO PRINCIPATO — por los 55 años que le da el acta de defunción</dd>
@@ -1625,6 +1751,7 @@ Marano Principato, e dalla fu ————, domiciliata in ————, moglie 
 <p class="f-res">A stonemason from Atessa, born around 1824, father of Angiolina Pizzi. He could sign his name, which was rare among his people. He died on 28 September 1891 at the house on Via di Mezzo, aged sixty-seven, still married to Teresa Flocco.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giuseppe_pizzi" data-ir="giuseppe_pizzi">Giuseppe Pizzi</a> · <a href="#p-antonia_di_iorio" data-ir="antonia_di_iorio">Antonia di Iorio</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-teresa_flocco" data-ir="teresa_flocco">Teresa Flocco</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-angela_pizzi" data-ir="angela_pizzi">Angela Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1824, ATESSA — por los 67 años que le da el acta de defunción</dd>
@@ -1698,6 +1825,7 @@ DI IORIO, filatrice, domiciliata in vita in Atessa, marito di TERESA FLOCCO.</pr
 <h2>Teresa Flocco</h2>
 <p class="f-res">A spinner from Atessa, born around 1834, wife of Domenico Pizzi and mother of Angiolina. She was widowed in September 1891.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-domenico_pizzi" data-ir="domenico_pizzi">Domenico Pizzi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-angela_pizzi" data-ir="angela_pizzi">Angela Pizzi</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1834 — el acta de 1869 le da treinta y cinco años</dd>
@@ -1722,6 +1850,7 @@ EL DATO QUE HAY QUE APUNTAR es ese «fu Pasquale»: su padre se llamaba PASQUALE
 <p class="f-res">A shepherd of Marano Marchesato. The records almost always call him plain «Giacomo Palermo». He had at least four children at Marano between 1839 and 1852, moved with the family to Rende and died there on 13 May 1867, aged sixty.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giuseppe_palermo" data-ir="giuseppe_palermo">Giuseppe Palermo</a> · <a href="#p-carmina_spizzirri" data-ir="carmina_spizzirri">Carmina Spizzirri</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-carmina_volpintesta" data-ir="carmina_volpintesta">Carmina Volpintesta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-maria_antonia" data-ir="maria_antonia">Maria Antonia Palermo</a> · <a href="#p-antonio_palermo" data-ir="antonio_palermo">Antonio Palermo</a> · <a href="#p-annunciata_palermo" data-ir="annunciata_palermo">Annunziata Palermo</a> · <a href="#p-teresa_palermo" data-ir="teresa_palermo">Teresa Palermo</a></p>
 <div class="relato">
 <h3 class="rel-tit">He began and ended as a shepherd</h3>
@@ -1729,6 +1858,13 @@ EL DATO QUE HAY QUE APUNTAR es ese «fu Pasquale»: su padre se llamaba PASQUALE
 <p>The trade comes and goes with the years: pastore when he registers Antonio in 1841, bracciale in 1845 and 1852, pecoraio — sheep-herder — when he dies. He begins and ends with livestock. The contradas move too: Palazzo in 1841, Langhi in 1845, Cerzi in 1852, all within Marano; and then the whole village, because the family ended up settled at Rende.</p>
 <p>He died there on 13 May 1867 at four in the afternoon, at home, in a contrada the record writes as «Nocolitani» and which is at the resolution limit of the scan. The record says «marito di Carmina Volpintesta»: he did not die a widower, she outlived him. And it adds that he was «figlio del fu Giuseppe», without naming the mother.</p>
 <p>The man signing the record as registrar was Luigi Perugini, acting assessor. Nine years earlier, as mayor of Rende, it was he who had married his daughter Maria Antonia to Michele Salerno.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>pastore and pecoraio; bracciale in the middle years</dd>
+<dt>Born</dt><dd>c. 1807 at Marano Marchesato</dd>
+<dt>Contradas</dt><dd>Palazzo, Langhi and Cerzi at Marano; then Rende</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Death</dt><dd>13 May 1867, aged 60</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1807, Marano Marchesato — por la edad que declara al morir</dd>
@@ -1822,12 +1958,19 @@ EL DATO QUE HAY QUE APUNTAR es ese «fu Pasquale»: su padre se llamaba PASQUALE
 <p class="f-res">Wife of Giacomo Palermo and mother of Maria Antonia. Born at Marano Marchesato in May 1814, daughter of Vincenzo Volpentesta and Teresa Luchetta. She lost her father at eight and was widowed at Rende in May 1867.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-vincenzo_volpintesta" data-ir="vincenzo_volpintesta">Vincenzo Volpintesta</a> · <a href="#p-teresa_luchetta" data-ir="teresa_luchetta">Teresa Luchetta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-francesco_giacomo" data-ir="francesco_giacomo">Francesco Giacomo Palermo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-maria_antonia" data-ir="maria_antonia">Maria Antonia Palermo</a> · <a href="#p-antonio_palermo" data-ir="antonio_palermo">Antonio Palermo</a> · <a href="#p-annunciata_palermo" data-ir="annunciata_palermo">Annunziata Palermo</a> · <a href="#p-teresa_palermo" data-ir="teresa_palermo">Teresa Palermo</a></p>
 <div class="relato">
 <h3 class="rel-tit">Thirty years old, twice</h3>
 <p>She has no record of her own and yet appears in five: the births of her four children — Maria Antonia in 1839, Antonio in 1841, Annunciata in 1845 and Teresa in 1852 — and her husband&#x27;s death in 1867.</p>
 <p>The ages he declares for her are a good illustration of how little these figures are worth: thirty in October 1841, thirty again in February 1845, and thirty-five in January 1852. They place her somewhere between 1812 and 1817, and no closer.</p>
 <p>In May 1867 she was alive: her husband&#x27;s death record calls him «marito di Carmina Volpintesta», not a widower. And in passing it says «fu Vincenzo», so her own father was by then dead. The surname is written Volpintesta in the Rende records and Volpentesta in the Marano ones. Her birth would have to be sought around 1815; the «of Rende» the starting index gives her is confirmed by no record read.</p>
+<dl class="rel-claves">
+<dt>Born</dt><dd>between 1812 and 1817, place unconfirmed</dd>
+<dt>Appears in</dt><dd>five records, none of them hers</dd>
+<dt>Documented children</dt><dd>four, between 1839 and 1852</dd>
+<dt>Still alive in</dt><dd>May 1867</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>mayo de 1814, MARANO MARCHESATO — acta 41; el día se lee 12 con reserva (ver las notas del acta)</dd>
@@ -2049,12 +2192,20 @@ Es decir: el expediente la llama Aquila, su partida la llama Aquila, y el acta d
 <p class="f-res">A day labourer born in Castrolibero around 1848. He married at Rende in 1873 and had Filomena there. Still alive, and still able to sign, in 1910.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-raffaele_chiappetta" data-ir="raffaele_chiappetta">Raffaele Chiappetta</a> · <a href="#p-teresa_molinaro" data-ir="teresa_molinaro">Teresa Molinaro</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-angela_massei" data-ir="angela_massei">Angela Massei</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-filomena" data-ir="filomena">Filomena Chiappetta</a></p>
 <div class="relato">
 <h3 class="rel-tit">He could sign his name</h3>
 <p>He was born at Castrolibero around 1848 and married at Rende on 19 October 1873, at three in the afternoon, to Angela Massei. He declared twenty-five years completed; she, fifteen. That day nobody signed: neither the couple nor the witnesses could write, and the record is initialled only by the sindaco Vincenzo Martino.</p>
 <p>In May 1877 he came back to the town hall to register his daughter Filomena: twenty-nine years old, day labourer, the child born the previous day at nine in the morning in the contrada Soprano. Three separate records — the marriage of 1873, that birth of 1877 and his appearance as a witness in 1891 aged forty-three — point to the same year of birth. The fourth, that of 1910, is two years out.</p>
 <p>And here is what sets him apart. On 30 August 1910 he went to report the death of his granddaughter Angelina, aged eight, together with the child&#x27;s uncle. At the foot of the record it is stated that the informant Chiappetta Giovanni and the witness Vercillo Ferdinando sign; the others declared themselves illiterate. In a family where almost nobody signs — not the couple of 1873, nor those of 1894, nor Francesco on any of the nine records of his children — Giovanni Chiappetta could write his own name.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>bracciale, day labourer; contadino in 1910</dd>
+<dt>Born</dt><dd>c. 1848 at Castrolibero</dd>
+<dt>Could sign</dt><dd>yes — the only one in the family who does</dd>
+<dt>Married at</dt><dd>25</dd>
+<dt>Still alive in</dt><dd>August 1910, declaring 60 years</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1848, CASTROLIBERO — declara 25 años cumplidos en octubre de 1873</dd>
@@ -2076,12 +2227,20 @@ Es decir: el expediente la llama Aquila, su partida la llama Aquila, y el acta d
 <p class="f-res">Born at Castrolibero around 1858. She married at barely fifteen and was Filomena&#x27;s mother at nineteen.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-domenico_massei" data-ir="domenico_massei">Domenico Massei</a> · <a href="#p-carmina_ricchio" data-ir="carmina_ricchio">Carmina Ricchio</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-giovanni_chiappetta" data-ir="giovanni_chiappetta">Giovanni Chiappetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-filomena" data-ir="filomena">Filomena Chiappetta</a></p>
 <div class="relato">
 <h3 class="rel-tit">Fifteen years completed</h3>
 <p>Her marriage record leaves no room for doubt: «di anni quindici compiti», fifteen years completed. She married on 19 October 1873, at the town hall of Rende, to Giovanni Chiappetta, a twenty-five-year-old day labourer. Both had been born at Castrolibero and both were already living at Rende; all four parents were alive and the record gives them as resident in the village.</p>
 <p>She had Filomena at nineteen, on 11 May 1877. And twenty-one years later, on 1 April 1894, she went back to the same town hall to give her consent for her daughter to marry at sixteen. The same scene, one year apart.</p>
 <p>She could not write, and her birth record — around 1858, at Castrolibero — has not been located. The surname is written MASSEI on her marriage, on Filomena&#x27;s birth and at the 1894 wedding; the index this began from gives it as «Mazzei» and also as «Mazza».</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>contadina, countrywoman</dd>
+<dt>Born</dt><dd>c. 1858 at Castrolibero</dd>
+<dt>Married at</dt><dd>15</dd>
+<dt>A mother at</dt><dd>19</dd>
+<dt>Could sign</dt><dd>no</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1858, CASTROLIBERO — declara 15 años cumplidos en octubre de 1873</dd>
@@ -2166,6 +2325,7 @@ non che i testimoni Antonio Loizzo o Guallatta, di anni quaranta, bracciale, e S
 <p class="legal">In the records: <b>Michele Salerno di Rende</b></p>
 <p class="f-res">A foundling. Found at the wheel of the Cosenza hospice on 3 May 1825. A day labourer. He used three surnames over his lifetime and had none of his own.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-maria_antonia" data-ir="maria_antonia">Maria Antonia Palermo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico" data-ir="domenico">Domenico Salerno</a> · <a href="#p-arcangela" data-ir="arcangela">Arcangela Salerno</a> · <a href="#p-francesco" data-ir="francesco">Francesco Salerno</a> · <a href="#p-giovanni" data-ir="giovanni">Giovanni Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">The child at the wheel</h3>
@@ -2173,6 +2333,13 @@ non che i testimoni Antonio Loizzo o Guallatta, di anni quaranta, bracciale, e S
 <p>The business of the mark is not a piece of boilerplate. The usual thing was to leave a foundling with a garment torn in two, half a coin or a ribbon, and to keep the other half in order to be able to claim him one day. That he carried nothing means nobody intended to come back for him. On the record, the section for witnesses was left blank, and so was the column reserved for the parish to notify the baptism.</p>
 <p>The name was given by the servant, not by the priest or the mayor: the form says «lo stesso ha inoltre dichiarato di dare al bambino il nome di Michele Salerno di Rende», and «the same» is Emiddio Carli. Foundlings had surnames invented for them and a place name was often pressed into service. That «di Rende» stuck to the name ended up being read as a birthplace: in 1858, in order to marry, the mayor of Castelfranco certified him as «esposito nativo di Rende». Michele could not possibly have known where he was born.</p>
 <p>He had three documentary identities and no surname of his own: Salerno, imposed on him that day; Esposito, which was his condition and stayed with him always; and De Rango at Castrolibero, presumably from the household that raised him — his three children are registered there as De Rango. He was a day labourer and illiterate, and he never knew his age: he declared forty-two in 1868, forty-eight in 1870 and forty in 1873. He married at thirty-three to Maria Antonia Palermo, and he was still alive on 5 November 1910, aged eighty-five: the record of his son Domenico&#x27;s second marriage names him without the «fu» with which that same clerk marks, on the same page, the bride&#x27;s dead parents. His death has not been located, and since the digitised Rende collections stop precisely in 1910, it will probably have to be sought at the town hall.</p>
+<dl class="rel-claves">
+<dt>How he enters the records</dt><dd>found at the wheel of the Cosenza hospice, 3 May 1825, 1 p.m.</dd>
+<dt>Marks on him</dt><dd>none</dd>
+<dt>Surnames he used</dt><dd>Salerno, Esposito and De Rango</dd>
+<dt>Trade</dt><dd>bracciale, a landless day labourer</dd>
+<dt>Still alive in</dt><dd>November 1910, aged 85</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>3 de mayo de 1825, Cosenza — acta 254</dd>
@@ -2254,6 +2421,7 @@ di  Michele Salerno di Rende</pre></div>
 <p class="f-res">Born at Marano Marchesato in March 1839. She married at nineteen a man fourteen years her senior. A countrywoman, and by 1873 a spinner.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-francesco_giacomo" data-ir="francesco_giacomo">Francesco Giacomo Palermo</a> · <a href="#p-carmina_volpintesta" data-ir="carmina_volpintesta">Carmina Volpintesta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-michele" data-ir="michele">Michele Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico" data-ir="domenico">Domenico Salerno</a> · <a href="#p-arcangela" data-ir="arcangela">Arcangela Salerno</a> · <a href="#p-francesco" data-ir="francesco">Francesco Salerno</a> · <a href="#p-giovanni" data-ir="giovanni">Giovanni Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">The index changed her name</h3>
@@ -2261,6 +2429,13 @@ di  Michele Salerno di Rende</pre></div>
 <p>The index this investigation started from transcribes that same record 18 of 1839 as «Maria Francesca Palermo». It is an index error, and an expensive kind: searching for a Maria Francesca finds nobody. The rule that came out of this holds for everything else: if the record number, the year and the parents match and only the name is wrong, the original record wins.</p>
 <p>She married on 22 August 1858, at two in the afternoon, at the town hall of Rende, aged nineteen; he was thirty-three, fourteen years older. The banns were read at Castrolibero, where he lived, and they were married by the mayor of Rende, Luigi Perugini — the same official who nine years later would sign her father&#x27;s death record.</p>
 <p>On her children&#x27;s records she appears as contadina, a countrywoman, and in 1873 as filatrice, a spinner. She is almost always called «Palermo Maria», without the Antonia: the full name appears only on her own birth record. She was still alive in November 1910, aged seventy-one, when her eldest son married.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>March 1839, Marano Marchesato, record 18</dd>
+<dt>The index calls her</dt><dd>Maria Francesca — the record says Maria Antonia</dd>
+<dt>Married at</dt><dd>19, to a man fourteen years older</dd>
+<dt>Trade</dt><dd>contadina; filatrice, spinner, in 1873</dd>
+<dt>Still alive in</dt><dd>November 1910, aged 71</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>marzo de 1839, Marano Marchesato — acta 18</dd>
@@ -2314,6 +2489,12 @@ di  Michele Salerno di Rende</pre></div>
 <p>He was born on 10 October 1841 at ten in the morning, in his parents&#x27; house, in the contrada Palazzo of Marano Marchesato. That same afternoon, at four, his father took him before Francesco Spizzirri, sindaco and registrar. Giacomo Palermo declared thirty-six years and the trade of shepherd.</p>
 <p>The right-hand column of the record certifies that the parish priest of Marano baptised him that same 10th. The witnesses were two day labourers from his own contrada, Bruno Parro — an uncertain reading — aged thirty, and Domenico Belmonte, forty. None of the three could write: only the mayor signs.</p>
 <p>He is the second of the four documented children of Giacomo and Carmina, and Maria Antonia&#x27;s brother. After that day he never appears in any paper again: no marriage, no death, no mention on anyone else&#x27;s record.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>10 October 1841, 10 a.m., contrada Palazzo, Marano Marchesato</dd>
+<dt>Baptism</dt><dd>the same day</dd>
+<dt>Father&#x27;s trade then</dt><dd>pastore</dd>
+<dt>After 1841</dt><dd>nothing</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>10 de octubre de 1841, 10 h, Marano Marchesato — acta 67</dd>
@@ -2372,6 +2553,12 @@ di  Michele Salerno di Rende</pre></div>
 <p>She was born on 3 February 1845 at nine in the morning, in the contrada Langhi of Marano Marchesato, and her father registered her at two that same afternoon. Giacomo Palermo then declared thirty-eight years and the trade of day labourer; four years earlier he had declared shepherd.</p>
 <p>The modern index calls her Annunziata, with a z. The original record and the baptismal entry write ANNUNCIATA, with a c. The spelling of the document is what governs.</p>
 <p>One of her two witnesses, Gaetano De Luca, a forty-two-year-old day labourer from the contrada Conchiali, will sign again seven years later at her sister Teresa&#x27;s birth. After 1845 nothing more is known of her.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>3 February 1845, 9 a.m., contrada Langhi, Marano Marchesato</dd>
+<dt>Spelling</dt><dd>Annunciata on the record and at the baptism; Annunziata only in the index</dd>
+<dt>Baptism</dt><dd>the same day</dd>
+<dt>After 1845</dt><dd>nothing</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>3 de febrero de 1845, 9 h, Marano Marchesato — acta 7</dd>
@@ -2430,6 +2617,12 @@ di  Michele Salerno di Rende</pre></div>
 <p>She was born on 16 January 1852 at ten in the morning, in the contrada Cerzi — an uncertain reading — and was registered at five that same afternoon. She was baptised that day in the parish of S. Maria del Carmine at Marano.</p>
 <p>Her father declared forty years. The mayor was no longer Francesco Spizzirri, who signed in 1841 and 1845, but Ferdinando Conforti. And among the witnesses is Gaetano De Luca again, now aged forty-eight.</p>
 <p>She is the youngest of the four documented children, and eleven years separate her from the eldest. Between 1839 and 1852 nobody has yet swept the Marano births: it is very likely there are more siblings to find. Of Teresa&#x27;s life after that 16 January nothing is known.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>16 January 1852, 10 a.m., contrada Cerzi, Marano Marchesato</dd>
+<dt>Baptism</dt><dd>the same day, S. Maria del Carmine</dd>
+<dt>Place among the siblings</dt><dd>the youngest of the four documented</dd>
+<dt>After 1852</dt><dd>nothing</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>16 de enero de 1852, 10 h, Marano Marchesato — acta 5</dd>
@@ -2540,6 +2733,13 @@ acta 19 | Maria Antonia Palermo    | Palermo, Francesco Giacomo  Volpintesta, Ca
 <p>His marriage record states unambiguously that he was born at Castrolibero. That clashes with an earlier check which had ruled Castrolibero out after sweeping fourteen years of registers. The likeliest explanation is that the wrong surname was searched: there Michele registered his children as DE RANGO. 1858 and 1859 must be looked at again for a «De Rango Domenico», son of Michele and Maria Palermo.</p>
 <p>He married on 5 November 1910, at half past nine in the morning, to Giuseppina Cairo, a spinster of thirty-two, orphaned of both parents. The record calls him «vedovo»: it was not his first wedding, and of the first wife neither the name nor the date of death is known. Nobody appears to give consent — he was fifty-one, she thirty-two — and neither of them signs; the witnesses do, a forty-eight-year-old tailor and a twenty-seven-year-old «civile». Two children by a Maria Russo are attributed to him, Salvatore in 1906 and Michele in 1909, but no record confirms it.</p>
 <p>His wedding is, incidentally, the single most productive document of the whole investigation. By naming his parents without the «fu» — when on the same page the same clerk writes «figlia di fu Giovanni» of the bride — it proves that Michele and Maria Antonia were still alive in November 1910.</p>
+<dl class="rel-claves">
+<dt>Born</dt><dd>c. 1859 at Castrolibero, by his own declaration</dd>
+<dt>Trade</dt><dd>contadino, farmhand</dd>
+<dt>Status on marrying in 1910</dt><dd>widower, aged 51</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Birth record</dt><dd>not located; look for it as De Rango</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1859, CASTROLIBERO — según declara él mismo en 1910</dd>
@@ -2566,6 +2766,12 @@ acta 19 | Maria Antonia Palermo    | Palermo, Francesco Giacomo  Volpintesta, Ca
 <p>She was born on 23 June 1868 at two in the morning, in her parents&#x27; house, on the strada Feudo at Castrolibero. Her father went to register her at eight the following morning, before Giovanni Morelli, senior assessor acting as mayor in the absence of the incumbent.</p>
 <p>The record calls him «MICHELE DE RANGO, figlio di Esposito», forty-two years old, by trade bracciale; and her mother «MARIA PALERMO, contadina». It is the first of the three Castrolibero records that write De Rango where Rende will put Salerno. The two witnesses were day labourers like him, Pasquale Sarentino, thirty-eight, and Ippolito Stellato, thirty-six, and none of them signed: the record notes that father, informant and witnesses are illiterate.</p>
 <p>She is the only daughter of Michele and Maria Antonia for whom there is documentary evidence. After that record she never appears again: no marriage, no death, not a mention on her brothers&#x27; records.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>23 June 1868, 2 a.m., strada Feudo, Castrolibero</dd>
+<dt>Registered as</dt><dd>De Rango Arcangela</dd>
+<dt>Father&#x27;s declared age</dt><dd>42 — the one that best fits the foundling of 1825</dd>
+<dt>After 1868</dt><dd>nothing</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>23 de junio de 1868, 2 de la madrugada, Castrolibero — acta 18</dd>
@@ -2615,6 +2821,7 @@ acta 19 | Maria Antonia Palermo    | Palermo, Francesco Giacomo  Volpintesta, Ca
 <p class="f-res">Born at Castrolibero in 1870 and registered as De Rango. He married at Rende in 1894, by then as Salerno. A day labourer and farmhand; the family moved from one contrada to another almost every year.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-michele" data-ir="michele">Michele Salerno</a> · <a href="#p-maria_antonia" data-ir="maria_antonia">Maria Antonia Palermo</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-filomena" data-ir="filomena">Filomena Chiappetta</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe" data-ir="giuseppe">Giuseppe Salerno</a> · <a href="#p-antonio" data-ir="antonio">Antonio Salerno</a> · <a href="#p-umberto" data-ir="umberto">Umberto Salerno</a> · <a href="#p-settimo" data-ir="settimo">Settimo Salerno</a> · <a href="#p-saverio" data-ir="saverio">Saverio Salerno</a> · <a href="#p-angelina" data-ir="angelina">Angelina Salerno</a> · <a href="#p-giovanni_hijo" data-ir="giovanni_hijo">Giovanni Salerno</a> · <a href="#p-arturo" data-ir="arturo">Arturo Salerno</a> · <a href="#p-maria" data-ir="maria">Maria Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">He never knew his age</h3>
@@ -2622,6 +2829,13 @@ acta 19 | Maria Antonia Palermo    | Palermo, Francesco Giacomo  Volpintesta, Ca
 <p>The ages he declared over his lifetime almost never add up. In February 1895, registering his first child, he said thirty: he was twenty-four. On marrying in April 1894 he had said twenty-four, when he was twenty-three. In November 1897 he said twenty-four again and was twenty-six. In May 1902 he said thirty and was thirty-one; in December 1907 he said thirty-eight on the very day he turned thirty-seven. He got it right twice: twenty-five in June 1896 and twenty-eight in October 1899. He was illiterate and signed none of those records.</p>
 <p>He married on 1 April 1894, at half past ten in the morning, to Filomena Chiappetta, aged sixteen. Both declared they could not write. They had nine documented children between 1895 and 1909, and the household moved with almost every one: contrada Saporito in 1895, S. Agostino in 1896, Saporito again in 1897, Campagnano in 1899 and 1902, S. Agostino from 1904. The trade wobbles on paper too — agricoltore, contadino, bracciante — though the work was always the same.</p>
 <p>On 24 September 1909 he went to register his daughter Maria and stayed on as a witness to the next record, that of his neighbour Benincasa: there appears a «Salerno Francesco, di anni trentotto, contadino», the same age and the same trade. That record was reported by a midwife because the husband «è in America». Ten years later his eldest sons would emigrate; he and Filomena stayed at Rende.</p>
+<dl class="rel-claves">
+<dt>Trade</dt><dd>agricoltore, contadino, bracciante — depending on the year</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Married at</dt><dd>23, though the record puts him at 24</dd>
+<dt>Documented children</dt><dd>nine, between 1895 and 1909</dd>
+<dt>Contradas</dt><dd>Saporito, S. Agostino, Campagnano — they moved often</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>7 de diciembre de 1870, 6 de la mañana, Castrolibero — acta 39</dd>
@@ -2678,6 +2892,7 @@ Lo stesso dichiarante ha imposto al bambino il nome di Francesco.</pre></div>
 <p class="f-res">The youngest. Born at Castrolibero in 1873, married at Rende in 1897 and dead at twenty-six, leaving a thirteen-month-old son.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-michele" data-ir="michele">Michele Salerno</a> · <a href="#p-maria_antonia" data-ir="maria_antonia">Maria Antonia Palermo</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-vincenzina" data-ir="vincenzina">Vincenzina Morelli</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-salvatore" data-ir="salvatore">Salvatore Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">The clerk wrote «girl»</h3>
@@ -2685,6 +2900,13 @@ Lo stesso dichiarante ha imposto al bambino il nome di Francesco.</pre></div>
 <p>He married on 17 October 1897, at four in the afternoon, to Vincenzina Morelli, aged twenty-three. Neither signed. That record is the hinge of the whole tree: the same man registered as DE RANGO at birth marries as SALERNO, with the same parents, Michele and Palermo Maria. Without it there would be no way to stitch the Castrolibero records to those of Rende.</p>
 <p>His son Salvatore was born on 12 January 1899. Giovanni died on 23 February 1900, at ten past ten in the morning, in the contrada S. Agostino, aged twenty-six: two years and four months after marrying, leaving a thirteen-month-old child. Two village farmhands went to report it, Cacciaro Raffaele, twenty-nine, and Stellato Andrea, forty-one.</p>
 <p>The record says he had been born at Rende. That is an error by the informants, who were neighbours and not family: his birth record is from Castrolibero, and he had said so himself on marrying three years earlier. One further detail from that record: one of the witnesses was called De Rango Salvatore. The family&#x27;s foundling surname was still alive at Rende in 1900.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>24 January 1873, 2 p.m., strada Sciolle, Castrolibero</dd>
+<dt>The record says</dt><dd>«di sesso femminile», and then gives him a boy&#x27;s name</dd>
+<dt>Registered as</dt><dd>De Rango Giovanni; he marries as Salerno</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Death</dt><dd>23 February 1900, aged 26, leaving a thirteen-month-old son</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>24 de enero de 1873, 14 h, Castrolibero — acta 8</dd>
@@ -2768,6 +2990,7 @@ Lo stesso dichiarante ha imposto al bambino il nome di Francesco.</pre></div>
 <p class="f-res">Born at Rende in 1877. She married at sixteen. Mother of the nine documented children.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giovanni_chiappetta" data-ir="giovanni_chiappetta">Giovanni Chiappetta</a> · <a href="#p-angela_massei" data-ir="angela_massei">Angela Massei</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-francesco" data-ir="francesco">Francesco Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-giuseppe" data-ir="giuseppe">Giuseppe Salerno</a> · <a href="#p-antonio" data-ir="antonio">Antonio Salerno</a> · <a href="#p-umberto" data-ir="umberto">Umberto Salerno</a> · <a href="#p-settimo" data-ir="settimo">Settimo Salerno</a> · <a href="#p-saverio" data-ir="saverio">Saverio Salerno</a> · <a href="#p-angelina" data-ir="angelina">Angelina Salerno</a> · <a href="#p-giovanni_hijo" data-ir="giovanni_hijo">Giovanni Salerno</a> · <a href="#p-arturo" data-ir="arturo">Arturo Salerno</a> · <a href="#p-maria" data-ir="maria">Maria Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">Married at sixteen</h3>
@@ -2775,6 +2998,13 @@ Lo stesso dichiarante ha imposto al bambino il nome di Francesco.</pre></div>
 <p>She married on 1 April 1894 at sixteen. Her mother, Angela Massei, had married at fifteen. On the record all four parents appear to give consent, and neither the couple nor they sign: «per essere analfabeti come hanno dichiarato». The two witnesses signed — Rendano Alfonso, a thirty-five-year-old landholder, and Vercillo Salvatore, a forty-five-year-old farmer — and the registrar.</p>
 <p>Between 1895 and 1909 she had nine documented children: Giuseppe, Antonio, Umberto, the twins Settimo and Saverio, Angelina, Giovanni, Arturo and Maria. On the records she appears as «donna di casa» until 1897 and as contadina from 1899. In August 1910 she lost Angelina, aged eight; the death was reported not by her or her husband but by her father and her brother-in-law.</p>
 <p>Family memory speaks of fourteen children. The sweep of the Rende births from 1893 to 1910, complete year by year and with no gaps, gives nine to Filomena; the other Salernos with a father named Francesco who turn up in those years belong to three other women in the village. There may have been more children between 1911 and 1918, which is the stretch that is not digitised — but that, as things stand, is a hypothesis.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>11 May 1877, 9 a.m., Rende, record 64</dd>
+<dt>Married at</dt><dd>16; her mother married at 15</dd>
+<dt>Could sign</dt><dd>no</dd>
+<dt>Trade</dt><dd>«donna di casa» until 1897; contadina from 1899</dd>
+<dt>Documented children</dt><dd>nine</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>11 de mayo de 1877, 9 h, Rende — acta 64</dd>
@@ -2823,12 +3053,19 @@ Lo stesso dichiarante ha imposto al bambino il nome di Francesco.</pre></div>
 <h2>Vincenzina Morelli</h2>
 <p class="f-res">Born at Castrolibero on 4 April 1874, on the Strada Marchesato, daughter of a day labourer and a spinner. She married Giovanni in 1897 and was widowed two and a half years later, with a thirteen-month-old son.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giovanni" data-ir="giovanni">Giovanni Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-salvatore" data-ir="salvatore">Salvatore Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">Two and a half years of marriage</h3>
 <p>She was born at Castrolibero around 1874, daughter of Morelli Antonio and Vina Maria. Her birth record has not been located: everything known about her comes from two records belonging to other people.</p>
 <p>She married on 17 October 1897, at four in the afternoon, at the town hall of Rende, to Giovanni Salerno. She declared twenty-three years; he, twenty-four. The witnesses were not day labourers, as at almost every wedding in this family, but Pellicori Antonio, a thirty-two-year-old café keeper, and Cianci Costantino, a merchant. The couple did not sign.</p>
 <p>Her son Salvatore was born on 12 January 1899 at three in the morning. Thirteen months later, on 23 February 1900, her husband died aged twenty-six. She was widowed at about twenty-six, with a thirteen-month-old child. Of her life from then on nothing is recorded — except that the boy grew up: in October 1921 he married at Rende.</p>
+<dl class="rel-claves">
+<dt>Born</dt><dd>c. 1874 at Castrolibero</dd>
+<dt>Married at</dt><dd>23</dd>
+<dt>Widowed in</dt><dd>February 1900, with a thirteen-month-old son</dd>
+<dt>Records of her own</dt><dd>none; she appears in the 1897 marriage and the 1900 death</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>4 de abril de 1874, 17 h, CASTROLIBERO, Strada Marchesato — acta 17</dd>
@@ -2995,6 +3232,7 @@ Al presente matrimonio hanno dato il loro consenso Salerno Michele e Palermo Mar
 <p class="f-res">Born at Atessa on 12 February 1869, daughter of the stonemason Domenico Pizzi and the spinner Teresa Flocco. In 1892 she married NICOLA FAIENZA, and the note in the margin of her own birth record is what ties this branch to the Faienza surname.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-domenico_pizzi" data-ir="domenico_pizzi">Domenico Pizzi</a> · <a href="#p-teresa_flocco" data-ir="teresa_flocco">Teresa Flocco</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-nicola_faienza" data-ir="nicola_faienza">Nicola Faienza</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico_faienza" data-ir="domenico_faienza">Domenico Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>12 de febrero de 1869, a las «ocho horas italianas», ATESSA — acta 65</dd>
@@ -3067,6 +3305,7 @@ ANGIOLINA.
 <p class="f-res">A farmhand from Atessa, born around 1869. He married Angiolina Pizzi on 29 December 1892, record 101 of the Atessa register. Until August 2026 absolutely nothing was known about him; the marriage record says it all at once: where he was born, what he did and whose son he was.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giuseppe_faienza" data-ir="giuseppe_faienza">Giuseppe Faienza</a> · <a href="#p-maria_staniscia" data-ir="maria_staniscia">Maria Staniscia</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-angela_pizzi" data-ir="angela_pizzi">Angela Pizzi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-domenico_faienza" data-ir="domenico_faienza">Domenico Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1869, ATESSA — el acta de matrimonio le da veintitrés años en diciembre de 1892 y lo declara «nato in Atessa». Su partida estaría en los Nati de Atessa de 1868-1870</dd>
@@ -3093,6 +3332,7 @@ LO QUE FALTA: su propia partida de nacimiento, en los Nati de Atessa hacia 1869,
 <h2>Giuseppe Faienza</h2>
 <p class="f-res">A farmhand from Atessa, father of Nicola Faienza. Born around 1840. He was alive in December 1892 and had to give his consent for his son to marry.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-maria_staniscia" data-ir="maria_staniscia">Maria Staniscia</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-nicola_faienza" data-ir="nicola_faienza">Nicola Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1840, presumiblemente Atessa — su hijo nació allí hacia 1869</dd>
@@ -3116,6 +3356,7 @@ LO QUE NO SE SABE: cuándo nació, de quién era hijo y cuándo murió. Su matri
 <h2>Maria Staniscia</h2>
 <p class="f-res">Mother of Nicola Faienza, from Atessa. Born around 1845. She was already dead when her son married, in December 1892.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giuseppe_faienza" data-ir="giuseppe_faienza">Giuseppe Faienza</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-nicola_faienza" data-ir="nicola_faienza">Nicola Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1845, presumiblemente Atessa</dd>
@@ -3238,6 +3479,12 @@ testimone · L&#x27;Ufficiale dello Stato Civile, Francesco Falcucci</pre></div>
 <p>He was born on 23 February 1895 at ten in the morning, in the contrada Saporito at Rende. His father registered him the next day at the same hour, before Spina Raffaele, secretary delegated by the mayor. The witnesses were Zicarelli Carmine, a twenty-eight-year-old day labourer, and Marchese Vincenzo, a sixty-year-old farmer.</p>
 <p>On that record Francesco declared thirty years. He was twenty-four. It is the first in a run of misdeclared ages that has forced every record of this family to be checked by the mother&#x27;s name and the sequence number, and never by the father&#x27;s age.</p>
 <p>He is the first child of Francesco and Filomena, born eleven months after the wedding. In 1919 he was twenty-four and was among those who crossed to Argentina — though the year of the voyage is still not settled: Italy did not allow men of military age to emigrate until after the war, and emigration to Argentina did not resume until March 1920.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>23 February 1895, 10 a.m., contrada Saporito, Rende</dd>
+<dt>Place among the siblings</dt><dd>the eldest of the nine</dd>
+<dt>Father&#x27;s declared age</dt><dd>30, when he was 24</dd>
+<dt>In 1919</dt><dd>24 years old; emigrated</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>23 de febrero de 1895, 10 h, Rende — acta 43</dd>
@@ -3287,6 +3534,7 @@ testimone · L&#x27;Ufficiale dello Stato Civile, Francesco Falcucci</pre></div>
 <p class="f-res">The brother who went to Chicago. Second son of Francesco and Filomena, born at Rende in 1896; he boarded at Naples at seventeen and landed in New York on 16 April 1914. He died in Illinois in 1981, aged eighty-four, after sixty-seven years in the same town and thirty-odd in the same feed mill. He is by far the brother of Settimo about whom most is known.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-francesco" data-ir="francesco">Francesco Salerno</a> · <a href="#p-filomena" data-ir="filomena">Filomena Chiappetta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-rosina_salerno" data-ir="rosina_salerno">Rosina Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-dominick_salerno" data-ir="dominick_salerno">Domenico Salerno</a> · <a href="#p-filomena_salerno_usa" data-ir="filomena_salerno_usa">Filomena Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">The record that exposed the catalogue</h3>
@@ -3294,6 +3542,12 @@ testimone · L&#x27;Ufficiale dello Stato Civile, Francesco Falcucci</pre></div>
 <p>That exactness solved a serious problem. The register holding his record, Rende&#x27;s number 87, is listed in the archive catalogue as «Births 1895», but the handwritten year in the heading says «novantasei» quite clearly and the father&#x27;s age fits 1896. From this it emerged that the catalogue&#x27;s dating is not reliable and that the Rende birth volumes do not run one per year: they split years in two. Since then there has been a rule in this investigation — read the handwritten year before accepting any record.</p>
 <p>The family had moved from Saporito, where Giuseppe had been born, to S. Agostino, the contrada where they would live again from 1904.</p>
 <p>Family memory places him in Chicago, alongside a Vincenzo. There is as yet no document to support it: it is a lead, not a fact.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>13 June 1896, contrada S. Agostino, Rende, record 117</dd>
+<dt>What his record proved</dt><dd>that the archive catalogue dated the register wrongly</dd>
+<dt>Father&#x27;s declared age</dt><dd>25 — correct</dd>
+<dt>In 1919</dt><dd>23 years old; emigrated</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>13 de junio de 1896, Rende — acta 117, contrada S. Agostino</dd>
@@ -3470,6 +3724,12 @@ BEVERLEE, la nieta, 2 años.</p>
 <p>The age Francesco declared is written in very faint ink; the likeliest reading is twenty-four, and he was twenty-six. The witnesses were two village farmers, Spizzirri Giovanni, forty-nine, and Picarelli Vincenzo, sixty-eight. Nobody signed but the secretary, Spina Raffaele.</p>
 <p>His record was harder to find than any other. The 1897 register has re-photographed pages: when the volume has a loose sheet lying on it — death annotations that other town halls would send decades later — the digitiser takes two shots of the same opening. Page 86 carries a sheet covering half the spread; page 85 is the clean one, and that is the one that was saved.</p>
 <p>With Umberto the family had gone back to the contrada Saporito, where they had already been in 1895. In 1919 he was twenty-two and was one of those who left.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>22 November 1897, 6 a.m., contrada Saporito, Rende</dd>
+<dt>Registered</dt><dd>the same day, four hours later</dd>
+<dt>Father&#x27;s declared age</dt><dd>24, when he was 26</dd>
+<dt>In 1919</dt><dd>22 years old; emigrated</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>22 de noviembre de 1897, 6 de la mañana, Rende — acta 240</dd>
@@ -3519,6 +3779,7 @@ BEVERLEE, la nieta, 2 años.</p>
 <p class="f-res">The great-grandfather Gonzalo lived to know. A twin, the first born, at half past four in the morning of 24 October 1899 at Rende. He crossed the Atlantic, married at Santa Fe at twenty-three, and had to fight the Argentine civil registry for twenty-seven years to get his own name spelled correctly.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-francesco" data-ir="francesco">Francesco Salerno</a> · <a href="#p-filomena" data-ir="filomena">Filomena Chiappetta</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-cristina_rizzo" data-ir="cristina_rizzo">Cristina Rizzo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carlos_salerno" data-ir="carlos_salerno">Carlos Francisco Salerno</a> · <a href="#p-nilda_salerno" data-ir="nilda_salerno">Nilda Salerno</a></p>
 <div class="relato">
 <h3 class="rel-tit">Twenty-five minutes the elder</h3>
@@ -3526,6 +3787,13 @@ BEVERLEE, la nieta, 2 años.</p>
 <p>That they were twins is not an inference from the closeness of the numbers: both records say so in writing and refer to each other. His says «e ch&#x27;è gemello un altro mi conserva l&#x27;atto seguente»; Saverio&#x27;s, «l&#x27;atto precedente». And his adds a line nobody was obliged to write: «Il dichiarante ha inoltre attestato che il bambino suddetto è IL PRIMO NATO». The order of birth was supplied by the father himself, not by a midwife.</p>
 <p>The index this investigation started from calls him «Settino». The original record says SETTIMO, quite clearly, both in the body and in the marginal heading. Settimo is the ordinary Italian name for a seventh child; on paper he is the fourth documented. Either the name is only a name, or there were earlier children who are not recorded. It proves nothing, but it points towards the fourteen children of family memory.</p>
 <p>He belongs to the class of &#x27;99, the ragazzi del &#x27;99, the cohort Italy called up in 1917 at barely eighteen; the family keeps his First World War medals. He ended up at Santa Fe, Argentina, where he went by Setimio. His wife, Cristina Rizzo, died there in November 1967, and he between 1977 and 1980, aged seventy-eight or eighty-one. He does not appear in the index of arrivals at the port of Buenos Aires under any spelling of his name.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>24 October 1899, 4:30 a.m., contrada Campagnano</dd>
+<dt>Twin</dt><dd>of Saverio, twenty-five minutes younger</dd>
+<dt>The record says</dt><dd>«il primo nato», the first born</dd>
+<dt>His name</dt><dd>Settimo — the index calls him Settino and is wrong</dd>
+<dt>Afterwards</dt><dd>the class of 1899, the war; and Santa Fe, Argentina, as Setimio</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>24 de octubre de 1899, a las 4:30 de la madrugada, Rende — acta 231</dd>
@@ -3650,6 +3918,12 @@ Il dichiarante ha inoltre attestato che il bambino suddetto è il primo nato.</p
 <p>He was born at four fifty-five in the morning on 24 October 1899, in the same house in the contrada Campagnano and twenty-five minutes after his brother.</p>
 <p>His record was drawn up at ten forty-five on 28 October, five minutes after Settimo&#x27;s, before the same official and with the same two witnesses — Perri Pietro, sixty-one, and Spizzirri Giovanni, forty-six, both farmhands. It closes with the mirror of the other&#x27;s formula: «il bambino soddetto è IL SECONDO NATO». None of those present signed.</p>
 <p>In 1919 he was twenty and was one of those who left. He does not appear in the Buenos Aires arrivals index, just like his twin.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>24 October 1899, 4:55 a.m., contrada Campagnano</dd>
+<dt>Twin</dt><dd>of Settimo, twenty-five minutes older</dd>
+<dt>The record says</dt><dd>«il secondo nato», the second born</dd>
+<dt>In 1919</dt><dd>20 years old; emigrated</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>24 de octubre de 1899, 4:55 de la madrugada, Rende — acta 232</dd>
@@ -3707,6 +3981,12 @@ Il dichiarante ha inoltre attestato che il bambino soddetto è il secondo nato.<
 <p>She died on 29 August 1910 at noon, in the contrada Sant&#x27;Agostino, in the same house where her brothers Giovanni and Arturo and her sister Maria had been born. The death record says «di anni dieci», ten years old. It is wrong, and the proof is two registers away: her own birth record. She was eight years and three months old.</p>
 <p>It was not her parents who reported the death. It was her uncle Salerno Domenico, fifty, and her maternal grandfather, Chiappetta Giovanni, sixty, and between them they rounded the child&#x27;s age badly. The grandfather signed the record; the others declared themselves illiterate. The witnesses were a twenty-six-year-old farmhand and a thirty-five-year-old barber.</p>
 <p>The margin of her birth record is blank: the death was never noted there, although the record exists and sits in the next register along. For a time it was assumed that Angelina had emigrated to Argentina with the family. She did not: she died nine years before her brothers sailed.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>14 May 1902, 12:30, contrada Campagnano</dd>
+<dt>Death</dt><dd>29 August 1910, noon, contrada Sant&#x27;Agostino</dd>
+<dt>Real age at death</dt><dd>eight years and three months — the record says ten</dd>
+<dt>Who reported it</dt><dd>her uncle and her grandfather; neither parent</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>14 de mayo de 1902, 12:30, Rende — acta 55</dd>
@@ -3806,6 +4086,12 @@ di anni dieci… nata in Rende da Francesco… e da Chiappetta Filomena</pre></d
 <p>He was born on 1 January 1904 at two in the morning, in the contrada Santo Agostino: the family&#x27;s first birth of the year, and one of the register&#x27;s first records, number 5. His father registered him on the 3rd at ten in the morning and declared thirty-four years. He carries the name of his uncle, dead four years earlier at twenty-six.</p>
 <p>In the margin of the record a later hand wrote, with a flourish: «Addì 24-7-1926 in Rende n° 34 sposò Cundari Anna». He married at Rende on 24 July 1926. That line changed the story: if he was in the village in 1926, either he never sailed or he came back. He was fifteen when the older ones left.</p>
 <p>It is the document that best supports what the family tells: that the household split in two, that the elder brothers crossed, and that Francesco and Filomena stayed at Rende with the younger ones. And it means there is a living branch there, descended from Giovanni and Anna Cundari.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>1 January 1904, 2 a.m., contrada Santo Agostino</dd>
+<dt>Marginal note</dt><dd>married at Rende on 24 July 1926 to Cundari Anna</dd>
+<dt>In 1919</dt><dd>15 years old; he stayed</dd>
+<dt>He carries the name</dt><dd>of his uncle Giovanni, dead in 1900</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>1 de enero de 1904, 2 de la madrugada, Rende — acta 5</dd>
@@ -3866,6 +4152,12 @@ da Chiappetta Filomena, sua moglie, contadina, seco lui convivente… il nome di
 <p>The witnesses on his record are not the usual day labourers. Signing as witnesses are Sicilia Pasquale, a sixty-one-year-old carpenter, and Bruno Giovanni, a seventy-seven-year-old shoemaker — two village trades and two old men. Francesco declared thirty-eight years on the very day he turned thirty-seven.</p>
 <p>His record sits in a treacherous volume: Rende&#x27;s «ordinary» register 99 has only two pages, and the real one is «supplement 2», with ninety-four. It is closed by Domenico Pisani at Rende on 1 January 1908.</p>
 <p>He was twelve in 1919. He stayed in Italy with his parents.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>21 December 1907, 4:30 a.m., contrada S. Agostino</dd>
+<dt>Registered</dt><dd>the same day, seven hours later</dd>
+<dt>Witnesses</dt><dd>a carpenter of 61 and a shoemaker of 77</dd>
+<dt>In 1919</dt><dd>12 years old; he stayed</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>21 de diciembre de 1907, 4:30 de la madrugada, Rende — acta 215</dd>
@@ -3926,6 +4218,12 @@ seco lui convivente… il nome di Arturo</pre></div>
 <p>The record has an odd gap. The line «Avanti di me» — before me — was left blank: the clerk never got round to writing his own name. The man signing at the foot is Federico Costabile, who on neighbouring records appears as assessor delegated for civil registration. The witnesses were two farmhands, Ruffolo Serafino, fifty-three, and Rende Tommaso, thirty-five.</p>
 <p>On the same opening of the register, the next record carries as a witness a «Salerno Francesco, di anni trentotto, contadino»: same age, same trade. It is him, staying on as a witness for the neighbour after registering his daughter. That record was reported by a midwife because the husband «è in America». The village was already emigrating.</p>
 <p>She was ten in 1919 and stayed with her parents. The family remembers a «Marietta» who ended up in Canada; Marietta is the ordinary diminutive of Maria, so it could be her or her aunt Maria Chiappetta, born in 1901. No document settles it.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>23 September 1909, 11:35 p.m., contrada S. Agostino</dd>
+<dt>Oddity of the record</dt><dd>the registrar&#x27;s line was left blank</dd>
+<dt>Father&#x27;s declared age</dt><dd>38 — exact, for once</dd>
+<dt>In 1919</dt><dd>10 years old; she stayed</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>23 de septiembre de 1909, 23:35, Rende — acta 206</dd>
@@ -3985,6 +4283,12 @@ moglie seco lui convivente… il nome di Maria</pre></div>
 <p>His record was ordered on the assumption that he was another child of Francesco and Filomena. He is not, and the original is emphatic: the informant is SALERNO GIOVANNI and the mother MORELLI VINCENZINA. Salvatore is the son of Francesco&#x27;s younger brother — that is, Settimo&#x27;s first cousin and not his brother. It fits without forcing anything: his parents married in October 1897 and he was born in January 1899.</p>
 <p>The find also produced the hardest fact yet about his father. When Giovanni died, on 23 February 1900, Salvatore was thirteen months old. His mother was left a widow with him. And one more age that does not add up: Giovanni declared twenty-four years when registering him, when he had turned twenty-six.</p>
 <p>In the margin of the record a twentieth-century hand noted: «Addì 18.10.1921 in Rende n° 67 sposò Misuraca Caterina Santa». He married at Rende in October 1921, aged twenty-two.</p>
+<dl class="rel-claves">
+<dt>Birth</dt><dd>12 January 1899, 3 a.m., Rende, record 13</dd>
+<dt>Relationship</dt><dd>first cousin of the nine, not a brother</dd>
+<dt>Orphaned of his father</dt><dd>at thirteen months</dd>
+<dt>Marginal note</dt><dd>married at Rende in October 1921 to Misuraca Caterina Santa</dd>
+</dl>
 </div>
 <dl class="datos">
 <dt>Birth</dt><dd>12 de enero de 1899, 3 de la madrugada, Rende — acta 13</dd>
@@ -4103,6 +4407,7 @@ e di fu Busatta Rosa, residente in vita in Rende</pre></div>
 <p class="f-res">Son of Nicola Faienza and Angiolina Pizzi. He emigrated to Argentina, where he died at Santa Fe on 13 December 1985, aged eighty-five. *** HIS ARGENTINE DEATH CERTIFICATE TURNED UP IN AUGUST 2026 AND CHANGED EVERYTHING: *** it says he was BORN AT PAGLIETA (Italy) on 1 March 1900, and it confirms his parents. The Italian record has still not been found, but now it is known exactly where and when to look — and why it never surfaced: it had been sought in 1899, and he was born in 1900.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-nicola_faienza" data-ir="nicola_faienza">Nicola Faienza</a> · <a href="#p-angela_pizzi" data-ir="angela_pizzi">Angela Pizzi</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-brigida_nelli" data-ir="brigida_nelli">Brigida Maria Ana Nelli</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-adelina_faienza" data-ir="adelina_faienza">Adelina Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1 de marzo de 1900 en PAGLIETA (Chieti), según su partida de defunción argentina de 1985. La misma fecha que ya daba el registro del cementerio: dos fuentes argentinas independientes coinciden</dd>
@@ -4270,6 +4575,7 @@ Y LO QUE DICEN LAS CUATRO ACTAS:
 <p class="f-res">Argentine, born in the city of Santa Fe. Until 29 August 2026 she was a loose thread in the whole tree: no parents were known for her. Two civil registry certificates gave them both at once.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-salvador_rizzo" data-ir="salvador_rizzo">Salvador Rizzo</a> · <a href="#p-angela_costabile" data-ir="angela_costabile">Ángela Costabile</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-settimo" data-ir="settimo">Settimo Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-carlos_salerno" data-ir="carlos_salerno">Carlos Francisco Salerno</a> · <a href="#p-nilda_salerno" data-ir="nilda_salerno">Nilda Salerno</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>en la CIUDAD DE SANTA FE. El año no se puede fijar: su acta de matrimonio de 1923 le da 23 años (n. ~1900) y su partida de defunción le da 74 (n. ~1893). Siete años de diferencia</dd>
@@ -4318,6 +4624,7 @@ Y LO QUE DICEN LAS CUATRO ACTAS:
 <h2>Salvador Rizzo</h2>
 <p class="f-res">Father of Cristina Rizzo. He entered the tree on 29 August 2026, through two Argentine certificates forty-four years apart that name him identically.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-angela_costabile" data-ir="angela_costabile">Ángela Costabile</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-cristina_rizzo" data-ir="cristina_rizzo">Cristina Rizzo</a></p>
 <dl class="datos">
 <dt>Quién era</dt><dd>padre de CRISTINA RIZZO, nacida en la ciudad de Santa Fe entre 1893 y 1900</dd>
@@ -4366,6 +4673,7 @@ Si en los ocho no apareciera ninguna boda Rizzo × Costabile entre 1875 y 1893, 
 <h2>Ángela Costabile</h2>
 <p class="f-res">Mother of Cristina Rizzo, Italian, resident at Santa Fe in 1923.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-salvador_rizzo" data-ir="salvador_rizzo">Salvador Rizzo</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-cristina_rizzo" data-ir="cristina_rizzo">Cristina Rizzo</a></p>
 <dl class="datos">
 <dt>Quién era</dt><dd>madre de CRISTINA RIZZO</dd>
@@ -4396,6 +4704,7 @@ Un detalle que conviene no olvidar: en el barrido no aparece NINGUNA boda Rizzo 
 <p class="f-res">Son of Settimo and Cristina, born in Argentina. A chartered accountant and a public figure in Santa Fe: president of Club Atlético Colón from 1970 to 1974 and an official in the provincial administration. He died on 13 August 2002. He is the only person in the tree with a published newspaper biography.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-settimo" data-ir="settimo">Settimo Salerno</a> · <a href="#p-cristina_rizzo" data-ir="cristina_rizzo">Cristina Rizzo</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-adelina_faienza" data-ir="adelina_faienza">Adelina Faienza</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-stella_maris" data-ir="stella_maris">Stella Maris Salerno</a> · <a href="#p-susana_salerno" data-ir="susana_salerno">Susana Alicia Salerno</a> · <a href="#p-cristina_salerno" data-ir="cristina_salerno">Maria Cristina Salerno</a> · <a href="#p-beatriz_salerno" data-ir="beatriz_salerno">Beatriz Graciela Salerno</a> · <a href="#p-norma_salerno" data-ir="norma_salerno">Norma Alejandra Salerno</a></p>
 <dl class="datos">
 <dt>Parents</dt><dd>Settimo Salerno y Cristina Rizzo</dd>
@@ -4427,6 +4736,7 @@ FUENTE: El Litoral (Santa Fe), 13 de agosto de 2002, Deportes, DEPO-06, «Fallec
 <p class="f-res">Daughter of Domenico Faienza and Brigida Nelli. She is where the two branches meet: the Salerno of Calabria and the Faienza and Pizzi of Abruzzo.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-domenico_faienza" data-ir="domenico_faienza">Domenico Faienza</a> · <a href="#p-brigida_nelli" data-ir="brigida_nelli">Brigida Maria Ana Nelli</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-carlos_salerno" data-ir="carlos_salerno">Carlos Francisco Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-stella_maris" data-ir="stella_maris">Stella Maris Salerno</a> · <a href="#p-susana_salerno" data-ir="susana_salerno">Susana Alicia Salerno</a> · <a href="#p-cristina_salerno" data-ir="cristina_salerno">Maria Cristina Salerno</a> · <a href="#p-beatriz_salerno" data-ir="beatriz_salerno">Beatriz Graciela Salerno</a> · <a href="#p-norma_salerno" data-ir="norma_salerno">Norma Alejandra Salerno</a></p>
 <dl class="datos">
 <dt>Parents</dt><dd>Domenico Faienza y Brigida Nelli</dd>
@@ -4444,6 +4754,7 @@ FUENTE: El Litoral (Santa Fe), 13 de agosto de 2002, Deportes, DEPO-06, «Fallec
 <p class="f-res">Born at Santa Fe in January 1901 and baptised in the Cathedral. She is the first Argentine of that branch: her parents were already here. Her death certificate, obtained in August 2026, finally gave her parents&#x27; full names.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-angel_nelli" data-ir="angel_nelli">Ángel Alberto Nelli</a> · <a href="#p-filomena_pagliarone" data-ir="filomena_pagliarone">Filomena Pagliarone</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-domenico_faienza" data-ir="domenico_faienza">Domenico Faienza</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-adelina_faienza" data-ir="adelina_faienza">Adelina Faienza</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>enero de 1901, provincia de SANTA FE. La fe de bautismo dice el día 13; la partida de defunción dice el 12. Vale más la fe, escrita a los pocos días</dd>
@@ -4495,6 +4806,7 @@ FUENTE: El Litoral (Santa Fe), 13 de agosto de 2002, Deportes, DEPO-06, «Fallec
 <h2>Ángel Alberto Nelli</h2>
 <p class="f-res">Brígida&#x27;s father. He entered the tree on 28 August 2026, through his daughter&#x27;s death certificate: until that day he was only an initial on a baptismal record.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-filomena_pagliarone" data-ir="filomena_pagliarone">Filomena Pagliarone</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-brigida_nelli" data-ir="brigida_nelli">Brigida Maria Ana Nelli</a></p>
 <dl class="datos">
 <dt>Quién era</dt><dd>padre de BRÍGIDA MARÍA ANA NELLI, nacida en la provincia de Santa Fe en enero de 1901</dd>
@@ -4518,6 +4830,7 @@ POR ESO LA PARTIDA DE NACIMIENTO DE BRÍGIDA (enero de 1901) SUBE DE PRIORIDAD: 
 <h2>Filomena Pagliarone</h2>
 <p class="f-res">Brígida&#x27;s mother. Her forename is clear in two documents; the surname is the one weak point of this couple, because the two sources spell it differently.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-angel_nelli" data-ir="angel_nelli">Ángel Alberto Nelli</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-brigida_nelli" data-ir="brigida_nelli">Brigida Maria Ana Nelli</a></p>
 <dl class="datos">
 <dt>Quién era</dt><dd>madre de BRÍGIDA MARÍA ANA NELLI</dd>
@@ -4540,6 +4853,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <p class="f-res">Born at Santa Fe on 23 December 1953. Gonzalo&#x27;s mother.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-carlos_salerno" data-ir="carlos_salerno">Carlos Francisco Salerno</a> · <a href="#p-adelina_faienza" data-ir="adelina_faienza">Adelina Faienza</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-marcos_rivas" data-ir="marcos_rivas">Marcos Cesar Rivas</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-gonzalo" data-ir="gonzalo">Gonzalo Matías Rivas</a> · <a href="#p-luciano_rivas" data-ir="luciano_rivas">Withheld</a> · <a href="#p-alfonsina_rivas" data-ir="alfonsina_rivas">Withheld</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>23 de diciembre de 1953, Santa Fe, Argentina</dd>
@@ -4557,6 +4871,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <p class="f-res">Born at Santa Fe on 22 March 1950, the eldest of the four children of Marcos Ramón Rivas and Elba Celeri. Gonzalo&#x27;s father. The Rivas branch enters the tree through him.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-marcos_ramon_rivas" data-ir="marcos_ramon_rivas">Marcos Ramón Rivas</a> · <a href="#p-elba_celeri" data-ir="elba_celeri">Elba Celeri</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-stella_maris" data-ir="stella_maris">Stella Maris Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-gonzalo" data-ir="gonzalo">Gonzalo Matías Rivas</a> · <a href="#p-luciano_rivas" data-ir="luciano_rivas">Withheld</a> · <a href="#p-alfonsina_rivas" data-ir="alfonsina_rivas">Withheld</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>22 de marzo de 1950, Santa Fe, Argentina</dd>
@@ -4782,6 +5097,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <h2>Withheld</h2>
 <p class="f-res">A living person. By family decision their details are not published on this site: the name, dates and places are not in the file at all, only in the private copy.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-gonzalo" data-ir="gonzalo">Gonzalo Matías Rivas</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-florentina_rivas" data-ir="florentina_rivas">Withheld</a> · <a href="#p-paulina_rivas" data-ir="paulina_rivas">Withheld</a></p>
 <div class="pend"><h4>No record obtained yet</h4>
 <p>There is nothing to show here, and that is deliberate. This person belongs to the two most recent generations of the tree and is alive, so the published version keeps them only as a link: you can see whom they descend from, so the line is not broken, and nothing more. The details remain complete in the family&#x27;s private copy.</p></div>
@@ -4792,6 +5108,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <h2>Withheld</h2>
 <p class="f-res">A living person. By family decision their details are not published on this site: the name, dates and places are not in the file at all, only in the private copy.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-gonzalo" data-ir="gonzalo">Gonzalo Matías Rivas</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-laia_rivas" data-ir="laia_rivas">Withheld</a> · <a href="#p-alexia_rivas" data-ir="alexia_rivas">Withheld</a></p>
 <div class="pend"><h4>No record obtained yet</h4>
 <p>There is nothing to show here, and that is deliberate. This person belongs to the two most recent generations of the tree and is alive, so the published version keeps them only as a link: you can see whom they descend from, so the line is not broken, and nothing more. The details remain complete in the family&#x27;s private copy.</p></div>
@@ -4902,6 +5219,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <p class="f-res">Gonzalo&#x27;s paternal grandfather. He and Elba Celeri had four children.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-ramon_rivas" data-ir="ramon_rivas">Ramón Rivas</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-elba_celeri" data-ir="elba_celeri">Elba Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-marcos_rivas" data-ir="marcos_rivas">Marcos Cesar Rivas</a> · <a href="#p-hector_omar_rivas" data-ir="hector_omar_rivas">Héctor Omar Rivas</a> · <a href="#p-beatriz_rivas" data-ir="beatriz_rivas">Beatriz Margarita Rivas</a> · <a href="#p-raul_rivas" data-ir="raul_rivas">Raúl Rivas</a></p>
 <dl class="datos">
 <dt>Spouse</dt><dd>Elba Celeri</dd>
@@ -4920,6 +5238,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <p class="f-res">Gonzalo&#x27;s paternal grandmother, one of at least five sisters. Her father was an Italian immigrant, probably from the north: a second Italy enters the tree here, quite unlike the Calabrian one.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-tebaldo_celeri" data-ir="tebaldo_celeri">Tebaldo Celeri</a> · <a href="#p-margarita_alasia" data-ir="margarita_alasia">Margarita Alasia</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-marcos_ramon_rivas" data-ir="marcos_ramon_rivas">Marcos Ramón Rivas</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-marcos_rivas" data-ir="marcos_rivas">Marcos Cesar Rivas</a> · <a href="#p-hector_omar_rivas" data-ir="hector_omar_rivas">Héctor Omar Rivas</a> · <a href="#p-beatriz_rivas" data-ir="beatriz_rivas">Beatriz Margarita Rivas</a> · <a href="#p-raul_rivas" data-ir="raul_rivas">Raúl Rivas</a></p>
 <dl class="datos">
 <dt>Spouse</dt><dd>Marcos Ramón Rivas</dd>
@@ -5274,6 +5593,7 @@ Lo que significa en la práctica: mientras el apellido no esté fijado y no sepa
 <p class="f-res">Gonzalo&#x27;s paternal great-grandmother. Born at Colonia Emilia, in the heart of the Piedmontese farming colonies of Santa Fe, and married at nineteen to an Italian widower twice her age.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-benedetto_alasia" data-ir="benedetto_alasia">Benedetto Alasia</a> · <a href="#p-maria_maddalena_bertino" data-ir="maria_maddalena_bertino">Maria Maddalena Bertino</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-tebaldo_celeri" data-ir="tebaldo_celeri">Tebaldo Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-elba_celeri" data-ir="elba_celeri">Elba Celeri</a> · <a href="#p-olga_celeri" data-ir="olga_celeri">Olga Celeri</a> · <a href="#p-ercilia_celeri" data-ir="ercilia_celeri">Ercilia Celeri</a> · <a href="#p-rosa_celeri" data-ir="rosa_celeri">Rosa Celeri</a> · <a href="#p-nerina_celeri" data-ir="nerina_celeri">Nerina Celeri</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1882, COLONIA EMILIA, provincia de Santa Fe — los diecinueve años que declara al casarse. Argentina de nacimiento, italiana de sangre</dd>
@@ -5306,6 +5626,7 @@ SU APELLIDO ABRE UNA SEGUNDA ITALIA, Y NO ES LA MISMA. Los Alasia vienen de SAVI
 <p class="legal">In the records: <b>«Encarnación Fernández» en el acta de defunción de su hija, de 1946</b></p>
 <p class="f-res">Tebaldo Celeri&#x27;s first wife, and she was not Italian: an Argentine from CÓRDOBA. For one day she was only a name in this tree, taken from a daughter&#x27;s death certificate; the 1895 census put her back among the living, with an age, a province and, beside her, her husband and the little girl.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-tebaldo_celeri" data-ir="tebaldo_celeri">Tebaldo Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-enriqueta_celeri" data-ir="enriqueta_celeri">Enriqueta Celeri</a></p>
 <dl class="datos">
 <dt>Name</dt><dd>CONCEPCIÓN en el censo de 1895, tomado en vida suya. ENCARNACIÓN en el acta de defunción de su hija, cincuenta y un años después. Se prefiere el censo</dd>
@@ -5378,6 +5699,7 @@ Y SI TUVO MÁS HIJOS, hay medios hermanos de Elba sin descubrir. En 1895 sólo c
 <p class="f-res">TOWN CLERK OF TRASSILICO — the man who wrote the village&#x27;s records. Born around 1831, son of a Desiderio Celeri already dead by then. Father of Tebaldo, and the proof that this family were not peasants.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-desiderio_celeri" data-ir="desiderio_celeri">Desiderio Celeri</a> · <a href="#p-angela_menghi" data-ir="angela_menghi">Angela Menghi</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-enrichetta_vanni" data-ir="enrichetta_vanni">Enrichetta Vanni</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-tebaldo_celeri" data-ir="tebaldo_celeri">Tebaldo Celeri</a> · <a href="#p-ciro_celeri" data-ir="ciro_celeri">Ciro Celeri</a> · <a href="#p-dante_celeri" data-ir="dante_celeri">Dante Giuseppe Celeri</a> · <a href="#p-giuseppe_celeri" data-ir="giuseppe_celeri">Giuseppe Tullio Polinice Celeri</a></p>
 <dl class="datos">
 <dt>Name</dt><dd>CALLISTO en el acta italiana de 1923; «Calisto» en la argentina de 1900. Del latín Callistus. Es raro, y por eso el más fácil de rastrear de toda la rama</dd>
@@ -5449,6 +5771,7 @@ Y SI TUVO MÁS HIJOS, hay medios hermanos de Elba sin descubrir. En 1895 sólo c
 <p class="f-res">Gonzalo&#x27;s paternal great-great-grandmother. She was born and died at TRASSILICO, a mountain village in the Garfagnana, province of Lucca, and lived eighty-eight years without leaving it. Her death record is the one that gave this whole branch a village: until it surfaced, all that was known of Tebaldo was that he was «a native of Italy».</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-pietro_vanni" data-ir="pietro_vanni">Pietro Vanni</a> · <a href="#p-lucia_righini" data-ir="lucia_righini">Livia Righini</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-calisto_celeri" data-ir="calisto_celeri">Callisto Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-tebaldo_celeri" data-ir="tebaldo_celeri">Tebaldo Celeri</a> · <a href="#p-ciro_celeri" data-ir="ciro_celeri">Ciro Celeri</a> · <a href="#p-dante_celeri" data-ir="dante_celeri">Dante Giuseppe Celeri</a> · <a href="#p-giuseppe_celeri" data-ir="giuseppe_celeri">Giuseppe Tullio Polinice Celeri</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1835, TRASSILICO, provincia de Lucca, Toscana — los ochenta y ocho años que le da su acta de defunción</dd>
@@ -5655,6 +5978,7 @@ ESO ABRE UN FRENTE NUEVO Y ENTERO. Hasta ahora esta rama estaba encerrada en un 
 <p class="f-res">Of Trassilico, in the Garfagnana. Father of Enrichetta Vanni and great-great-grandfather of Gonzalo&#x27;s paternal grandfather.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giuseppe_vanni" data-ir="giuseppe_vanni">Giuseppe Vanni</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-lucia_righini" data-ir="lucia_righini">Livia Righini</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-enrichetta_vanni" data-ir="enrichetta_vanni">Enrichetta Vanni</a> · <a href="#p-luisa_vanni" data-ir="luisa_vanni">Luisa Vanni</a></p>
 <dl class="datos">
 <dt>Trade</dt><dd>*** ABOGADO, NO MÉDICO. *** «Di professione LEGALE», dice el acta de matrimonio de su hija Luisa, de abril de 1863. Durante días se le tuvo por el médico del pueblo porque el acta de su nieto Tebaldo lo llama «dottor Pietro» — pero en Italia «dottore» es cualquier titulado. Era hombre de leyes</dd>
@@ -5714,6 +6038,7 @@ ESO ABRE UN FRENTE NUEVO Y ENTERO. Hasta ahora esta rama estaba encerrada en un 
 <p class="legal">In the records: <b>«Lucia Righini» en el árbol de FamilySearch; el acta dice LIVIA</b></p>
 <p class="f-res">Of Trassilico. Mother of Enrichetta Vanni. Her name was written wrongly until the record turned up.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-pietro_vanni" data-ir="pietro_vanni">Pietro Vanni</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-enrichetta_vanni" data-ir="enrichetta_vanni">Enrichetta Vanni</a> · <a href="#p-luisa_vanni" data-ir="luisa_vanni">Luisa Vanni</a></p>
 <dl class="datos">
 <dt>Name</dt><dd>LIVIA, según el acta de defunción de su hija. El árbol de FamilySearch la llama «Lucia»: se prefiere el acta</dd>
@@ -5781,6 +6106,7 @@ FUE ÉL QUIEN CERRÓ LA IDENTIFICACIÓN DE TODA ESTA RAMA. Durante días hubo du
 <p class="f-res">A Piedmontese from Savigliano, a settler in Santa Fe. Father of Margarita and great-grandfather of Marcos César Rivas.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-bartolomeo_allasia" data-ir="bartolomeo_allasia">Bartolomeo Allasia</a> · <a href="#p-lucia_gaido" data-ir="lucia_gaido">Lucia Gaido</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-maria_maddalena_bertino" data-ir="maria_maddalena_bertino">Maria Maddalena Bertino</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-margarita_alasia" data-ir="margarita_alasia">Margarita Alasia</a> · <a href="#p-domingo_alasia" data-ir="domingo_alasia">Domingo Alasia</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1822, según el árbol de FamilySearch</dd>
@@ -5878,6 +6204,7 @@ Y HAY UNA CUARTA VÍA, ARGENTINA Y MÁS BARATA: el CENSO NACIONAL DE 1895. Bened
 <p class="f-res">A Piedmontese woman from Savigliano, mother of Margarita Alasia.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-giovanni_domenico_bertino" data-ir="giovanni_domenico_bertino">Giovanni Domenico Bertino</a> · <a href="#p-catterina_bonavia" data-ir="catterina_bonavia">Catterina Bonavia</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-benedetto_alasia" data-ir="benedetto_alasia">Benedetto Alasia</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-margarita_alasia" data-ir="margarita_alasia">Margarita Alasia</a> · <a href="#p-domingo_alasia" data-ir="domingo_alasia">Domingo Alasia</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1839, según el árbol de FamilySearch</dd>
@@ -5949,6 +6276,7 @@ Y de paso el censo confirma lo suyo por segunda vía: *** declara los CATORCE HI
 <h2>Bartolomeo Allasia</h2>
 <p class="f-res">Piedmontese, born around 1797. The oldest ancestor of the Rivas branch.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-lucia_gaido" data-ir="lucia_gaido">Lucia Gaido</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-benedetto_alasia" data-ir="benedetto_alasia">Benedetto Alasia</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1797, según el árbol de FamilySearch</dd>
@@ -5976,6 +6304,7 @@ ADEMÁS ESTÁ INDIZADO POR NOMBRE, gratis, en FamilySearch: colección 1392991, 
 <h2>Lucia Gaido</h2>
 <p class="f-res">Piedmontese, born around 1800. Mother of Benedetto Alasia.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-bartolomeo_allasia" data-ir="bartolomeo_allasia">Bartolomeo Allasia</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-benedetto_alasia" data-ir="benedetto_alasia">Benedetto Alasia</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1800, según el árbol de FamilySearch</dd>
@@ -5994,6 +6323,7 @@ Se busca igual que a su marido: Savigliano, STATO CIVILE NAPOLEONICO 1802-1813, 
 <h2>Giovanni Domenico Bertino</h2>
 <p class="f-res">Piedmontese, born around 1798. Father of Maria Maddalena Bertino.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-catterina_bonavia" data-ir="catterina_bonavia">Catterina Bonavia</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-maria_maddalena_bertino" data-ir="maria_maddalena_bertino">Maria Maddalena Bertino</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1798, según el árbol de FamilySearch</dd>
@@ -6012,6 +6342,7 @@ Mismo camino que los Allasia: Savigliano está en Antenati dentro del STATO CIVI
 <h2>Catterina Bonavia</h2>
 <p class="f-res">Piedmontese, born around 1799. Mother of Maria Maddalena Bertino.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giovanni_domenico_bertino" data-ir="giovanni_domenico_bertino">Giovanni Domenico Bertino</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-maria_maddalena_bertino" data-ir="maria_maddalena_bertino">Maria Maddalena Bertino</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>1799, según el árbol de FamilySearch</dd>
@@ -6190,6 +6521,7 @@ DONDE NO ESTÁ, Y ESO YA ES UN DATO (29 de agosto de 2026). Se han leído cuatro
 <p class="legal">In the records: <b>ROSE SALERNO en Estados Unidos</b></p>
 <p class="f-res">Antonio&#x27;s wife. Salerno by her maiden name too, as he was, and also from the province of Cosenza. She reached New York on the steamer Giuseppe Verdi and outlived her husband.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-antonio" data-ir="antonio">Antonio Salerno</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-dominick_salerno" data-ir="dominick_salerno">Domenico Salerno</a> · <a href="#p-filomena_salerno_usa" data-ir="filomena_salerno_usa">Filomena Salerno</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1901-1907, provincia de COSENZA, Italia — el censo de 1950 le da 43 años, su petición de naturalización una fecha algo anterior</dd>
@@ -6325,6 +6657,7 @@ CAMBIA QUIEN FIRMA EN EL AYUNTAMIENTO. En enero de 1863 el oficial del estado ci
 <h2>Angela Menghi</h2>
 <p class="f-res">The mother of Callisto Celeri, and for weeks the most conspicuous gap in this branch. She surfaced on 27 August 2026, in a grandson&#x27;s birth record.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-desiderio_celeri" data-ir="desiderio_celeri">Desiderio Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-calisto_celeri" data-ir="calisto_celeri">Callisto Celeri</a></p>
 <dl class="datos">
 <dt>Quién era</dt><dd>mujer de DESIDERIO CELERI y madre de CALLISTO — es decir, la tatarabuela del abuelo paterno de Gonzalo</dd>
@@ -6500,6 +6833,7 @@ LO CERRARÍA UN DOCUMENTO YA LOCALIZADO: su hijo Antonio se casó en 1864, y el 
 <h2>Pietro Celeri</h2>
 <p class="f-res">A farmer of Trassilico, born around 1814. The NINTH Celeri father in the village, and the first to appear with his wife&#x27;s name. He came out on 28 August 2026 of his daughter&#x27;s marriage promise.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-elisabetta_santi" data-ir="elisabetta_santi">Elisabetta Santi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-leonilda_celeri" data-ir="leonilda_celeri">Maria Leonilda Celeri</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1814 — los cincuenta años que declara en agosto de 1864</dd>
@@ -6520,6 +6854,7 @@ ES DE LA MISMA QUINTA QUE DESIDERIO, el bisabuelo: Pietro nació hacia 1814, y D
 <h2>Elisabetta Santi</h2>
 <p class="f-res">Wife of Pietro Celeri. She was alive in August 1864 and appeared in person at her daughter&#x27;s marriage promise.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-pietro_celeri_1814" data-ir="pietro_celeri_1814">Pietro Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-leonilda_celeri" data-ir="leonilda_celeri">Maria Leonilda Celeri</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1815 — los cuarenta y nueve años que declara en agosto de 1864</dd>
@@ -6668,6 +7003,7 @@ Y las dos actas que lo describen dan su edad por caminos distintos: *** cincuent
 <h2>Giovanni Antonio Celeri</h2>
 <p class="f-res">Another Celeri patriarch of the Garfagnana, of the same generation as Domenico — Tebaldo&#x27;s great-grandfather. He surfaced on 28 August 2026 in the death record of his son Francesco. Whether the two branches touch is unknown.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-mariangela_giusti" data-ir="mariangela_giusti">Mariangela Giusti</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-francesco_celeri_1802" data-ir="francesco_celeri_1802">Francesco Celeri</a></p>
 <dl class="datos">
 <dt>Cuándo vivió</dt><dd>nacido hacia 1770-1780. Ya había muerto en marzo de 1864</dd>
@@ -6685,6 +7021,7 @@ Y las dos actas que lo describen dan su edad por caminos distintos: *** cincuent
 <h2>Mariangela Giusti</h2>
 <p class="f-res">Wife of Giovanni Antonio Celeri. She is known only from her son&#x27;s death record, which names her as already dead.</p>
 </div>
+<p class="linaje"><span>Married</span> <a href="#p-giovanni_antonio_celeri" data-ir="giovanni_antonio_celeri">Giovanni Antonio Celeri</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-francesco_celeri_1802" data-ir="francesco_celeri_1802">Francesco Celeri</a></p>
 <dl class="datos">
 <dt>Cuándo vivió</dt><dd>nacida hacia 1770-1780; muerta antes de marzo de 1864</dd>
@@ -6871,6 +7208,7 @@ DE LOS NUEVE, SÓLO UNA RELACIÓN ESTÁ PROBADA: Domenico e Ilario son hermanos,
 <p class="f-res">The oldest Celeri known. Father of Callisto and great-grandfather of grandmother Elba. He surfaced on 27 August 2026, in three words of a record of 1862.</p>
 </div>
 <p class="linaje"><span>Child of</span> <a href="#p-domenico_celeri_viejo" data-ir="domenico_celeri_viejo">Domenico Celeri</a></p>
+<p class="linaje"><span>Married</span> <a href="#p-angela_menghi" data-ir="angela_menghi">Angela Menghi</a></p>
 <p class="linaje"><span>Parent of</span> <a href="#p-calisto_celeri" data-ir="calisto_celeri">Callisto Celeri</a></p>
 <dl class="datos">
 <dt>Birth</dt><dd>hacia 1800 o antes — su hijo Callisto tenía treinta y un años en 1862</dd>
@@ -6974,120 +7312,120 @@ Il sottoscritto Parroco fa fede che il Sig. CALLISTO figlio del fu DESIDERIO CEL
         <h2>What is missing</h2>
         <p class="f-res">Cada cabo con el motivo por el que no se cierra, y dónde habría que mirar.</p>
       </div>
-      <div id="abiertos"><div class="ab" data-r="salerno"><h4>Los catorce hijos — y ahora sabemos dónde están los cinco que faltan</h4><p>La memoria familiar de Santa Fe habla de CATORCE hijos de Francesco y Filomena, y recuerda entre ellos a un VINCENZO, un Raffaele, una Marietta y un Angelo. Los documentos dan nueve. Durante meses eso se archivó como exageración de la memoria.
+      <div id="abiertos"><div class="ab" data-r="salerno"><h4>The fourteen children — and now we know where the missing five are</h4><p>Family memory in Santa Fe speaks of FOURTEEN children of Francesco and Filomena, and remembers among them a VINCENZO, a Raffaele, a Marietta and an Angelo. The documents give nine. For months that was filed away as memory exaggerating.
 
-YA NO. EN AGOSTO DE 2026 TRES COSAS INDEPENDIENTES SE JUNTARON:
+NOT ANY MORE. IN AUGUST 2026 THREE INDEPENDENT THINGS CAME TOGETHER:
 
-1. La descendiente de Antonio en Chicago, contactada por su cuenta, dice exactamente lo mismo desde el otro lado del Atlántico: catorce. Dos ramas separadas por sesenta años y diez mil kilómetros que nunca se hablaron recuerdan la misma cifra.
+1. Antonio&#x27;s descendant in Chicago, contacted separately, says exactly the same thing from the other side of the Atlantic: fourteen. Two branches separated by sixty years and ten thousand kilometres, which never spoke to each other, remember the same number.
 
-2. La esquela de Antonio, «The Star», 10 de mayo de 1981: «He is survived by […] a brothr, VINCENZO of Riverdale». UN HERMANO VINCENZO, VIVO EN 1981. Es papel impreso, no memoria.
+2. Antonio&#x27;s obituary, «The Star», 10 May 1981: «He is survived by […] a brothr, VINCENZO of Riverdale». A BROTHER VINCENZO, ALIVE IN 1981. That is printed paper, not memory.
 
-3. Y sobre todo, la cadencia de los nacimientos, que es la prueba de verdad:
+3. And above all the cadence of the births, which is the real proof:
 
-        1895 · 1896 · 1897 · 1899 (mellizos) · 1902 · 1904 · 1907 · 1909
+        1895 · 1896 · 1897 · 1899 (twins) · 1902 · 1904 · 1907 · 1909
 
-Un hijo cada dieciocho o veinticuatro meses sin interrupción, desde la boda de 1894. Y EL ÚLTIMO DOCUMENTADO ES MARIA, DE SEPTIEMBRE DE 1909 — es decir, justo en el borde. Los fondos de Rende en Antenati SE CORTAN EN 1910.
+A child every eighteen or twenty-four months without a break, from the wedding of 1894. AND THE LAST DOCUMENTED ONE IS MARIA, OF SEPTEMBER 1909 — that is, right at the edge. The Rende holdings on Antenati STOP IN 1910.
 
-*** DE AHÍ SALIÓ LA PRIMERA HIPÓTESIS: no faltan cinco hijos, faltan cinco años de registro. *** Filomena se casó en 1894 y seguía pariendo en 1909 al mismo ritmo. Si continuó, 1911, 1913, 1915, 1917 y 1919 dan cinco hijos más. Nueve más cinco, catorce.
+*** FROM THIS CAME THE FIRST HYPOTHESIS: five children are not missing, five years of registration are. *** Filomena married in 1894 and was still bearing children in 1909 at the same rate. If she went on, 1911, 1913, 1915, 1917 and 1919 give five more children. Nine plus five, fourteen.
 
-PERO HAY UNA OBJECIÓN SERIA, y la puso el propio Gonzalo mirando la foto de los cuatro hermanos en Argentina: ANTONIO SE FUE DE RENDE EN 1914. Si Vincenzo hubiera nacido después de 1910, Antonio se marchó cuando su hermano era un bebé o ni había nacido — y sin embargo en 1981 vivían en el mismo pueblo de Illinois y el periódico los da por hermanos. No es imposible: así funciona la emigración en cadena, el mayor llama al pequeño veinte años después. Pero debilita la hipótesis.
+BUT THERE IS A SERIOUS OBJECTION, and Gonzalo himself raised it looking at the photograph of the four brothers in Argentina: ANTONIO LEFT RENDE IN 1914. If Vincenzo had been born after 1910, Antonio left when his brother was a baby or not yet born — and yet in 1981 they were living in the same Illinois town and the newspaper calls them brothers. It is not impossible: that is how chain migration works, the eldest sends for the youngest twenty years later. But it weakens the hypothesis.
 
-Y OBLIGA A MIRAR LOS HUECOS. Entre los nueve documentados hay SEIS AÑOS VACÍOS: 1898, 1900, 1901, 1903, 1905, 1906 y 1908. Se venía dando por bueno que la transcripción del blog cubre Rende de 1893 a 1910 sin una fisura. Pero este mismo proyecto ha demostrado que LOS REGISTROS TIENEN AGUJEROS: el nacimiento de Francesco Giacomo NO está en el civil de Marano de 1809 —84 actas, leído entero— y hubo que ir a buscarlo al libro parroquial, dentro de un expediente matrimonial. Si los Salerno bautizaron a algún hijo sin inscribirlo, o si se perdió el registro de un año, esos niños existen y no están.
+AND IT FORCES US TO LOOK AT THE GAPS. Among the nine documented children there are SIX EMPTY YEARS: 1898, 1900, 1901, 1903, 1905, 1906 and 1908. It had been taken for granted that the blog&#x27;s transcription covers Rende from 1893 to 1910 without a crack. But this very project has shown that THE REGISTERS HAVE HOLES: the birth of Francesco Giacomo is NOT in the Marano civil register for 1809 — 84 records, read in full — and it had to be hunted down in the parish book, inside a marriage dossier. If the Salernos had a child baptised without registering him, or if a year&#x27;s register was lost, those children exist and are not there.
 
-*** DOS HIPÓTESIS VIVAS, Y HAY QUE PEDIR LAS DOS COSAS ***
+*** TWO LIVE HYPOTHESES, AND BOTH THINGS MUST BE REQUESTED ***
 
-A) NACIDOS DESPUÉS DE 1909 — al COMUNE DI RENDE, nacimientos de 1910 a 1920, hijos de Francesco Salerno y Filomena Chiappetta. Va en la misma carta que las cuatro defunciones, así que no cuesta nada añadirlo.
+A) BORN AFTER 1909 — to the COMUNE DI RENDE, births from 1910 to 1920, children of Francesco Salerno and Filomena Chiappetta. It goes in the same letter as the four deaths, so it costs nothing to add.
 
-B) NACIDOS EN LOS HUECOS DE 1898-1908 — a los LIBROS PARROQUIALES DE RENDE, vía el Archivio Diocesano di Cosenza-Bisignano. El registro civil de esos años ya está barrido; si hay hijos ahí, están en los bautismos y no en el ayuntamiento.
+B) BORN IN THE GAPS OF 1898-1908 — to the PARISH BOOKS OF RENDE, via the Archivio Diocesano di Cosenza-Bisignano. The civil register for those years has already been swept; if there are children there, they are in the baptisms and not at the town hall.
 
-YA DESCARTADO — SAN FILI. El 26 de agosto de 2026 se puso a prueba la idea de que algún hijo se hubiera inscrito en un pueblo vecino, si la familia estaba fuera de Rende cuando llegó el parto. San Fili está a diez kilómetros y sus índices están en disco. Se leyeron enteros los SIETE años de hueco —1898, 1900, 1901, 1903, 1905, 1906 y 1908— y no hay ni un hijo de Francesco Salerno y Filomena Chiappetta. Sí hay cinco familias Salerno propias del pueblo, y una de ellas es un FRANCESCO SALERNO casado con ASSUNTA CAIRO que tuvo una hija allí en 1908: no es el nuestro, pero cualquier búsqueda futura va a tropezar con él. Quedan por mirar, gratis, Marano Principato y San Vincenzo la Costa.
+ALREADY RULED OUT — SAN FILI. On 26 August 2026 the idea was tested that a child might have been registered in a neighbouring village, if the family were away from Rende when the birth came. San Fili is ten kilometres off and its indexes are on disk. All SEVEN gap years were read in full — 1898, 1900, 1901, 1903, 1905, 1906 and 1908 — and there is not one child of Francesco Salerno and Filomena Chiappetta. There are five Salerno families native to the village, and one of them is a FRANCESCO SALERNO married to an ASSUNTA CAIRO who had a daughter there in 1908: not ours, but any future search will trip over him. Marano Principato and San Vincenzo la Costa remain to be checked, and they are free.
 
-Y LO MÁS RÁPIDO DE TODO, que no cuesta ni un sello: preguntarle a la descendiente de Antonio en Chicago LA FECHA Y EL PUEBLO DE NACIMIENTO DE VINCENZO. Si dice Rende y un año anterior a 1910, gana la hipótesis B. Si dice 1913, gana la A. Un solo dato lo resuelve, y esa señora ya está en contacto.</p></div>
-<div class="ab" data-r="celeri"><h4>Los otros Celeri de Trassilico — tres casas, un solo apellido</h4><p>Celeri es apellido rarísimo en la Garfagnana: hoy no queda ni uno en todo el valle, y en el índice de nacidos de Trassilico de 1862 hay UN Celeri entre setenta y tres nacimientos. Y sin embargo, en 1861 había en el municipio al menos TRES casas Celeri.
+AND THE QUICKEST THING OF ALL, which does not even cost a stamp: ask Antonio&#x27;s descendant in Chicago for VINCENZO&#x27;S DATE AND PLACE OF BIRTH. If she says Rende and a year before 1910, hypothesis B wins. If she says 1913, A wins. A single fact settles it, and that lady is already in touch.</p></div>
+<div class="ab" data-r="celeri"><h4>The other Celeri of Trassilico — three households, one surname</h4><p>Celeri is an extremely rare surname in the Garfagnana: today not one remains in the whole valley, and in the Trassilico index of births for 1862 there is ONE Celeri among seventy-three births. And yet in 1861 there were at least THREE Celeri households in the comune.
 
-· **CALLISTO, hijo del difunto DESIDERIO** — la nuestra. En Trassilico pueblo. Possidente y secretario del ayuntamiento.
-· **La casa del difunto NICOLAO CELERI**, casado con ROSARIA DOMINICI, que en noviembre de 1861 seguía viva. Su hija MARIA, de veintisiete años, agricultrice, se casó el 7 de noviembre de 1861 con PIETRO BATTAGLIA, de S. Pellegrinetto, vecino del Eremo di Calomini (Trassilico, Matrimoni 1861, actas 30 y 39).
-· **Los hermanos DOMENICO e ILARIO CELERI**, propietarios de una casa en VALICO SOTTO, en el paraje llamado Capanne (Trassilico, Nati 1861, acta 45).
+· **CALLISTO, son of the late DESIDERIO** — ours. In the village of Trassilico. Possidente and town clerk.
+· **The household of the late NICOLAO CELERI**, married to ROSARIA DOMINICI, who was still alive in November 1861. Their daughter MARIA, twenty-seven, agricultrice, married on 7 November 1861 to PIETRO BATTAGLIA, of S. Pellegrinetto, a resident of the Eremo di Calomini (Trassilico, Marriages 1861, records 30 and 39).
+· **The brothers DOMENICO and ILARIO CELERI**, owners of a house at VALICO SOTTO, in the place called Capanne (Trassilico, Births 1861, record 45).
 
-SE FUE A BUSCAR UNA HERMANA DE CALLISTO Y SALIÓ UNA RAMA ENTERA. Maria Celeri parecía la candidata perfecta —edad justa, mismo pueblo, y Callisto firmando de testigo en su boda—, pero el acta dice «figlia del fu NICOLAO» y no de Desiderio. Que Callisto fuera su testigo no prueba nada: aparece como testigo en cinco actas seguidas de ese año, porque era el testigo de oficio del pueblo.
+A SISTER OF CALLISTO WAS SOUGHT AND A WHOLE BRANCH CAME OUT. Maria Celeri looked like the perfect candidate — the right age, the same village, and Callisto signing as a witness at her wedding — but the record says «figlia del fu NICOLAO» and not of Desiderio. That Callisto was her witness proves nothing: he appears as a witness on five consecutive records that year, because he was the village&#x27;s standing witness.
 
-QUE ESTÉN EMPARENTADOS ES MUY PROBABLE Y NO ESTÁ PROBADO. Con un apellido tan raro en un pueblo de montaña, Desiderio, Nicolao y el padre de Domenico e Ilario serían hermanos o primos. Lo cerraría **la defunción de cualquiera de ellos**, que nombraría a sus padres. Las tres son anteriores a 1862 y estarían en los registros de Morti de Trassilico de 1852 a 1861, todos digitalizados y con ark calculable.</p></div>
-<div class="ab" data-r="salerno"><h4>Quién es el «brothr Vincenzo of Riverdale»</h4><p>La esquela de Antonio, de mayo de 1981, lo nombra entre los que le sobreviven: «a brothr, VINCENZO of Riverdale». Está a una línea de distancia de resolver el enigma de los catorce hijos, y hay que ser honesto: caben tres lecturas.
+THAT THEY ARE RELATED IS VERY LIKELY AND IS NOT PROVEN. With so rare a surname in a mountain village, Desiderio, Nicolao and the father of Domenico and Ilario would be brothers or cousins. It would be settled by **the death record of any one of them**, which would name their parents. All three predate 1862 and would be in the Trassilico death registers from 1852 to 1861, all digitised and with a calculable ark.</p></div>
+<div class="ab" data-r="salerno"><h4>Who is the «brothr Vincenzo of Riverdale»</h4><p>Antonio&#x27;s obituary, of May 1981, names him among the survivors: «a brothr, VINCENZO of Riverdale». It is one line away from solving the riddle of the fourteen children, and one must be honest: three readings are possible.
 
-A) ES UN HERMANO DE VERDAD, hijo de Francesco y Filomena, nacido en Rende después de 1909 y por tanto invisible en Antenati. Es la lectura que encaja con la memoria de las dos ramas de la familia, con la cadencia de los nacimientos y con el nombre: la familia de Santa Fe recuerda precisamente a un VINCENZO entre los catorce. Un obituario americano dice «brother» cuando es hermano.
+A) HE IS A REAL BROTHER, son of Francesco and Filomena, born at Rende after 1909 and therefore invisible on Antenati. It is the reading that fits the memory of both branches of the family, the cadence of the births, and the name: the Santa Fe family remembers precisely a VINCENZO among the fourteen. An American obituary says «brother» when it means brother.
 
-B) ES SU CUÑADO. Su mujer, Rosina, era Salerno de soltera, y el árbol de FamilySearch le da un hermano llamado VINCENZO SALERNO. Un cuñado que además comparte apellido puede acabar impreso como «brother» sin que nadie lo corrija. Contra esta lectura: los obituarios de la época solían distinguir «brother-in-law».
+B) HE IS HIS BROTHER-IN-LAW. His wife, Rosina, was a Salerno by birth, and the FamilySearch tree gives her a brother called VINCENZO SALERNO. A brother-in-law who also shares the surname can end up printed as «brother» with nobody correcting it. Against this reading: obituaries of the period usually distinguished «brother-in-law».
 
-C) ES OTRO VINCENZO SALERNO SIN PARENTESCO. Y aquí hay que ir con mucho cuidado, porque YA VAN CUATRO VINCENZO SALERNO distintos en la órbita de Chicago:
+C) HE IS ANOTHER VINCENZO SALERNO, unrelated. And here great care is needed, because there are ALREADY FOUR different Vincenzo Salernos in the Chicago orbit:
 
-   · El de BROGNATURO, nacido el 13 de diciembre de 1896, marido de Maria Emilia Squillacioti, con cinco hijos en Chicago. Provincia de Vibo Valentia: otra familia.
-   · El de SAN FILI, nacido el 14 de octubre de 1889, llegado a Nueva York en el vapor Tuscania el 7 de septiembre de 1923, mixer en la Sawyer Biscuit Co. de Chicago. Se le localizó la partida en el índice de San Fili —acta 110 de 1889— y ES HIJO DE VINCENZO ANTONIO SALERNO Y CAROLINA FILOMENA RINALDI. *** DESCARTADO ***: nació cinco años antes de la boda de Francesco y Filomena, en otro pueblo y de otros padres. OJO CON ÉL, porque es una trampa perfecta: su madre se llamaba CAROLINA FILOMENA. Un Vincenzo Salerno hijo de una Filomena, de la provincia de Cosenza, emigrado a Chicago y de la edad aproximada. Todo encaja menos el apellido de ella.
-   · El hermano de ROSINA, la mujer de Antonio, según el árbol de FamilySearch. Sin acta.
-   · Y el de la esquela, sin identificar.
+   · The one from BROGNATURO, born 13 December 1896, husband of Maria Emilia Squillacioti, with five children in Chicago. Province of Vibo Valentia: another family.
+   · The one from SAN FILI, born 14 October 1889, arrived in New York on the steamer Tuscania on 7 September 1923, a mixer at the Sawyer Biscuit Co. in Chicago. His record was located in the San Fili index — record 110 of 1889 — and HE IS THE SON OF VINCENZO ANTONIO SALERNO AND CAROLINA FILOMENA RINALDI. *** RULED OUT ***: born five years before Francesco and Filomena&#x27;s wedding, in another village and of other parents. BEWARE OF HIM, because he is a perfect trap: his mother was called CAROLINA FILOMENA. A Vincenzo Salerno, son of a Filomena, from the province of Cosenza, emigrated to Chicago and of roughly the right age. Everything fits except her surname.
+   · Rosina&#x27;s brother, Antonio&#x27;s wife, according to the FamilySearch tree. No record.
+   · And the one in the obituary, unidentified.
 
-CÓMO SE RESUELVE, por orden de facilidad:
-· La esquela del propio Vincenzo de Riverdale, que nombraría a sus padres. Si dice Francesco y Filomena, se acabó.
-· Su ficha de reclutamiento o su naturalización, que darían pueblo y fecha de nacimiento. Si pone RENDE y un año posterior a 1909, es hermano.
-· Los nacimientos de Rende de 1910 a 1920, en el Comune di Rende.
-· Y la vía más rápida de todas, que resuelve todo con un solo dato: preguntarle a la descendiente de Antonio en Chicago LA FECHA Y EL PUEBLO DE NACIMIENTO del Vincenzo de Riverdale. Si dice RENDE, es hermano y los catorce hijos quedan probados. Si dice SAN FILI, es el de 1889 y no lo es.</p></div>
-<div class="ab" data-r="salerno"><h4>Un Vincenzo en San Sisto</h4><p>En 1914 se casó en San Sisto un VINCENZO SALERNO, hijo de un Domenico, con Assunta Buccieri; y en 1912 una ROSA SALERNO, hija del mismo Domenico, con Raffaele Mirandola. San Sisto es la única serie del blog que cruza el muro de 1910. Si ese Domenico es el hermano de Francesco, Vincenzo es primo hermano de Settimo — y el primero de los cuatro nombres que aparece a la distancia genealógica correcta. El índice sólo da el nombre de pila del padre, así que hace falta el acta.</p></div>
-<div class="ab" data-r="salerno"><h4>La defunción de Michele y de Maria Antonia</h4><p>Los dos estaban vivos el 1 de abril de 1894, dando su consentimiento en la boda de Francesco, y seguían vivos en octubre de 1897, en la de Giovanni. La boda de Domenico, de noviembre de 1910, cierra la horquilla doce años más: allí los dos figuran «residentes en Rende», sin el «fu» que el mismo formulario emplea para los padres muertos de la novia. Michele tenía 85 años y ella 71, y seguían vivos. Sus defunciones son, por tanto, posteriores a noviembre de 1910 — justo el año en que se acaban los fondos de Rende en Antenati, así que lo más probable es que haya que pedirlas al Comune di Rende.</p></div>
-<div class="ab" data-r="salerno"><h4>Dónde nació Domenico</h4><p>Resuelto a medias en 2026: en su acta de matrimonio de noviembre de 1910 declara haber nacido en CASTROLIBERO y tener cincuenta y un años, lo que lo sitúa hacia 1859 — unos diez meses después de la boda de sus padres, o sea, como primogénito. El problema es que el barrido de Castrolibero, que cubrió de 1859 a 1872, no lo encontró. O nació a finales de 1858, fuera de la ventana, o su acta está inscrita bajo DE RANGO, el apellido con el que Michele registraba allí a sus hijos, y se pasó por alto al buscar «Salerno». Hay que releer Castrolibero, Nati 1858 y 1859, buscando a un Domenico de Michele y Maria Palermo.</p></div>
-<div class="ab" data-r="salerno"><h4>De quién enviudó Domenico</h4><p>El acta de 1910 lo llama «vedovo» y no dice más. Antes de Giuseppina Cairo hubo otra mujer, y con ella probablemente los hijos Salvatore (1906) y Michele (1909) que el índice le atribuye junto a una Maria Russo. Faltan ese primer matrimonio y la defunción de la primera esposa.</p></div>
-<div class="ab" data-r="salerno"><h4>Por encima de Michele no hay nada</h4><p>Y no por falta de búsqueda. Su acta de nacimiento dice que lo encontraron en el torno del hospicio de Cosenza sin ninguna señal encima. No hay filiación que buscar porque nunca la hubo por escrito. Lo único que podría quedar está en los libros de la casa de expósitos de Cosenza y en los parroquiales del Archivio Diocesano di Cosenza-Bisignano.</p></div>
-<div class="ab" data-r="salerno"><h4>RESUELTA · La boda de Giacomo y Carmina, y con ella la filiación</h4><p>Se buscó durante meses en Marano Marchesato y no estaba: nueve índices, de 1830 a 1838, ciento ochenta y tres bodas, ni un Palermo varón con ninguna Volpintesta. El registro de 1837 de Marano lleva índice al final con sus veinticinco bodas una por una, y el legajo de expedientes —235 páginas— corresponde exactamente a esas veinticinco, sin sitio para una vigesimosexta.
+HOW IT GETS SOLVED, in order of ease:
+· The obituary of the Riverdale Vincenzo himself, which would name his parents. If it says Francesco and Filomena, that is that.
+· His draft card or his naturalisation, which would give village and date of birth. If it says RENDE and a year after 1909, he is a brother.
+· The Rende births from 1910 to 1920, at the Comune di Rende.
+· And the quickest route of all, which settles everything with a single fact: ask Antonio&#x27;s descendant in Chicago for THE DATE AND PLACE OF BIRTH of the Riverdale Vincenzo. If she says RENDE, he is a brother and the fourteen children are proven. If she says SAN FILI, he is the one born in 1889 and he is not.</p></div>
+<div class="ab" data-r="salerno"><h4>A Vincenzo at San Sisto</h4><p>In 1914 a VINCENZO SALERNO, son of a Domenico, married Assunta Buccieri at San Sisto; and in 1912 a ROSA SALERNO, daughter of the same Domenico, married Raffaele Mirandola. San Sisto is the only series on the blog that crosses the 1910 wall. If that Domenico is Francesco&#x27;s brother, Vincenzo is Settimo&#x27;s first cousin — and the first of the four names to appear at the right genealogical distance. The index gives only the father&#x27;s forename, so the record itself is needed.</p></div>
+<div class="ab" data-r="salerno"><h4>The deaths of Michele and Maria Antonia</h4><p>Both were alive on 1 April 1894, giving their consent at Francesco&#x27;s wedding, and still alive in October 1897, at Giovanni&#x27;s. Domenico&#x27;s wedding, of November 1910, extends the window by twelve more years: there they both appear as «resident at Rende», without the «fu» that the same form uses for the bride&#x27;s dead parents. Michele was 85 and she was 71, and they were still living. Their deaths are therefore later than November 1910 — precisely the year the Rende holdings on Antenati end, so they will most likely have to be requested from the Comune di Rende.</p></div>
+<div class="ab" data-r="salerno"><h4>Where Domenico was born</h4><p>Half solved in 2026: on his marriage record of November 1910 he declares he was born at CASTROLIBERO and is fifty-one, which places him around 1859 — some ten months after his parents&#x27; wedding, that is, as the first-born. The problem is that the Castrolibero sweep, which covered 1859 to 1872, did not find him. Either he was born at the end of 1858, outside the window, or his record is entered under DE RANGO, the surname Michele used to register his children there, and it was overlooked when searching for «Salerno». Castrolibero births for 1858 and 1859 must be read again, looking for a Domenico son of Michele and Maria Palermo.</p></div>
+<div class="ab" data-r="salerno"><h4>Whom Domenico was widowed of</h4><p>The 1910 record calls him «vedovo» and says no more. Before Giuseppina Cairo there was another wife, and with her probably the children Salvatore (1906) and Michele (1909) whom the index attributes to him alongside a Maria Russo. That first marriage and the first wife&#x27;s death are both missing.</p></div>
+<div class="ab" data-r="salerno"><h4>Above Michele there is nothing</h4><p>And not for want of searching. His birth record says he was found at the wheel of the Cosenza hospice with no mark on him. There is no parentage to look for because there never was any in writing. All that might remain is in the books of the Cosenza foundling house and in the parish books of the Archivio Diocesano di Cosenza-Bisignano.</p></div>
+<div class="ab" data-r="salerno"><h4>SOLVED · The wedding of Giacomo and Carmina, and with it the parentage</h4><p>It was searched for at Marano Marchesato for months and was not there: nine indexes, from 1830 to 1838, one hundred and eighty-three weddings, not a single male Palermo with any Volpintesta. Marano&#x27;s 1837 register carries an index at the end with its twenty-five weddings one by one, and the dossier file — 235 pages — corresponds exactly to those twenty-five, with no room for a twenty-sixth.
 
-NO ESTABA EN MARANO PORQUE ESTÁ EN RENDE. RENDE, MATRIMONI 1837, ACTA 20, del 19 de octubre. Descargada y leída el 26 de agosto de 2026. Él, veintiocho años, pecorajo, nacido en Marano; ella, veintitrés, nacida en Marano y ya domiciliada en Rende. La boda en la iglesia, en Santa Maria Maggiore, al día siguiente.
+IT WAS NOT AT MARANO BECAUSE IT IS AT RENDE. RENDE, MARRIAGES 1837, RECORD 20, of 19 October. Downloaded and read on 26 August 2026. He, twenty-eight, pecorajo, born at Marano; she, twenty-three, born at Marano and already resident at Rende. The church wedding at Santa Maria Maggiore the following day.
 
-LA LECCIÓN, PARA NO VOLVER A PERDER MESES: cuando los dos novios son de un pueblo pero ella ya vive en otro, la boda se celebra donde vive ELLA. El propio acta lo dice sin querer: la notificación se fijó en las puertas de los dos ayuntamientos, el de Rende y el de Marano, el mismo domingo.
+THE LESSON, so as never to lose months again: when both parties are from one village but she already lives in another, the wedding takes place where SHE lives. The record says so without meaning to: the notice was posted on the doors of both town halls, Rende&#x27;s and Marano&#x27;s, on the same Sunday.
 
-Y RESUELVE ALGO MÁS GRANDE QUE UNA FECHA. Que Francesco Giacomo fuese hijo de Giuseppe Palermo y Carmina Spizzirri era hasta ese día una inferencia por convergencia, apoyada en el acta de su hermana Rosalia y en la coincidencia de pueblo, nombre y oficio. Su acta de boda lo dice con todas las letras. Así que Rosalia y Aquila son sus hermanas de padre Y de madre, y Carmina Spizzirri queda como bisabuela por línea directa sin ninguna reserva.
+AND IT SETTLES SOMETHING BIGGER THAN A DATE. That Francesco Giacomo was the son of Giuseppe Palermo and Carmina Spizzirri had until that day been an inference by convergence, resting on his sister Rosalia&#x27;s record and on the coincidence of village, name and trade. His marriage record says it in so many words. So Rosalia and Aquila are his sisters by both father AND mother, and Carmina Spizzirri stands as a great-grandmother in the direct line without any reservation.
 
-LO QUE QUEDA: el PROCESSETTO de Rende 1837. El acta enumera los ocho documentos que los novios presentaron, y los dos primeros son sus partidas de nacimiento. El expediente las conserva. La de Francesco Giacomo —1809, Marano— es la pieza que lleva años faltando: no está en el registro civil de Marano de 1809, leído entero, de modo que ese extracto puede ser la única copia que sobreviva.</p></div>
-<div class="ab" data-r="salerno"><h4>RESUELTA · La generación de 1780, y la de 1740 detrás</h4><p>Eran cuatro los ascendientes sin un solo papel —Giuseppe Palermo, Carmina Spizzirri, Vincenzo Volpintesta y Teresa Luchetta—. En agosto de 2026 pasaron a ser dos, y con la tanda de cinco actas de Marano Marchesato han pasado a ser CERO. Los cuatro tienen ahora acta propia, edad, oficio y fecha de muerte:
+WHAT REMAINS: the PROCESSETTO of Rende 1837. The record lists the eight documents the couple presented, and the first two are their birth certificates. The dossier preserves them. That of Francesco Giacomo — 1809, Marano — is the piece that has been missing for years: it is not in the Marano civil register for 1809, which has been read in full, so that extract may be the only surviving copy.</p></div>
+<div class="ab" data-r="salerno"><h4>SOLVED · The generation of 1780, and the one of 1740 behind it</h4><p>There were four forebears without a single paper — Giuseppe Palermo, Carmina Spizzirri, Vincenzo Volpintesta and Teresa Luchetta. In August 2026 they became two, and with the batch of five Marano Marchesato records they have become NONE. All four now have a record of their own, an age, a trade and a date of death:
 
-GIUSEPPE PALERMO — Morti 1863, acta 24. Noventa años, bracciale, muerto el 6 de marzo de 1863. «Sposo di Carmina Spizzirri», «figlio di fu LORENZO... e di fu GIULIA CHIAPPETTA».
+GIUSEPPE PALERMO — Deaths 1863, record 24. Ninety years old, bracciale, died 6 March 1863. «Sposo di Carmina Spizzirri», «figlio di fu LORENZO... e di fu GIULIA CHIAPPETTA».
 
-CARMINA SPIZZIRRI — Morti 1864, acta 74. Setenta años, contadina, muerta el 11 de octubre de 1864. «Vedova di Giuseppe Palermo». Sus padres NO se nombran.
+CARMINA SPIZZIRRI — Deaths 1864, record 74. Seventy years old, contadina, died 11 October 1864. «Vedova di Giuseppe Palermo». Her parents are NOT named.
 
-VINCENZO VOLPENTESTA — Morti 1823, acta 8. Cincuenta años, bracciale, muerto el 19 de marzo de 1823. «Sposo di Teresa Luchetta», «figlio del fu MICHELE». La madre no se nombra.
+VINCENZO VOLPENTESTA — Deaths 1823, record 8. Fifty years old, bracciale, died 19 March 1823. «Sposo di Teresa Luchetta», «figlio del fu MICHELE». The mother is not named.
 
-TERESA LUCHETTA — Morti 1851, acta 44. Setenta y dos años, contadina, muerta el 6 de junio de 1851. «Vedova di Vincenzo Volpentesta», «figlia del fu GIO: ANTONIO... e della fu MARIANNA CONFORTI». La que no tenía ningún papel acabó siendo la mejor de las cinco actas.
+TERESA LUCHETTA — Deaths 1851, record 44. Seventy-two years old, contadina, died 6 June 1851. «Vedova di Vincenzo Volpentesta», «figlia del fu GIO: ANTONIO... e della fu MARIANNA CONFORTI». The one who had no paper at all turned out to have the best of the five records.
 
-Y con ellas entran al árbol, ya probados, cinco nombres nuevos de la generación de 1740-1760: Lorenzo Palermo, Giulia Chiappetta, Michele Volpintesta, Gio: Antonio Luchetta y Marianna Conforti. Por encima de ellos ya no hay estado civil: el registro napoleónico de Calabria arranca en 1809 y esta gente nació y se casó mucho antes. Lo que queda son los libros de la parroquia de S. Maria del Carmine de Marano.</p></div>
-<div class="ab" data-r="salerno"><h4>Los padres de Carmina Spizzirri — y ahora sabemos dónde buscarlos</h4><p>Se fue a buscar su acta de defunción precisamente para sacarle los padres, y es el único documento del árbol que deja esas dos casillas deliberadamente en blanco: «figlia del fu ————» y «della fu ————». Lo único que prueba es que en octubre de 1864 los dos ya habían muerto.
+And with them five new names of the 1740-1760 generation enter the tree, already proven: Lorenzo Palermo, Giulia Chiappetta, Michele Volpintesta, Gio: Antonio Luchetta and Marianna Conforti. Above them there is no civil registration at all: the Napoleonic register in Calabria begins in 1809 and these people were born and married long before. What remains are the books of the parish of S. Maria del Carmine at Marano.</p></div>
+<div class="ab" data-r="salerno"><h4>Carmina Spizzirri&#x27;s parents — and now we know where to look for them</h4><p>Her death record was sought precisely in order to get her parents out of it, and it is the one document in the tree that leaves those two boxes deliberately blank: «figlia del fu ————» and «della fu ————». All it proves is that by October 1864 both were dead.
 
-PERO LA VENTANA SE HA ESTRECHADO MUCHO. El bautismo de su hijo Francesco Giacomo —Marano, 14 de febrero de 1809, hallado dentro del expediente de 1837— dice que ella y Giuseppe Palermo eran ya «LEGITIMIS CONJUGIBUS», legítimos cónyuges. Hasta ahora sólo se sabía que estaban casados antes de 1812, por el primer hijo del que había constancia. Ahora sabemos que su matrimonio es ANTERIOR A FEBRERO DE 1809.
+BUT THE WINDOW HAS NARROWED SHARPLY. The baptism of her son Francesco Giacomo — Marano, 14 February 1809, found inside the 1837 dossier — says that she and Giuseppe Palermo were already «LEGITIMIS CONJUGIBUS», lawfully married. Until now all that was known was that they were married before 1812, from the first child on record. Now we know their marriage is EARLIER THAN FEBRUARY 1809.
 
-Y eso lo saca de Antenati para siempre: el registro civil del Reino de Nápoles no empieza hasta 1809, así que esa boda sólo puede estar en los libros parroquiales de Marano Marchesato — la iglesia de SANTA MARIA DEL MONTE CARMELO, que es donde bautizaron al hijo—. Un acta de matrimonio parroquial nombra a los padres de los dos novios: sería la que abre la rama Spizzirri de golpe.
+And that takes it out of Antenati for good: civil registration in the Kingdom of Naples does not begin until 1809, so that wedding can only be in the parish books of Marano Marchesato — the church of SANTA MARIA DEL MONTE CARMELO, which is where the son was baptised. A parish marriage record names the parents of both parties: it would open the Spizzirri branch at a stroke.
 
-Con ella nacida hacia 1789, la boda estará entre 1805 y 1808. Es un rango de cuatro años en un pueblo pequeño: perfectamente rastreable para quien pueda entrar en el Archivio Diocesano di Cosenza-Bisignano.</p></div>
-<div class="ab" data-r="salerno"><h4>RESUELTA · Sí: Carmina Spizzirri es la madre de Francesco Giacomo</h4><p>Esta pregunta estuvo abierta y bien abierta. La había levantado el acta de defunción de Carmina, que la hace morir en octubre de 1864 DE SETENTA AÑOS, o sea nacida hacia 1794. Con esa cifra, y con un Francesco Giacomo nacido entre 1805 y 1812, ella habría tenido entre once y dieciocho años al parirlo. Con los demás hijos no había problema —Antonio Benedetto (1812), Francesca (1816), Vincenzo (1818), Aquila (1821), Francesca (1823) la sitúan entre los dieciocho y los veintinueve—; el que se salía era él, y por bastante. De modo que se dejó por escrito que cabía un primer matrimonio de Giuseppe, y que Francesco Giacomo podía ser medio hermano de Rosalia y no hermano entero.
+With her born around 1789, the wedding will fall between 1805 and 1808. That is a four-year range in a small village: perfectly searchable for anyone able to get into the Archivio Diocesano di Cosenza-Bisignano.</p></div>
+<div class="ab" data-r="salerno"><h4>SOLVED · Yes: Carmina Spizzirri is the mother of Francesco Giacomo</h4><p>This question was open, and wide open. It had been raised by Carmina&#x27;s death record, which has her dying in October 1864 AGED SEVENTY, that is born around 1794. With that figure, and a Francesco Giacomo born between 1805 and 1812, she would have been between eleven and eighteen when she bore him. With the other children there was no problem — Antonio Benedetto (1812), Francesca (1816), Vincenzo (1818), Aquila (1821), Francesca (1823) place her between eighteen and twenty-nine; the one who did not fit was him, and by a good margin. So it was set down in writing that a first marriage of Giuseppe&#x27;s was possible, and that Francesco Giacomo might be Rosalia&#x27;s half-brother and not her full brother.
 
-LA RESUELVE SU PROPIA ACTA DE MATRIMONIO, leída el 26 de agosto de 2026: RENDE, 1837, ACTA 20. Dice, sin lugar a interpretación, «figlio di GIUSEPPE… e di CARMELA SPIZZIRRI, domiciliata ivi». Carmela y Carmina son la misma mujer: coinciden el marido, el pueblo y el oficio, y el escribano era de Rende, no de Marano.
+HIS OWN MARRIAGE RECORD SETTLES IT, read on 26 August 2026: RENDE, 1837, RECORD 20. It says, beyond interpretation, «figlio di GIUSEPPE… e di CARMELA SPIZZIRRI, domiciliata ivi». Carmela and Carmina are the same woman: the husband, the village and the trade all agree, and the clerk was from Rende, not Marano.
 
-Y LA OBJECIÓN DE LAS EDADES SE DESHACE SOLA. Los setenta años del acta de 1864 eran la cifra mala. En 1821, al declarar el nacimiento de Aquila, su propio marido la da de TREINTA Y DOS años, lo que la hace nacida hacia 1789. Con esa fecha —que es la que dice alguien que la conocía, y no un declarante ante un cadáver— tenía unos veinte años cuando nació Francesco Giacomo en 1809. Nada que explicar.
+AND THE OBJECTION FROM THE AGES UNDOES ITSELF. The seventy years of the 1864 record were the bad figure. In 1821, registering Aquila&#x27;s birth, her own husband gives her as THIRTY-TWO, which makes her born around 1789. With that date — stated by someone who knew her, not by an informant standing over a corpse — she was about twenty when Francesco Giacomo was born in 1809. Nothing left to explain.
 
-CONSECUENCIA: Rosalia y Aquila Palermo son sus hermanas de padre Y de madre, no medias hermanas. Y Carmina Spizzirri queda como bisabuela por línea directa sin ninguna reserva. El silencio del acta de 1867 sobre la madre era, después de todo, desidia del formulario de Rende.</p></div>
-<div class="ab" data-r="salerno"><h4>RESUELTA · Teresa Tenuta existe, y la salvó un documento de 1793</h4><p>Estuvo dos años en el limbo. Los índices escaneados la daban por madre de Vincenzo Volpentesta en dos filas distintas, pero el acta de defunción de 1823 se leyó DOS VECES —el original y la copia certificada de 1837 que está dentro del expediente matrimonial— y las dos dejan la casilla de la madre EN BLANCO, con la raya impresa sin rellenar. Se decidió no abrirle ficha: un nombre de índice sin documento no entra en este árbol.
+CONSEQUENCE: Rosalia and Aquila Palermo are his sisters by both father AND mother, not half-sisters. And Carmina Spizzirri stands as a direct-line great-grandmother without reservation. The silence of the 1867 record about the mother was, after all, mere slackness in the Rende form.</p></div>
+<div class="ab" data-r="salerno"><h4>SOLVED · Teresa Tenuta exists, and a document of 1793 saved her</h4><p>She spent two years in limbo. The scanned indexes gave her as the mother of Vincenzo Volpentesta in two separate rows, but the 1823 death record was read TWICE — the original and the certified copy of 1837 inside the marriage dossier — and both leave the mother&#x27;s box BLANK, with the printed rule unfilled. It was decided not to open a card for her: an index name with no document does not enter this tree.
 
-La rescató el sitio más inesperado: el extracto parroquial de la muerte de su marido, guardado dentro del expediente de boda de su NIETA Carmina, en Rende, 1837. Tres palabras en latín: «MICHAEL VOLPENTESTA VIR THERESIAE TENUTA» — Michele Volpentesta, marido de Teresa Tenuta.
+She was rescued from the least expected place: the parish extract of her husband&#x27;s death, kept inside the marriage dossier of her GRANDDAUGHTER Carmina, at Rende, 1837. Three words of Latin: «MICHAEL VOLPENTESTA VIR THERESIAE TENUTA» — Michele Volpentesta, husband of Teresa Tenuta.
 
-Ya tiene ficha. De ella no se sabe nada más: ni año, ni pueblo, ni padres, ni cuándo murió. En agosto de 1793 enviudó. Todo lo suyo sería parroquial, porque el registro civil no existe hasta 1809.
+She now has a card. Nothing else is known of her: no year, no village, no parents, no date of death. In August 1793 she was widowed. Everything of hers would be parochial, because civil registration does not exist until 1809.
 
-LA LECCIÓN, que vale para todo lo que queda abierto: el documento que confirma a alguien casi nunca es el suyo. Es el de otro.</p></div>
-<div class="ab" data-r="salerno"><h4>Los Chiappetta también vienen de Castrolibero</h4><p>Es el hallazgo colateral del matrimonio de 1873. Giovanni Chiappetta y Angela Massei, los padres de Filomena, declaran los dos haber nacido en CASTROLIBERO y estar residiendo en Rende. Es el mismo pueblo del que venían Michele Salerno —inscrito allí como De Rango— y Maria Palermo, y del que llegaron a Rende sus hijos. Dos familias distintas haciendo el mismo camino en los mismos años, y que acaban emparentando en 1894. Consecuencia práctica: los nacimientos de Giovanni (hacia 1848) y de Angela (hacia 1858) hay que buscarlos en Castrolibero, no en Rende, igual que hubo que hacer con los Salerno.</p></div>
-<div class="ab" data-r="salerno"><h4>Cuántos hermanos tuvo Maria Antonia</h4><p>Se conocen cuatro hijos de Giacomo Palermo y Carmina Volpintesta: Maria Antonia (marzo de 1839), Antonio (octubre de 1841), Annunciata (febrero de 1845) y Teresa (enero de 1852). Trece años entre la primera y la última, y sólo tres huecos mirados. En una familia calabresa de campesinos de esos años lo normal serían seis u ocho hijos, así que casi con seguridad faltan hermanos entre 1839 y 1852 —y quizá alguno anterior a 1839—. Los registros de nacimientos de Marano Marchesato están completos para esos años y son fáciles de recorrer: dos actas por imagen, con el número escrito en letra en la cabecera. Es trabajo de barrido, no de detective.</p></div>
-<div class="ab" data-r="salerno"><h4>El barco</h4><p>La familia emigró a Argentina hacia 1919. La lista de pasajeros de la llegada a Buenos Aires nombra a toda la familia con la edad de cada uno: un solo documento con la fotografía exacta de quiénes eran los Salerno el día que embarcaron. Es el siguiente objetivo. Y hay una razón nueva para buscarlo: al margen del nacimiento de GIOVANNI (1904) alguien anotó que el 24 de julio de 1926 se casó EN RENDE con Cundari Anna. Si en 1926 estaba en el pueblo, o no embarcó en 1919 o volvió. El supuesto de que emigraron todos hay que comprobarlo, no darlo por bueno.</p></div>
-<div class="ab" data-r="faienza"><h4>RESUELTO · El matrimonio de Atessa de 1892, acta 101</h4><p>Era el cabo más corto y más rentable que quedaba abierto, y ha pagado con creces. El acta 101 de los Matrimoni de Atessa de 1892 está descargada, leída y transcrita en la ficha del matrimonio de Nicola y Angiolina. Se casaron el 29 de diciembre de 1892 a las once y cuarto de la mañana. Él tenía veintitrés años, era CONTADINO, había NACIDO EN ATESSA y era hijo de GIUSEPPE FAIENZA, campesino de Atessa y vivo entonces, y de la difunta MARIA STANISCIA. Con eso se acaba la pregunta de dónde viene la familia: de Atessa, no de Paglieta. Lo que abre ahora es la partida de nacimiento del propio Nicola, hacia 1869 en Atessa, y el matrimonio de sus padres, hacia 1865.</p></div>
-<div class="ab" data-r="faienza"><h4>CERRADO EN ANTENATI · Domenico Faienza hay que pedirlo al Comune di Atessa</h4><p>Se le buscó el nacimiento en los dos pueblos posibles y en los dos años posibles, y el resultado es negativo por las cuatro esquinas. PAGLIETA 1899 y ATESSA 1899: leídos enteros, ningún Faienza hijo de Nicola. PAGLIETA 1900 y ATESSA 1900: no existen en Antenati — la consulta responde «nessun risultato», que no es un fallo de red sino la respuesta del catálogo.
+THE LESSON, which holds for everything still open: the document that confirms someone is almost never their own. It is somebody else&#x27;s.</p></div>
+<div class="ab" data-r="salerno"><h4>The Chiappettas also come from Castrolibero</h4><p>It is the incidental find of the 1873 marriage. Giovanni Chiappetta and Angela Massei, Filomena&#x27;s parents, both declare they were born at CASTROLIBERO and are resident at Rende. It is the same village Michele Salerno came from — registered there as De Rango — and Maria Palermo, and from which their children reached Rende. Two separate families making the same journey in the same years, and ending up related in 1894. Practical consequence: the births of Giovanni (c. 1848) and Angela (c. 1858) must be sought at Castrolibero, not at Rende, exactly as had to be done with the Salernos.</p></div>
+<div class="ab" data-r="salerno"><h4>How many siblings Maria Antonia had</h4><p>Four children of Giacomo Palermo and Carmina Volpintesta are known: Maria Antonia (March 1839), Antonio (October 1841), Annunciata (February 1845) and Teresa (January 1852). Thirteen years between the first and the last, and only three gaps looked at. In a Calabrian peasant family of those years six or eight children would be normal, so there are almost certainly siblings missing between 1839 and 1852 — and perhaps one before 1839. The Marano Marchesato birth registers are complete for those years and easy to run through: two records per image, with the number written out in the heading. It is sweeping work, not detective work.</p></div>
+<div class="ab" data-r="salerno"><h4>The ship</h4><p>The family emigrated to Argentina around 1919. The passenger list of the arrival at Buenos Aires names the whole family with each one&#x27;s age: a single document with an exact photograph of who the Salernos were the day they sailed. It is the next objective. And there is a new reason to look for it: in the margin of GIOVANNI&#x27;s birth record (1904) someone noted that on 24 July 1926 he married Cundari Anna AT RENDE. If he was in the village in 1926, either he did not sail in 1919 or he came back. The assumption that they all emigrated has to be checked, not taken on trust.</p></div>
+<div class="ab" data-r="faienza"><h4>SOLVED · The Atessa marriage of 1892, record 101</h4><p>It was the shortest and most profitable loose end still open, and it has paid off handsomely. Record 101 of the Atessa Marriages for 1892 has been downloaded, read and transcribed on the card for Nicola and Angiolina&#x27;s marriage. They married on 29 December 1892 at a quarter past eleven in the morning. He was twenty-three, a CONTADINO, had been BORN AT ATESSA and was the son of GIUSEPPE FAIENZA, a farmhand of Atessa and living at the time, and of the late MARIA STANISCIA. With that the question of where the family comes from is closed: from Atessa, not Paglieta. What it opens now is Nicola&#x27;s own birth record, around 1869 at Atessa, and his parents&#x27; marriage, around 1865.</p></div>
+<div class="ab" data-r="faienza"><h4>CLOSED ON ANTENATI · Domenico Faienza must be requested from the Comune di Atessa</h4><p>His birth was searched for in both possible villages and both possible years, and the result is negative on all four corners. PAGLIETA 1899 and ATESSA 1899: read in full, no Faienza son of Nicola. PAGLIETA 1900 and ATESSA 1900: they do not exist on Antenati — the query answers «nessun risultato», which is not a network failure but the catalogue&#x27;s answer.
 
-Conclusión, y conviene dejar de gastar ventanas en esto: EL FONDO DE ATESSA EN EL ARCHIVIO DI STATO DI CHIETI NO LLEGA A 1900. Su partida hay que pedírsela al COMUNE DI ATESSA, que conserva lo que el archivo todavía no ha recibido ni escaneado. Y es un problema de escáner, no de privacidad: una partida de 1900 no tiene ninguna restricción legal.
+Conclusion, and it is worth stopping spending windows on this: THE ATESSA HOLDINGS AT THE ARCHIVIO DI STATO DI CHIETI DO NOT REACH 1900. His record must be requested from the COMUNE DI ATESSA, which keeps what the archive has not yet received or scanned. And it is a scanning problem, not a privacy one: a record of 1900 carries no legal restriction.
 
-Al pedirla, el dato que lo identifica NO es el apellido: en Atessa había varias familias Faienza a la vez —los nacimientos de 1899 muestran tres distintas—. Lo que identifica es «DI NICOLA», y mejor todavía «di Nicola e di Angela Pizzi».</p></div>
-<div class="ab" data-r="faienza"><h4>RESUELTO · Quién era el padre de Giuseppe Pizzi, y de qué mujer de las tres</h4><p>Las dos preguntas se han caído con un solo renglón. El árbol de Atessa tenía dos tramos y un hueco: arriba Domenico Pizzi y Santa Menna, hacia 1730, padres de Leone Pizzi (†1841); abajo Giuseppe Pizzi, padre de Domenico (1824-1891) y bisabuelo de Angiolina. Que Giuseppe fuera hijo de Leone encajaba, pero no estaba escrito en ninguna parte y lo sostenía únicamente un bloque familiar sin fuentes que ya había errado tres veces comprobadas. Ahora está escrito: la defunción de GIUSEPPE PIZZI —Atessa, 29 de abril de 1847, acta 106, descargada y transcrita en su ficha— dice «figlio del fu LEONE PIZZI di professione MURATORE, e della fu ROSA IACOBITTI». Los dos tramos son uno solo, y con ellos entran al árbol, ya probados, Domenico Pizzi el viejo y Santa Menna, de la generación de 1730-1740. El acta resuelve además la segunda pregunta: Leone enviudó tres veces —Anna Iano, Rosa Iacobitti y Erminia Vitulli— y no se sabía cuál le había dado hijos. Fue ROSA IACOBITTI, la segunda. Y de paso fija la lectura de su nombre, que el acta de 1841 había dejado dudosa entre «Nora» y «Rosa».</p></div>
-<div class="ab" data-r="faienza"><h4>Los padres de Rosa Iacobitti, y el matrimonio de Leone</h4><p>El techo nuevo de esta rama. Rosa Iacobitti se casó con Leone Pizzi antes de 1787 —su hijo Giuseppe nació ese año— y por tanto antes de que existiera el estado civil napoleónico, que en los Abruzos arranca en 1809. Ni su nacimiento, ni su matrimonio, ni su defunción pueden estar en Antenati. Lo que queda son los libros parroquiales de Atessa, en el Archivio Diocesano di Chieti-Vasto. Lo mismo vale para Domenico Pizzi el viejo y Santa Menna, y para las otras dos mujeres de Leone.</p></div>
-<div class="ab" data-r="faienza"><h4>El nacimiento de Nicola Faienza, y sus padres</h4><p>El acta de matrimonio de 1892 le da veintitrés años y lo declara nacido en Atessa, de modo que su partida está en los Nati de Atessa de 1868, 1869 o 1870 — el mismo registro, y casi el mismo año, que el de su mujer Angiolina, que es de febrero de 1869. Con dos índices alfabéticos se cierra. Y detrás está el matrimonio de sus padres, GIUSEPPE FAIENZA y MARIA STANISCIA, que sería de hacia 1865 en Atessa, y la defunción de ella, anterior a diciembre de 1892. Aviso para esa búsqueda: en Atessa hay varias familias Faienza a la vez —los nacimientos de 1899 muestran tres distintas— así que el apellido no identifica a nadie. Lo que identifica es «di Giuseppe».</p></div>
+When requesting it, the identifying detail is NOT the surname: at Atessa there were several Faienza families at once — the 1899 births show three different ones. What identifies him is «di Nicola», and better still «di Nicola e di Angela Pizzi».</p></div>
+<div class="ab" data-r="faienza"><h4>SOLVED · Who Giuseppe Pizzi&#x27;s father was, and by which of the three wives</h4><p>Both questions have fallen to a single line. The Atessa tree had two halves and a gap: at the top Domenico Pizzi and Santa Menna, around 1730, parents of Leone Pizzi (d. 1841); at the bottom Giuseppe Pizzi, father of Domenico (1824-1891) and great-grandfather of Angiolina. That Giuseppe was Leone&#x27;s son fitted, but it was written nowhere and rested solely on an unsourced family compilation that had already been wrong three times over. Now it is written: the death record of GIUSEPPE PIZZI — Atessa, 29 April 1847, record 106, downloaded and transcribed on his card — says «figlio del fu LEONE PIZZI di professione MURATORE, e della fu ROSA IACOBITTI». The two halves are one, and with them Domenico Pizzi the elder and Santa Menna enter the tree, proven, from the generation of 1730-1740. The record also settles the second question: Leone was widowed three times — Anna Iano, Rosa Iacobitti and Erminia Vitulli — and it was not known which had borne him children. It was ROSA IACOBITTI, the second. And in passing it fixes the reading of her name, which the 1841 record had left wavering between «Nora» and «Rosa».</p></div>
+<div class="ab" data-r="faienza"><h4>Rosa Iacobitti&#x27;s parents, and Leone&#x27;s marriage</h4><p>The new ceiling of this branch. Rosa Iacobitti married Leone Pizzi before 1787 — their son Giuseppe was born that year — and therefore before Napoleonic civil registration existed, which in Abruzzo begins in 1809. Neither her birth, nor her marriage, nor her death can be on Antenati. What remains are the parish books of Atessa, in the Archivio Diocesano di Chieti-Vasto. The same holds for Domenico Pizzi the elder and Santa Menna, and for Leone&#x27;s other two wives.</p></div>
+<div class="ab" data-r="faienza"><h4>Nicola Faienza&#x27;s birth, and his parents</h4><p>The marriage record of 1892 gives him twenty-three years and declares him born at Atessa, so his birth record is in the Atessa Births for 1868, 1869 or 1870 — the same register, and almost the same year, as that of his wife Angiolina, who is from February 1869. Two alphabetical indexes close it. And behind that lies the marriage of his parents, GIUSEPPE FAIENZA and MARIA STANISCIA, which would be around 1865 at Atessa, and her death, before December 1892. A warning for that search: at Atessa there are several Faienza families at once — the 1899 births show three different ones — so the surname identifies nobody. What identifies him is «di Giuseppe».</p></div>
 <div class="ab ab-vacio" data-r="rivas"><h4>Ningún cabo abierto en la rama Rivas</h4><p class="va">Los cabos abiertos que hay apuntan a otras ramas. Pulsa «Todas» arriba para verlos todos.</p></div></div>
     </section>
   </main>
