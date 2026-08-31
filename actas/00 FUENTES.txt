@@ -14974,3 +14974,53 @@ de Santa Fe, pedidas y recibidas el 31 de agosto de 2026 por Gonzalo
   censo (se probaron censo1895.gob.ar, el catalogo del AGN y santafe.gov.ar).
   Sigue en pie el reparto acordado: Gonzalo entra con su cuenta y aqui se le dan
   los parametros exactos. Estan escritos abajo.
+
+
+================================================================================
+*** EL BAUTISMO DE FRANCISCO ES DE 1913, NO DE 1910 *** — correccion de lectura
+31 de agosto de 2026 · lo advirtio Gonzalo · Catedral de Todos los Santos, p. 389
+================================================================================
+
+  QUE PASO. El acta se transcribio aqui como «mil novecientos DIEZ». Gonzalo, al
+  ver la ficha, dijo que el bautismo que habia mandado era de 1913. Se volvio al
+  PDF y se amplio a 600 ppp la palabra manuscrita del año, que aparece TRES VECES
+  en la misma pagina y siempre igual. *** NO TIENE EL RABO DE LA «Z» DE «DIEZ».
+  DICE «TRECE». *** La lectura de Gonzalo es la correcta.
+
+  Y de paso, releidos los padrinos sobre el original ampliado, habia otros tres
+  errores de transcripcion:
+     padrino  FRANCISCO MARTINEZ ZUVIRIA (no «Fuoria»), de VEINTIDOS años (no 21)
+     madrina  MERCEDES C. MONTIER (no «Monbier»), de CUARENTA Y CUATRO (no 48)
+
+*** POR QUE ESTO CAMBIA LA CONCLUSION, Y NO POCO ***
+
+  Con 1910, Francisco nacia el 10 de mayo de 1910 y Ramon Marcos el 23 o 28 de
+  noviembre de 1909: CINCO MESES Y MEDIO. Imposible en la misma madre. El acta se
+  dio por descartada por esa via.
+
+  Con 1913 hay *** TRES AÑOS Y MEDIO ***, que es un intervalo corriente entre
+  hermanos. *** LA OBJECION DESAPARECE Y FRANCISCO VUELVE A SER CANDIDATO A SER
+  EL HERMANO QUE GONZALO RECUERDA ***, el que iba a visitar a su abuelo de viejo
+  — «menor, pero no mucho mas chico», que es exactamente lo que sale.
+
+  Y la edad de Rosa mejora: VEINTICINCO en agosto de 1913 da nacida hacia 1888,
+  o sea VEINTIUNO al nacer Ramon Marcos (con el año mal leido salian veinticuatro).
+
+  LO QUE NO CAMBIA: *** SIGUE SIN ESTAR PROBADO *** que esta Rosa Budiño sea la
+  nuestra. Que las fechas ya no se contradigan devuelve la pista a la mesa, no la
+  convierte en prueba. Lo resuelve la partida de nacimiento de Ramon Marcos, ya
+  pedida, que dara la edad exacta de su madre.
+
+*** LO QUE HAY QUE APRENDER DE ESTO ***
+
+  1. *** UN AÑO EN NUMEROS ROMANOS MENTALES NO EXISTE: HAY QUE AMPLIAR LA PALABRA. ***
+     «diez» y «trece» se parecen en cursiva de 1913 y la diferencia esta en el
+     rabo de la z. A 300 ppp y a tamaño de pantalla completa no se ve. A 600 ppp
+     y recortado, si. Con pdftoppm: -r 600 -x -y -W -H sobre el PDF original.
+  2. *** CUANDO UNA ARITMETICA SALE IMPOSIBLE, SOSPECHAR DE LA LECTURA ANTES QUE
+     DEL PARENTESCO. *** Aqui se concluyo «no puede ser hermano» cuando lo que
+     fallaba era una palabra mal leida. La imposibilidad biologica era la señal
+     de que habia que volver al original, y se uso para cerrar el caso en vez de
+     para reabrirlo.
+  3. La carpeta se renombro de «1910 - Rosa Budino» a «1913 - Rosa Budino» y los
+     dos ficheros del bautismo de «1910-08-20 N ...» a «1913-08-20 N ...».
