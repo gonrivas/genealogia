@@ -36,6 +36,12 @@ header{
   padding:9px 24px; background:var(--card); border-bottom:1px solid var(--rule);
   position:relative; z-index:40;
 }
+/* Que la cabecera quepa en UNA fila en pantallas anchas: el buscador cede
+   espacio antes que los botones, que son los que hay que poder pulsar. */
+header .buscar input{width:190px;min-width:120px}
+@media (min-width:1100px){ header{flex-wrap:nowrap} header .der{flex-wrap:nowrap} }
+@media (max-width:1099px){ header .sub{display:none} }
+
 /* la navegación va siempre junta y nunca se corta: se agrupa y, si hace falta,
    baja a una segunda línea entera en vez de salirse por la derecha */
 /* El buscador y los botones forman UN bloque: así, cuando la cabecera no cabe,
@@ -107,8 +113,11 @@ header a.vol:hover{background:var(--linea);color:var(--card)}
 .dn .kids{display:flex;flex-direction:column;gap:14px}
 
 /* ─────────── lienzo ─────────── */
+/* El desplazamiento superior lo fija el JS con la altura REAL de la cabecera.
+   Estaba clavado en 62px, y cuando la cabecera envolvía a dos filas escondía
+   debajo la franja de generaciones: por eso no se veía ningún rótulo. */
 #lienzo{
-  position:absolute; inset:62px 0 0 0; overflow:auto;
+  position:absolute; inset:var(--hh, 62px) 0 0 0; overflow:auto;
   background:
     radial-gradient(circle at 1px 1px, rgba(22,23,26,.055) 1px, transparent 0) 0 0/22px 22px,
     var(--paper);
@@ -359,7 +368,6 @@ h3.sec{
   <span class="rr" id="rr" hidden></span>
   <span class="sub">160 personas · 77 actas · 291 imágenes</span>
 
-  <span class="sp"></span>
   <div class="der">
   <div class="buscar">
     <input id="q" type="search" placeholder="Buscar a alguien…" autocomplete="off" spellcheck="false">
@@ -805,7 +813,13 @@ $('#lienzo').addEventListener('wheel', ev => {
 
 $('#bMas').onclick = () => { prof = Math.min(prof+1, 9); pinta(); };
 $('#bMenos').onclick = () => { prof = Math.max(prof-1, 1); pinta(); };
-addEventListener('resize', () => { hilos(); rotulos(); });
+function altoCabecera(){
+  const h = document.querySelector('header').offsetHeight;
+  document.documentElement.style.setProperty('--hh', h + 'px');
+}
+altoCabecera();
+addEventListener('resize', () => { altoCabecera(); hilos(); rotulos(); });
+if(window.ResizeObserver) new ResizeObserver(altoCabecera).observe(document.querySelector('header'));
 
 const ini = (location.hash||'').slice(1);
 if(ini && G[ini]) foco = ini;
