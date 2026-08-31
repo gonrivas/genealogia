@@ -789,6 +789,10 @@ function zoom(z, centrar){
   const cx = l.scrollLeft + l.clientWidth/2, cy = l.scrollTop + l.clientHeight/2;
   $('#pista').style.transform = escala === 1 ? '' : `scale(${escala})`;
   $('#zPct').textContent = Math.round(escala*100) + '%';
+  /* Los rótulos de generación viven FUERA del contenedor escalado, así que sus
+     posiciones hay que volver a medirlas: si no, se quedan donde estaban al 100%
+     y quedan desfasados respecto a las columnas. */
+  requestAnimationFrame(rotulos);
   if(centrar !== false){
     const k = escala/antes;
     l.scrollLeft = cx*k - l.clientWidth/2;
