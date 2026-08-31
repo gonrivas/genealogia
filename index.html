@@ -86,7 +86,13 @@ section.blq > .wrap > h2{font-size:31px;font-weight:600;max-width:22ch}
 .txt b{color:var(--ink);font-weight:600}
 
 /* ---------- ramas ---------- */
-.ramas-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin:34px 0 0}
+/* Las cuatro ramas: SIEMPRE 4 en fila o 2+2, nunca 3+1. Con columnas
+   automáticas el navegador metía tres y dejaba la cuarta sola debajo. */
+.ramas-g{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:34px 0 0}
+@media (min-width:1360px){ .ramas-g{grid-template-columns:repeat(4,1fr)} }
+@media (max-width:640px){ .ramas-g{grid-template-columns:1fr} }
+/* en pantallas anchas la sección de ramas respira más que el resto */
+#ramas > .wrap, #branches > .wrap{max-width:1340px}
 .rama-card{
   display:block; text-decoration:none; color:inherit;
   background:var(--surface); border:1px solid var(--rule); border-radius:8px;
