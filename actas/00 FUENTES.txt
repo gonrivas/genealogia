@@ -14911,14 +14911,6 @@ de Santa Fe, pedidas y recibidas el 31 de agosto de 2026 por Gonzalo
      SAN JAVIER .................. 24 personas, sobre 13.207 — el nucleo mas denso,
         al norte de Cayasta y al sur de Vera, en el mismo rio. Alli esta el UNICO
         varon llamado Ramon Rivas de toda la provincia: doce años en 1887.
-     RINCON DE AVILA (La Capital) . 4 personas: Hermengao 45 (jefe), Jose E. 17,
-        Felipe 10 y Carlota 7, *** TODOS NACIDOS EN CATAMARCA ***.
-        CURIOSIDAD, Y AHORA CON MENOS FUERZA DE LA QUE PARECIA: ese es el paraje
-        de SAN JOSE DEL RINCON, donde Ramon Marcos TENIA UNA CASA y donde estaba
-        domiciliado al morir. *** Pero murio en la ciudad de Santa Fe, no alli, y la
-        casa la puso el en el siglo XX: no dice nada del origen de la familia. ***
-        Se anota por si algun dia encaja con otra cosa, no como indicio.
-
 *** ASI QUE SAN JAVIER NO QUEDA DESCARTADO, PERO SI DEBILITADO ***
   Que la familia nunca lo mencione es un dato real. Pero San Javier NO es un sitio
   lejano: esta en el mismo corredor del Parana, entre Cayasta y Vera. Lo que si es
@@ -14932,3 +14924,53 @@ de Santa Fe, pedidas y recibidas el 31 de agosto de 2026 por Gonzalo
   SAN JUSTO, CAYASTACITO, CAYASTA y HELVECIA. Si la familia llego entre 1887 y 1895,
   ahi estara — y con ella un Ramon de cuatro o cinco años que seria el bueno.
   Es la misma busqueda que ya dio el hogar de la viuda Ramona en Rosario.
+
+
+================================================================================
+*** EL HOGAR DEL UNICO RAMON RIVAS VARON DE SANTA FE EN 1887 — Y SON DE CORRIENTES
+31 de agosto de 2026 · censo provincial de 1887, fichas 19407 a 19414
+================================================================================
+
+  Reconstruido por IDX correlativos, que es como se hace en este censo.
+
+     19407  RIVAS VARVARITA .. 34a  *** ESPOSA ***, casada .. Argentina, CORRIENTES
+     19412  Rivas Rosa ....... 16a  hija, soltera .......... Argentina, CORRIENTES
+     19413  Rivas Gregoria ... 15a  hija, soltera .......... Argentina, CORRIENTES
+     19408  Rivas Aparicio ... 13a  hijo ................... Argentina, CORRIENTES
+   *** 19409  RIVAS RAMON ...... 12a  hijo, soltero .......... Argentina, CORRIENTES ***
+     19410  Rivas Vicente .....  8a  hijo, soltero .......... Argentina, CORRIENTES
+     19414  Rivas Varvarita ...  4a  hija, soltera .......... Argentina, CORRIENTES
+     19411  Rivas Nicacio .....  2a  hijo ................... Argentina, CORRIENTES
+
+*** LO QUE ESTO AÑADE, Y ES LO MAS IMPORTANTE DEL DIA ***
+
+  1. *** LOS OCHO NACIERON EN CORRIENTES, INCLUIDO EL DE DOS AÑOS. *** Es decir:
+     la familia estaba todavia en Corrientes hacia 1885 y llego a San Javier
+     ENTRE 1885 Y 1887. Son recien llegados.
+     => Si nuestro Ramon Rivas es este, *** LOS RIVAS NO SON DE SANTA FE SINO DE
+     CORRIENTES ***, y eso abre una provincia entera que nadie habia mirado.
+     Encaja ademas con que el acta de 1948 lo llame ARGENTINO y no extranjero.
+
+  2. *** LA MADRE SE LLAMA VARVARITA *** —asi, con uve— y tiene 34 años, o sea
+     nacida hacia 1853. Consta como ESPOSA, luego habia marido: el jefe del hogar
+     NO aparece en las fichas contiguas. O estaba ausente el dia del censo, o su
+     ficha quedo en otro sitio del padron. Es un cabo suelto que se puede tirar.
+
+  3. *** SIETE HERMANOS CON NOMBRE ***: Rosa (1871), Gregoria (1872), Aparicio
+     (1874), RAMON (1875), Vicente (1879), Varvarita (1883) y Nicacio (1885).
+     Si alguno de ellos aparece luego en San Justo o en Cayastacito, la cadena
+     queda hecha.
+
+*** LA PREDICCION QUE SE PUEDE COMPROBAR ***
+  Si el Ramon Rivas de San Javier es el bisabuelo, la partida de nacimiento de
+  Ramon Marcos —Cayastacito, noviembre de 1909, ya pedida— deberia declarar al
+  padre con *** TREINTA Y CUATRO AÑOS ***, y podria decir que nacio en CORRIENTES.
+  Si el candidato bueno fuera el de Rosario, diria DIECIOCHO. Una sola cifra
+  distingue las dos historias.
+
+*** LO QUE NO PUEDO HACER YO ***
+  El censo nacional de 1895 esta en FamilySearch y *** exige sesion iniciada ***:
+  la consulta sin cuenta devuelve HTTP 401. No hay ningun indice abierto de ese
+  censo (se probaron censo1895.gob.ar, el catalogo del AGN y santafe.gov.ar).
+  Sigue en pie el reparto acordado: Gonzalo entra con su cuenta y aqui se le dan
+  los parametros exactos. Estan escritos abajo.
